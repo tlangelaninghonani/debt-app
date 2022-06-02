@@ -25,7 +25,7 @@
             </div>
             <div class="breaker"></div>
             <div class="">
-                <form action="/sign_in" method="POST">
+                <form id="signinform" action="/sign_in" method="POST">
                     @csrf
                     @method("POST")
                     <div class="input-contain">
@@ -48,7 +48,7 @@
                         <div class="text-align-center" onclick="redirect('/sign_up')">
                             <span class="nowrap">Sign up</span>
                         </div>
-                        <button class="primal-color display-flex-center">
+                        <button type="button" class="primal-color display-flex-center" onclick="submitForm('signinform')">
                             <span>Sign in</span>
                         </button>
                     </div>
