@@ -37,11 +37,12 @@
             <span>Schedule a <span class="primary-color">Virtual Meeting</span> with a Debt Counsellor on <br> <span class="title-small">Google Meet</span></span>
             <div class="family">
                 <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
+                    <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
                     <div class="breaker"></div>
-                    <span class="title-small">Matt</span><br>
-                    <span>Debt Counsellor</span>
+                    <span class="title-small">Mahlori</span><br>
+                    <span>Lead Debt Counsellor</span>
                 </div>
+                <div class="vert-seperator"></div>
                 <div class="text-align-center">
                     <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
                     <div class="breaker"></div>
@@ -58,6 +59,12 @@
                     <img class="profile-pic-small" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="title-small">Marry</span><br>
+                    <span>Debt Counsellor</span>
+                </div>
+                <div class="text-align-center">
+                    <img class="profile-pic-small" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
+                    <div class="breaker"></div>
+                    <span class="title-small">Matt</span><br>
                     <span>Debt Counsellor</span>
                 </div>
             </div>

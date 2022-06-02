@@ -483,13 +483,12 @@ img{
 
 .profile-pic-small{
     transition: transform .2s;
-    min-width: 80px;
-    min-height: 80px;
-    max-width: 80px;
-    max-height: 80px;
+    min-width: 90px;
+    min-height: 90px;
+    max-width: 90px;
+    max-height: 90px;
     border-radius: 50%;
     box-shadow: var(--shadow-tailwind);
-    border: 2px solid var(--primary-color);
 }
 
 .profile-pic-small:hover {
@@ -502,11 +501,10 @@ img{
     transition: transform .2s;
     min-width: 120px;
     min-height: 120px;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 120px;
+    max-height: 120px;
     border-radius: 50%;
     box-shadow: var(--shadow-tailwind);
-    border: 2px solid var(--primary-color);
 }
 
 .profile-pic-mid:hover {
@@ -522,6 +520,10 @@ img{
     box-shadow: var(--shadow-tailwind);
 }
 
+.vert-seperator{
+    min-width: 1px;
+    background-color: var(--input-color);
+}
 
 .position-fixed{
     position: fixed;
@@ -701,6 +703,15 @@ img{
     background-position: center;
  }
 
+ .top-banner-apply-2{
+    padding: var(--padding);
+    margin-top: -25px;
+    margin-bottom: 0;
+    background-image: url("https://m.foolcdn.com/media/affiliates/images/Woman_on_laptop_K6Be3BQ.width-1200.jpg");
+    background-size: cover;
+    background-position: center;
+ }
+
 .banner-content-apply{
     display: flex;
     justify-content: center;
@@ -743,7 +754,7 @@ a{
     left: 0;
     right: 0;
     background-color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    height: 2px;
     top: -26px;
 }
 

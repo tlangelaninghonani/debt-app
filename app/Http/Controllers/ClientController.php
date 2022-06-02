@@ -50,7 +50,13 @@ class ClientController extends Controller
             return redirect("/sign_in");
         }
 
-        return view("apply");
+        $account = Account::find(Session::get("accountid")); 
+        $application = Application::where("account_id", $account->id)->first();   
+
+        return view("apply", [
+            "account" => $account,
+            "application" => $application
+        ]);
     }
 
     public function apply(Request $req){
@@ -58,6 +64,7 @@ class ClientController extends Controller
         $account = Account::find(Session::get("accountid"));        
         
         $application = new Application();
+        $application->account_id = $account->id;
         $application->alternative_phone_number = $req->alternativephonenumber;
         $application->marital_status = $req->maritalstatus;
         $application->number_of_dependants = $req->numberofdependants;
@@ -71,6 +78,7 @@ class ClientController extends Controller
         $application->company_town = $req->companytown;
         $application->company_tel = $req->companytel;
         $application->position_held = $req->positionheld;
+        $application->type_of_employment = $req->typeofemployment;
         $application->employment_length = $req->employmentlength;
 
         $application->income_before_deductions = $req->incomebeforedeductions;

@@ -39,6 +39,7 @@ function refreshPage(){
 }
 
 function submitForm(formId){
+    loader();
     document.querySelector("#"+formId).submit();
 }
 
