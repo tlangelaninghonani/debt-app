@@ -38,6 +38,10 @@ function refreshPage(){
     location.reload();
 }
 
+function submitForm(formId){
+    document.querySelector("#"+formId).submit();
+}
+
 function showHideElement(id, styleDisplay){
     document.querySelector("#"+id).style.display = styleDisplay;
 }

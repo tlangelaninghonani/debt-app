@@ -23,7 +23,7 @@
             <span class="slogan">Personal</span>
             <div class="breaker"></div>
             <div class="">
-                <form action="/sign_up" method="POST">
+                <form id="signupform" action="/sign_up" method="POST">
                     @csrf
                     @method("POST")
                     <div class="input-contain">
@@ -37,7 +37,6 @@
                     <div class="input-contain">
                         <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Type your Phone number">
                     </div>
-                    <span>You will use your phone number and a password to Sign in</span>
                     <div class="breaker"></div>
                     <div class="input-contain">
                         <input type="text" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your Email address">
@@ -58,7 +57,7 @@
                         <div class="text-align-center" onclick="redirect('/sign_in')">
                             <span class="nowrap">Sign in</span>
                         </div>
-                        <button class="primal-color display-flex-center">
+                        <button type="button" class="primal-color display-flex-center" onclick="submitForm('signupform')">
                             <span>Sign up</span>
                         </button>
                     </div>
