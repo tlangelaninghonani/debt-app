@@ -1,0 +1,66 @@
+var googleIcons = document.createElement("link");
+googleIcons.rel = "stylesheet";
+googleIcons.href = "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined";
+
+var googleIconsRound = document.createElement("link");
+googleIconsRound.rel = "stylesheet";
+googleIconsRound.href = "https://fonts.googleapis.com/icon?family=Material+Icons+Round";
+
+var googleIconsSharp = document.createElement("link");
+googleIconsSharp.rel = "stylesheet";
+googleIconsSharp.href = "https://fonts.googleapis.com/icon?family=Material+Icons+Sharp";
+
+
+var jQuery = document.createElement("script");
+jQuery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
+
+document.getElementsByTagName("head")[0].appendChild(googleIcons);
+document.getElementsByTagName("head")[0].appendChild(googleIconsRound);
+document.getElementsByTagName("head")[0].appendChild(googleIconsSharp);
+document.getElementsByTagName("head")[0].appendChild(jQuery);
+
+function loader(){
+    document.querySelector(".loader-binder").style.display = "flex";
+}
+
+function redirect(path){
+    loader();
+    location.href = path;
+}
+
+function redirectBack(){
+    loader();
+    history.back();
+}
+
+function refreshPage(){
+    loader();
+    location.reload();
+}
+
+function showHideElement(id, styleDisplay){
+    document.querySelector("#"+id).style.display = styleDisplay;
+}
+
+function menu(mode){
+    if(mode == "open"){
+        document.querySelector("#menu").style.width = "50%";
+        document.querySelector("#menu").style.right = "0";
+    }else{
+        document.querySelector("#menu").style.width = "0";
+        document.querySelector("#menu").style.right = "-50px";
+    }
+}
+
+var observer = new IntersectionObserver(function(entries) {
+
+	if(entries[0].intersectionRatio === 0){
+        document.querySelector(".header").classList.add("development-padding");
+        document.querySelector(".top-patcher").style.display = "none";
+    }
+	else if(entries[0].intersectionRatio === 1){
+        document.querySelector(".header").classList.remove("development-padding");
+        document.querySelector(".top-patcher").style.display = "block";
+    }
+}, { threshold: [0,1] });
+
