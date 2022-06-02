@@ -4,7 +4,7 @@
             <div class="focused-nav"></div>
         @endif
         <span class="material-icons-sharp">
-        maps_home_work
+        home
         </span><br>
         <span class="helvetica">Home</span>
     </div>
