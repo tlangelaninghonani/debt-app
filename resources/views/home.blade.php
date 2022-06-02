@@ -40,21 +40,47 @@
         <div class="display-flex-space-between">
             <div class="installment">
                 <div>
-                    <span>Installment plan</span><br>
+                    <span class="nowrap">Overall installment plan</span><br>
                     <span class="number-mid nowrap">R 8 000.00</span><br>
-                    <span>From R 15 000.00</span>
+                    <span>From <span class="underline-white">R 15 000.00</span></span>
                 </div>
             </div>
-            <div class="text-align-center w-100">
-                <span class="material-icons-sharp">
+            <div class="text-align-center w-100 position-relative">
+                <span class="material-icons-sharp edit-plan">
                 edit
+                </span>
+                <span class="material-icons-sharp icon-mid">
+                store
                 </span><br>
-                <span>Edit plan</span>
+                <span>Visit your nearest <span class="primary-color">branch</span> to edit your plan</span>
             </div>
         </div>
         <div class="breaker"></div>
-        
-        <span class="slogan">Branches</span>
+        <span class="slogan">Indebted to</span>
+        <div class="breaker"></div>
+        <div class="highlight">
+            <div class="display-flex-align">
+                <span class="material-icons-sharp icon-mid">
+                business
+                </span>
+                <div>
+                    <span class="title-small">Capitec Bank Limited</span><br>
+                    <span>Indebt of <span class="underline">R 180 000.00</span></span>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-align">
+                <span class="material-icons-sharp icon-mid">
+                business
+                </span>
+                <div>
+                    <span class="title-small">Mjinga Trade Centre</span><br>
+                    <span>Indebt of <span class="underline">R 50 000.00</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="breaker"></div>
+        <span class="slogan">Our branches</span>
         <div class="breaker"></div>
         <div class="display-flex-space-between">
             <div class="display-flex">
@@ -73,8 +99,6 @@
                 </span>
             </a>
         </div>
-        <div class="breaker"></div>
-        <hr>
         <div class="breaker"></div>
         <div class="display-flex-space-between">
             <div class="display-flex">

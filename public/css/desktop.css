@@ -51,6 +51,11 @@ body{
     color: var(--primary-color) !important;
 }
 
+.highlight{
+    margin: 0 -25px;
+    background-color: var(--input-color);
+    padding: var(--padding);
+}
 
 .dark{
     font-family: 'MyFontBd';
@@ -221,6 +226,21 @@ body{
 .edge-fit{
     margin: 0 -25px;
     padding: var(--padding);
+}
+
+.edit-plan{
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    background-color: var(--input-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon-binder{
+    background-color: var(--input-color);
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .shadow{
@@ -446,7 +466,7 @@ img{
 .slogan-small-color{
     font-family: 'Poller One', cursive;
     font-size: 20px;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .slogan-primary-color{
@@ -462,6 +482,14 @@ img{
 .kanit-mid{
     /*font-family: 'Kanit', sans-serif;*/
     font-size: 25px;
+}
+
+.underline{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.underline-white{
+    border-bottom: 2px solid white;
 }
 
 .kanit-big{

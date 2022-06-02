@@ -50,8 +50,10 @@
             <div class="banner-content-apply" style="height: 250px">
                 <div class="text-align-center">
                     <span class="material-icons-sharp icon-big">
-                    task_alt
+                    watch_later
                     </span>
+                    <div class="breaker"></div>
+                    <span class="slogan-small">Applied, <span class="slogan-small-color">awaiting</span> approval</span>
                 </div>
             </div>
         </div>
@@ -60,31 +62,31 @@
                 <span class="slogan">Personal</span><br>
                 <div class="breaker"></div>
                 <span>Alternative phone number - <span class="dark">{{ $application->alternative_phone_number }}</span></span><br>
-                <span>Merital status - <span>{{ $application->merital_status }}</span></span><br>
-                <span>number of dependants - <span>{{ $application->number_of_dependants }}</span></span><br>
+                <span>Merital status - <span class="dark">{{ $application->marital_status }}</span></span><br>
+                <span>number of dependants - <span class="dark">{{ $application->number_of_dependants }}</span></span><br>
                 <div class="breaker"></div>
                 <span class="slogan">Residential</span><br>
                 <div class="breaker"></div>
-                <span>Province - <span>{{ $application->province }}</span></span><br>
-                <span>Town - <span>{{ $application->town }}</span></span><br>
+                <span>Province - <span class="dark">{{ $application->province }}</span></span><br>
+                <span>Town - <span class="dark">{{ $application->town }}</span></span><br>
                 <div class="breaker"></div>
                 <span class="slogan">Employer</span><br>
                 <div class="breaker"></div>
-                <span>Employer full name - <span>{{ $application->employer_full_name }}</span></span><br>
-                <span>Company name - <span>{{ $application->company_name }}</span></span><br>
-                <span>Company province - <span>{{ $application->company_province }}</span></span><br>
-                <span>company town - <span>{{ $application->company_town }}</span></span><br>
-                <span>company tel - <span>{{ $application->company_tel }}</span></span><br>
-                <span>Position held - <span>{{ $application->position_held }}</span></span><br>
-                <span>Type of employment - <span>{{ $application->type_of_employment }}</span></span><br>
+                <span>Employer full name - <span class="dark">{{ $application->employer_full_name }}</span></span><br>
+                <span>Company name - <span class="dark">{{ $application->company_name }}</span></span><br>
+                <span>Company province - <span class="dark">{{ $application->company_province }}</span></span><br>
+                <span>company town - <span class="dark">{{ $application->company_town }}</span></span><br>
+                <span>company tel - <span class="dark">{{ $application->company_tel }}</span></span><br>
+                <span>Position held - <span class="dark">{{ $application->position_held }}</span></span><br>
+                <span>Type of employment - <span class="dark">{{ $application->type_of_employment }}</span></span><br>
                 @if($application->type_of_employment == "Contract")
-                    <span>Employment length - <span>{{ $application->employment_length }}</span></span><br> 
+                    <span>Employment length - <span class="dark">{{ $application->employment_length }}</span></span><br> 
                 @endif
                 <div class="breaker"></div>
                 <span class="slogan">Income</span><br>
                 <div class="breaker"></div>
-                <span>Income before deductions - <span>{{ $application->income_before_deductions }}</span></span><br>
-                <span>Income after deductions - <span>{{ $application->income_after_deductions }}</span></span><br>
+                <span>Income before deductions - <span>R {{ number_format($application->income_before_deductions, 2, ".", " ") }}</span></span><br>
+                <span>Income after deductions - <span>R {{ number_format($application->income_after_deductions, 2, ".", " ") }}</span></span><br>
             </div>
         </div>
     @else
