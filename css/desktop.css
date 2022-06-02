@@ -489,6 +489,7 @@ img{
     max-height: 80px;
     border-radius: 50%;
     box-shadow: var(--shadow-tailwind);
+    border: 2px solid var(--primary-color);
 }
 
 .profile-pic-small:hover {
@@ -505,6 +506,7 @@ img{
     max-height: 80px;
     border-radius: 50%;
     box-shadow: var(--shadow-tailwind);
+    border: 2px solid var(--primary-color);
 }
 
 .profile-pic-mid:hover {
@@ -741,7 +743,7 @@ a{
     left: 0;
     right: 0;
     background-color: var(--primary-color);
-    height: 2px;
+    border-bottom: 2px solid var(--primary-color);
     top: -26px;
 }
 
