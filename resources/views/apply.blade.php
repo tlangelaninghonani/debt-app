@@ -46,7 +46,7 @@
         </div>
     </div>
     <div class="top-banner-apply">
-        <div class="banner-content-apply">
+        <div class="banner-content-apply" style="height: 250px">
             <span class="slogan">We will be with you <span class="slogan-primary-color">all</span> the way</span>
         </div>
     </div>
@@ -258,7 +258,7 @@
         </script>
     </div>
     <script>
-        //observer.observe(document.querySelector(".observer"));
+        observer.observe(document.querySelector(".observer"));
     </script>
     <script>
         function applicants(self){

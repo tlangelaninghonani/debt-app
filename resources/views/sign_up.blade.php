@@ -39,7 +39,7 @@
                     </div>
                     <div class="breaker"></div>
                     <div class="input-contain">
-                        <input type="text" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your Email address">
+                        <input type="email" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your Email address">
                     </div>
                     <div class="breaker"></div>
                     <span class="slogan">Setup a <span class="slogan-primary-color">Sign in</span> password</span><br>
