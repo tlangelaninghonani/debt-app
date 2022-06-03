@@ -30,7 +30,11 @@ class ClientController extends Controller
             return redirect("/sign_in");
         }
 
-        return view("status");
+        $account = Account::find(Session::get("accountid")); 
+
+        return view("status", [
+            "account" => $account
+        ]);
     }
 
     public function feeds(){

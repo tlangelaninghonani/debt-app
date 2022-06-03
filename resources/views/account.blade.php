@@ -11,10 +11,8 @@
 </head>
 <body>
     @include("components.menu")
-    @include("components.top_patcher")
     @include("components.loader")
     @include("components.error")
-    <div class="observer"></div>
     <div class="header display-flex-space-between">
         <span class="header-title">Profile</span>
         <div class="display-flex-align mid-gap">
@@ -105,8 +103,5 @@
         </div>
     </div>
     @include("components.nav_bottom")
-    <script>
-        observer.observe(document.querySelector(".observer"));
-    </script>
 </body>
 </html>

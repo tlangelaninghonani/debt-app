@@ -56,20 +56,3 @@ function menu(mode){
         document.querySelector("#menu").style.right = "-50px";
     }
 }
-
-var observer = new IntersectionObserver(function(entries) {
-
-	if(entries[0].intersectionRatio === 0){
-        document.querySelector(".header").classList.add("development-padding");
-        if(document.querySelector(".top-patcher")){
-            document.querySelector(".top-patcher").style.display = "none";
-        }
-    }
-	else if(entries[0].intersectionRatio === 1){
-        document.querySelector(".header").classList.remove("development-padding");
-        if(document.querySelector(".top-patcher")){
-            document.querySelector(".top-patcher").style.display = "block";
-        }
-    }
-}, { threshold: [0,1] });
-

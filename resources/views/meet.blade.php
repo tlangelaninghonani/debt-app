@@ -11,7 +11,6 @@
 </head>
 <body>
     @include("components.menu")
-    @include("components.top_patcher")
     @include("components.loader")
     <div class="observer"></div>
     <div class="header display-flex-space-between">
@@ -97,9 +96,5 @@
         </div>
     </div>
     @include("components.nav_bottom")
-    <script>
-        observer.observe(document.querySelector(".observer"));
-    </script>
-    @include('components.pull_to_refresh')
 </body>
 </html>

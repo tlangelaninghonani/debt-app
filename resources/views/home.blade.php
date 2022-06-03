@@ -11,7 +11,6 @@
 </head>
 <body>
     @include("components.menu")
-    @include("components.top_patcher")
     @include("components.loader")
     <div class="observer"></div>
     <div class="header display-flex-space-between">
@@ -39,7 +38,7 @@
             @endif
             <div>
                 <span class="slogan-small"><span class="slogan-small-color">Hi</span>, {{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Your status - <span>Negotiation</span></span>
+                <span>Your status - <span>Creditor notification</span></span>
             </div>
         </div>
         <div class="breaker"></div>
@@ -67,7 +66,7 @@
         <div>
             <div class="display-flex-align">
                 <span class="material-icons-sharp icon-mid">
-                business
+                apartment
                 </span>
                 <div>
                     <span class="title-small">Capitec Bank Limited</span><br>
@@ -77,7 +76,7 @@
             <div class="breaker"></div>
             <div class="display-flex-align">
                 <span class="material-icons-sharp icon-mid">
-                business
+                apartment
                 </span>
                 <div>
                     <span class="title-small">Mjinga Trade Centre</span><br>
@@ -126,9 +125,5 @@
         <div class="breaker"></div>
     </div>
     @include("components.nav_bottom")
-    <script>
-        observer.observe(document.querySelector(".observer"));
-    </script>
-    @include('components.pull_to_refresh')
 </body>
 </html>

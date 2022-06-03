@@ -34,7 +34,6 @@
 
 body{
     margin: 0;
-    margin-top: 20px;
 }
 
 *{
@@ -63,13 +62,17 @@ body{
 
 .status{
     width: auto;
-    box-shadow: var(--shadow-tailwind);
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.status *{
+    color: white;
 }
 
 .loader-anim{

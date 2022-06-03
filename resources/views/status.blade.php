@@ -11,12 +11,17 @@
 </head>
 <body>
     @include("components.menu")
-    @include("components.top_patcher")
     @include("components.loader")
     <div class="observer"></div>
     <div class="header display-flex-space-between">
-        <span class="header-title">Status</span>
+        <span class="header-title">Your status</span>
         <div class="display-flex-align mid-gap" style="padding-top: 2px">
+            <span class="material-icons-sharp" onclick="refreshPage()">
+            refresh
+            </span>
+            <span class="material-icons-sharp">
+            notifications
+            </span>
             <span class="material-icons-sharp" onclick="menu('open')">
             more_horiz
             </span>
@@ -27,25 +32,23 @@
             <p>
                 <div class="display-flex-center">
                     <div class="status position-relative">
-                        <div class="loader-anim"></div>
-                            <div class="text-align-center status-item">
-                                <span class="number-mid">85</span><br>
-                                <span>Percent</span>
-                            </div>
+                        <div class="text-align-center">
+                            <span class="number-mid nowrap">02</span><br>
+                            <span>Percent</span>
+                        </div>
                     </div>
                 </div>
             </p>
             <br>
             <p>
-                <span class="kanit-mid">Negotiation</span><br>
-                <span>In the event that the <span class="kanit">consumer</span> is indeed over-indebted and so their application is accepted, the <span class="kanit">debt counsellor</span> and <span class="kanit">credit providers</span> enter into repayment negotiations going forward</span>
+                <div class="text-align-center">
+                    <span class="slogan">Creditor notification</span>
+                    <div class="breaker"></div>
+                    <span>Debt Counsellor Notifies credit providers and credit bureau of the Consumers application for Debt Review</span>
+                </div>
             </p>
         </div>
     </div>
     @include("components.nav_bottom")
-    <script>
-        observer.observe(document.querySelector(".observer"));
-    </script>
-    @include('components.pull_to_refresh')
 </body>
 </html>

@@ -41,6 +41,5 @@
             </div>
         </div>
     </div>
-    @include('components.pull_to_refresh')
 </body>
 </html>

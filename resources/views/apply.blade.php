@@ -304,9 +304,6 @@
         </div>
     @endif
     <script>
-        observer.observe(document.querySelector(".observer"));
-    </script>
-    <script>
         function applicants(self){
             for (let i = 0; i < document.querySelectorAll(".focused").length; i++) {
                 const element = document.querySelectorAll(".focused")[i];
