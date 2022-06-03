@@ -13,7 +13,7 @@
             <div class="focused-nav"></div>
         @endif
         <span class="material-icons-sharp">
-        speed
+        autorenew
         </span><br>
         <span class="helvetica">Status</span>
     </div>
@@ -39,13 +39,9 @@
         @if(Route::getfacaderoot()->current()->uri() == "account")
             <div class="focused-nav"></div>
         @endif
-        @if($account->account_picture !="")
-            <img class="profile-pic-smallest" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt=""><br>
-        @else
-            <span class="material-icons-sharp">
-            account_circle
-            </span><br>
-        @endif
+        <span class="material-icons-sharp">
+        account_circle
+        </span><br>
         <span class="helvetica">Profile</span>
     </div>
 </div>
