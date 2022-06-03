@@ -8,15 +8,6 @@
         </span><br>
         <span class="helvetica">Home</span>
     </div>
-    <div class="text-align-center relative" onclick="redirect('/apply')">
-        @if(Route::getfacaderoot()->current()->uri() == "apply")
-            <div class="focused-nav"></div>
-        @endif
-        <span class="material-icons-sharp">
-        folder
-        </span><br>
-        <span class="helvetica">Apply</span>
-    </div>
     <div class="text-align-center relative" onclick="redirect('/status')">
         @if(Route::getfacaderoot()->current()->uri() == "status")
             <div class="focused-nav"></div>
@@ -25,6 +16,15 @@
         speed
         </span><br>
         <span class="helvetica">Status</span>
+    </div>
+    <div class="text-align-center relative" onclick="redirect('/apply')">
+        @if(Route::getfacaderoot()->current()->uri() == "apply")
+            <div class="focused-nav"></div>
+        @endif
+        <span class="material-icons-sharp">
+        folder
+        </span><br>
+        <span class="helvetica">Apply</span>
     </div>
     <div class="text-align-center relative" onclick="redirect('/meet')">
         @if(Route::getfacaderoot()->current()->uri() == "meet")
