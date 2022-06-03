@@ -231,10 +231,20 @@ body{
 .edit-plan{
     position: absolute;
     top: -15px;
-    right: 25px;
+    right: 10px;
     background-color: var(--input-color);
     padding: 10px;
     border-radius: 50%;
+}
+
+.empty-account{
+    font-size: 105px !important;
+    color: var(--input-color);
+}
+
+.empty-account-mid{
+    font-size: 150px !important;
+    color: var(--input-color);
 }
 
 .icon-binder{
@@ -509,6 +519,15 @@ img{
     font-size: 20px;
 }
 
+.profile-pic-smallest{
+    transition: transform .2s;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    border-radius: 50%;
+}
+
 .profile-pic-small{
     transition: transform .2s;
     min-width: 90px;
@@ -516,13 +535,12 @@ img{
     max-width: 90px;
     max-height: 90px;
     border-radius: 50%;
-    box-shadow: var(--shadow-tailwind);
 }
 
 .profile-pic-small:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
 
 .profile-pic-mid{
@@ -532,13 +550,12 @@ img{
     max-width: 120px;
     max-height: 120px;
     border-radius: 50%;
-    box-shadow: var(--shadow-tailwind);
 }
 
 .profile-pic-mid:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
 
 .profile-img{

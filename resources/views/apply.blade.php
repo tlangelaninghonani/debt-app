@@ -242,7 +242,7 @@
                     <span>Upload a <span class="kanit">certified</span> copy of your Identity *</span>
                     <div>
                         <span class="material-icons-sharp action-icon">
-                        drive_folder_upload
+                        cloud
                         </span>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                     <span>Upload a <span class="kanit">3 months certified</span> copy of your Payslip *</span>
                     <div>
                         <span class="material-icons-sharp action-icon">
-                        drive_folder_upload
+                        cloud
                         </span>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                     <span>Upload a <span class="kanit">3 months certified</span> copy of your Bank Statement *</span>
                     <div>
                         <span class="material-icons-sharp action-icon">
-                        drive_folder_upload
+                        cloud
                         </span>
                     </div>
                 </div>

@@ -17,6 +17,14 @@ class ClientController extends Controller
         return view("welcome");
     }
 
+    public function setupAccountPicture(){
+        $account = Account::find(Session::get("accountid")); 
+
+        return view("setup_account_picture", [
+            "account" => $account
+        ]);
+    }
+
     public function status(){
         if(! Session::has("signed")){
             return redirect("/sign_in");
@@ -31,18 +39,6 @@ class ClientController extends Controller
         }
 
         return view("feeds");
-    }
-
-    public function profile(){
-        if(! Session::has("signed")){
-            return redirect("/sign_in");
-        }
-
-        $account = Account::find(Session::get("accountid"));
-
-        return view("profile", [
-            "account" => $account
-        ]);
     }
 
     public function applyIndex(){
@@ -94,8 +90,11 @@ class ClientController extends Controller
         if(! Session::has("signed")){
             return redirect("/sign_in");
         }
+        $account = Account::find(Session::get("accountid")); 
 
-        return view("meet");
+        return view("meet", [
+            "account" => $account
+        ]);
     }
 
     public function home(){

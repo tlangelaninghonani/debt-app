@@ -63,23 +63,6 @@
                     </div>
                 </form>
             </div>
-            <div class="breaker"></div>
-            <hr>
-            <div class="breaker"></div>
-            <div class="display-flex-center">
-                <span class="nowrap">Twitter</span>
-                &#183;
-                <span class="nowrap">Facebook</span>
-                &#183;
-                <span class="nowrap">LinkedIn</span>
-            </div>
-            <div class="breaker"></div>
-            <div class="display-flex-center">
-                <span class="material-icons-sharp">
-                alternate_email
-                </span>
-                <span>The <span class="primary-color">Halping Hand</span> Debt Counsellors</span>
-            </div>
         </div>
     </div>
     @include('components.pull_to_refresh')

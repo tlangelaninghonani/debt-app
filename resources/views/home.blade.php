@@ -29,8 +29,14 @@
         </div>
     </div>
     <div class="container view-bottom">
-        <div class="display-flex-align">
-            <img class="profile-pic-small" src="https://www.capitalcdc.com/public/upload/files/general/West_Texas_-_Jason_Bigham.jpg" alt="">
+        <div class="display-flex-align mid-gap">
+            @if($account->account_picture != "")
+                <img class="profile-pic-small" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
+            @else
+                <span class="material-icons-sharp empty-account">
+                account_circle
+                </span>
+            @endif
             <div>
                 <span class="slogan-small"><span class="slogan-small-color">Hi</span>, {{ $account->first_name." ".$account->last_name }}</span><br>
                 <span>Your status - <span>Negotiation</span></span>
@@ -42,7 +48,7 @@
                 <div>
                     <span class="nowrap">Overall installment plan</span><br>
                     <span class="number-mid nowrap">R 8 000.00</span><br>
-                    <span>From <span class="underline-white">R 15 000.00</span></span>
+                    <span>From <span>R 15 000.00</span></span>
                 </div>
             </div>
             <div class="text-align-center w-100 position-relative">
@@ -58,14 +64,14 @@
         <div class="breaker"></div>
         <span class="slogan">Indebted to</span>
         <div class="breaker"></div>
-        <div class="highlight">
+        <div>
             <div class="display-flex-align">
                 <span class="material-icons-sharp icon-mid">
                 business
                 </span>
                 <div>
                     <span class="title-small">Capitec Bank Limited</span><br>
-                    <span>Indebt of <span class="underline">R 180 000.00</span></span>
+                    <span>Indebt of <span>R 180 000.00</span></span>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -75,7 +81,7 @@
                 </span>
                 <div>
                     <span class="title-small">Mjinga Trade Centre</span><br>
-                    <span>Indebt of <span class="underline">R 50 000.00</span></span>
+                    <span>Indebt of <span>R 50 000.00</span></span>
                 </div>
             </div>
         </div>

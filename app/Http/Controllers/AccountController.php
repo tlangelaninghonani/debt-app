@@ -25,42 +25,49 @@ class AccountController extends Controller
             if(strlen(str_replace(" ", "", $req->phonenumber)) != 10){
                 Session::put("error", true);
                 Session::put("errormessage", "Invalid Phone number");
+
                 return back(); 
             }
 
             if(! strpos(strtolower($req->emailaddress), "@")){
                 Session::put("error", true);
                 Session::put("errormessage", "Invalid email address");
+
                 return back(); 
             }
 
             if(! strpos(strtolower($req->emailaddress), ".")){
                 Session::put("error", true);
                 Session::put("errormessage", "Invalid email address");
+
                 return back(); 
             }
 
             if(Account::where("phone_number", str_replace(" ", "", $req->phonenumber))->exists()){
                 Session::put("error", true);
                 Session::put("errormessage", "Account already exists, Sign in instead");
+
                 return back();
             }
 
             if(Account::where("email_address", str_replace(" ", "", strtolower($req->email)))->exists()){
                 Session::put("error", true);
                 Session::put("errormessage", "Account already exists, Sign in instead");
+
                 return back();
             }
 
             if(strlen($req->password) < 6){
                 Session::put("error", true);
                 Session::put("errormessage", "Password should be at least 6 characters long");
+
                 return back(); 
             }
 
             if($req->password != $req->confirmpassword){
                 Session::put("error", true);
                 Session::put("errormessage", "Mismatching Passwords");
+
                 return back(); 
             }
 
@@ -74,10 +81,15 @@ class AccountController extends Controller
 
             Session::put("signed", true);
             Session::put("accountid", $account->id);
-            return redirect("/home");
+            Session::put("setuppicture", true);
+
+            return view("setup_account_picture", [
+                "account" => $account
+            ]);
         }else{
             Session::put("error", true);
             Session::put("errormessage", "Please fill in all required fields");
+
             return back();
         }
     }
@@ -97,16 +109,141 @@ class AccountController extends Controller
                 if(Hash::check($req->password, $account->password)){
                     Session::put("signed", true);
                     Session::put("accountid", $account->id);
+
                     return redirect("/home");
                 }
             }
             Session::put("error", true);
             Session::put("errormessage", "Either your Phone number or Password is incorrect");
+
             return back();
         }else{
             Session::put("error", true);
             Session::put("errormessage", "Enter your Phone number and a Password to Sign in");
+
             return back();
+        }
+    }
+
+    public function account(){
+        if(! Session::has("signed")){
+            return redirect("/sign_in");
+        }
+
+        $account = Account::find(Session::get("accountid"));
+
+        return view("account", [
+            "account" => $account
+        ]);
+    }
+
+    public function update(Request $req){
+
+        $account = Account::find(Session::get("accountid")); 
+
+        if($req->firstname != "" && $req->lastname != "" && 
+        $req->phonenumber != "" && $req->emailaddress != ""){
+            
+
+            if(strlen(str_replace(" ", "", $req->phonenumber)) != 10){
+                Session::put("error", true);
+                Session::put("errormessage", "Invalid Phone number");
+
+                return back(); 
+            }
+
+            if(! strpos(strtolower($req->emailaddress), "@")){
+                Session::put("error", true);
+                Session::put("errormessage", "Invalid email address");
+
+                return back(); 
+            }
+
+            if(! strpos(strtolower($req->emailaddress), ".")){
+                Session::put("error", true);
+                Session::put("errormessage", "Invalid email address");
+
+                return back(); 
+            }
+
+            if(Account::where("id", "!=", $account->id)->where("phone_number", str_replace(" ", "", $req->phonenumber))->exists()){
+                Session::put("error", true);
+                Session::put("errormessage", "Account already exists, Sign in instead");
+
+                return back();
+            }
+
+            if(Account::where("id", "!=", $account->id)->where("email_address", str_replace(" ", "", strtolower($req->email)))->exists()){
+                Session::put("error", true);
+                Session::put("errormessage", "Account already exists, Sign in instead");
+
+                return back();
+            }
+
+            if($req->password != ""){
+                if(strlen($req->password) < 6){
+                    Session::put("error", true);
+                    Session::put("errormessage", "Password should be at least 6 characters long");
+    
+                    return back(); 
+                }
+    
+                if($req->password != $req->confirmpassword){
+                    Session::put("error", true);
+                    Session::put("errormessage", "Mismatching Passwords");
+    
+                    return back(); 
+                }
+            }
+
+            $account->first_name = ucfirst(strtolower($req->firstname));
+            $account->last_name = ucfirst(strtolower($req->lastname));
+            $account->phone_number = str_replace(" ", "", $req->phonenumber);
+            $account->email_address = strtolower($req->emailaddress);
+            if($req->password != ""){
+                $account->password = Hash::make($req->password);
+            }
+            $account->save();
+
+            return back();
+        }else{
+            Session::put("error", true);
+            Session::put("errormessage", "Please fill in all required fields");
+
+            return back();
+        }
+    }
+
+    public function remove(){
+        $account = Account::find(Session::get("accountid"));
+        $account->account_picture = "";
+
+        $account->save();
+
+        return redirect("/account");
+    }
+
+    public function upload(Request $req){
+
+        $account = Account::find(Session::get("accountid"));
+
+        if($req->file("picture")){
+            $file = $req->file("picture");
+            $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
+            $file->move("accounts/accounts_pictures", $filename);
+
+            $account->account_picture = $filename;
+
+            $account->save();
+            
+            if(Session::has("setuppicture")){
+                Session::forget("setuppicture");
+
+                return redirect("/home");
+            }else{
+
+                return redirect("/account");
+            }
         }
     }
 }

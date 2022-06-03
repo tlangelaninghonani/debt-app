@@ -34,7 +34,9 @@
             videocam
             </span> 
             <div class="breaker"></div>
-            <span>Schedule a <span class="primary-color">Virtual Meeting</span> with a Debt Counsellor on <br> <span class="title-small">Google Meet</span></span>
+            <span>Schedule a <span class="primary-color">Virtual Meeting</span> with a Debt Counsellor on Google Meet</span>
+            <div class="breaker"></div>
+            <span class="slogan-small">Debt counsellors</span>
             <div class="family">
                 <div class="text-align-center">
                     <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
@@ -67,6 +69,10 @@
                     <span class="title-small">Matt</span><br>
                     <span>Debt Counsellor</span>
                 </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="text-align-left">
+                <span class="slogan-small">Meeting time</span>
             </div>
             <div class="breaker"></div>
             <div class="display-flex-align">
