@@ -134,7 +134,7 @@
                             <option value="{{ date('d', strtotime(date('d M Y'). '+1 days')) }}">{{ date('d', strtotime(date('d M Y'). "+1 days")) }}</option>
                             <option value="{{ date('d', strtotime(date('d M Y'). '+2 days')) }}">{{ date('d', strtotime(date('d M Y'). "+2 days")) }}</option>
                         </select>
-                        <div style="margin-top: -2px">
+                        <div style="margin-top: -1px">
                             <span>{{ date('F') }}</span>
                         </div>
                     </div>
