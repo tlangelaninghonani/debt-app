@@ -44,7 +44,7 @@
                 <div class="text-align-center">
                     <span class="slogan">Creditor notification</span>
                     <div class="breaker"></div>
-                    <span>Debt Counsellor Notifies credit providers and credit bureau of the Consumers application for Debt Review</span>
+                    <span>Debt Counsellor notifies <span class="dark">Credit Providers</span> and <span class="dark">Credit Bureau</span> of the consumers application for <span class="dark">Debt Review</span></span>
                 </div>
             </p>
         </div>
