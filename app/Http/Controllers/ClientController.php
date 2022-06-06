@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 use App\Models\Account;
 use App\Models\Application;
+use App\Models\Meeting;
 
 class ClientController extends Controller
 {
@@ -86,7 +88,9 @@ class ClientController extends Controller
 
         $application->save();
 
-        return redirect("/home");
+        Session::put("success", true);
+
+        return back();
 
     }
 
@@ -97,8 +101,33 @@ class ClientController extends Controller
         $account = Account::find(Session::get("accountid")); 
 
         return view("meet", [
-            "account" => $account
+            "account" => $account,
+            "meeting" => Meeting::where("account_id", $account->id)->first()
         ]);
+    }
+
+    public function schedule(Request $req){
+        
+        $account = Account::find(Session::get("accountid")); 
+
+        $meeting = new Meeting();
+        $meeting->account_id = $account->id;
+        $meeting->meeting_time = $req->time;
+        $meeting->meeting_date = $req->date." ".date("F");
+
+        $meeting->save();
+
+        Session::put("success", true);
+
+        return redirect("/meet");
+    }
+
+    public function meetingCancel(){
+        $account = Account::find(Session::get("accountid")); 
+
+        DB::table("meetings")->where("account_id", $account->id)->delete();
+
+        return redirect("/meet");
     }
 
     public function home(){

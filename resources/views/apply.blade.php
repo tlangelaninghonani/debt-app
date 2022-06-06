@@ -12,22 +12,23 @@
 <body>
     @include("components.menu")
     @include("components.loader")
-    <div class="applied" id="applied">
-        <div class="text-align-center w-100">
-            <span class="material-icons-sharp icon-big">
-            done
-            </span>
-            <br><br><br>
-            <span>Successfully applied</span>
-            <p>
-                <div class="display-flex-end" style="padding-top: 15px" onclick="(redirect('/home'))">
+    @if(Session::has("success"))
+        <div class="applied" id="applied">
+            <div class="text-align-center w-100">
+                <span class="material-icons-sharp icon-big">
+                done
+                </span>
+                <div class="breaker"></div>
+                <span>Successfully applied</span>
+                <div class="breaker"></div>
+                <div class="display-flex-end" onclick="redirect('/home')">
                     <button class="display-flex-center">
                         <span>Done</span>
                     </button>
                 </div>
-            </p>
+            </div>
         </div>
-    </div>
+    @endif
     <div class="observer"></div>
     <div class="header display-flex-space-between">
         <div class="display-flex-align mid-gap">
@@ -85,8 +86,8 @@
                 <div class="breaker"></div>
                 <span class="slogan">Income</span><br>
                 <div class="breaker"></div>
-                <span>Income before deductions - <span>R {{ number_format($application->income_before_deductions, 2, ".", " ") }}</span></span><br>
-                <span>Income after deductions - <span>R {{ number_format($application->income_after_deductions, 2, ".", " ") }}</span></span><br>
+                <span>Income before deductions - <span class="dark">R {{ number_format($application->income_before_deductions, 2, ".", " ") }}</span></span><br>
+                <span>Income after deductions - <span class="dark">R {{ number_format($application->income_after_deductions, 2, ".", " ") }}</span></span><br>
             </div>
         </div>
     @else
@@ -107,7 +108,7 @@
             <div class="breaker"></div>
             <span class="slogan">Personal</span><br>
             <div class="breaker"></div>
-            <form action="/apply" method="POST">
+            <form id="applyform" action="/apply" method="POST">
                 @csrf
                 @method("POST")
                 <div class="input-contain">
@@ -284,7 +285,7 @@
                     }
                 </script>
                 <div class="breaker"></div>
-                <div class="display-flex-end">
+                <div type="button" onclick="submitForm('applyform')" class="display-flex-end">
                     <button class="display-flex-center">
                         <span>Submit application</span>
                     </button>
