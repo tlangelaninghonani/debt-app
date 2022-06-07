@@ -134,7 +134,7 @@
                     <span class="dark">08:30 PM - 17:00 PM</span>
                 </div>
             </div>
-            <a href="https://goo.gl/maps/cipZyWgF4Sprtt8n8">
+            <a href="https://goo.gl/maps/31gMhB8KrieQV6248">
                 <span class="material-icons-sharp action-icon">
                 my_location
                 </span>
