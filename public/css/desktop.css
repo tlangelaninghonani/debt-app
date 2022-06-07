@@ -254,7 +254,6 @@ body{
     align-items: center;
     background-color: var(--input-color);
     border-radius: 40px;
-    padding-right: var(--padding);
     gap: var(--gap);
 }
 
@@ -302,7 +301,7 @@ body{
     font-size: 15px !important;
 }
 
-input:not(input[type=range]), select{
+input:not(input[type=range]), select, #phonenumber{
     box-sizing: border-box;
     padding: 25px;
     border: none;
