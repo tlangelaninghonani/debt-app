@@ -93,7 +93,7 @@
                 store
                 </span>
                 <div>
-                    <span class="title-small">Giyani (Headquarters), Limpopo</span><br>
+                    <span class="title-small">Giyani (Headq...), Limpopo</span><br>
                     <span>CBD, near Mopani Spar</span><br>
                     <span class="dark">08:30 PM - 17:00 PM</span>
                 </div>
