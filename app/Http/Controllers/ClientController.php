@@ -86,6 +86,24 @@ class ClientController extends Controller
         $application->income_before_deductions = $req->incomebeforedeductions;
         $application->income_after_deductions = $req->incomeafterdeductions;
 
+        $file = $req->file("identity");
+        $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
+        $file->move("accounts/accounts_documents", $filename);
+        $application->identity_document = $filename;
+        $application->identity_document_filename = $file->getClientOriginalName();;
+
+        $file = $req->file("payslip");
+        $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
+        $file->move("accounts/accounts_documents", $filename);
+        $application->payslip_document = $filename;
+        $application->payslip_document_filename = $file->getClientOriginalName();;
+
+        $file = $req->file("statement");
+        $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
+        $file->move("accounts/accounts_documents", $filename);
+        $application->statement_document = $filename;
+        $application->statement_document_filename = $file->getClientOriginalName();;
+
         $application->save();
 
         Session::put("success", true);

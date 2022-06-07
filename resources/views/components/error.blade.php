@@ -11,11 +11,9 @@
                 <span>{{ Session::get("errormessage") }}</span>
                 <div class="breaker"></div>
                 <div>
-                    <p>
-                        <button onclick="showHideElement('errormessage', 'none')">
-                            <span>Got it</span>
-                        </button>
-                    </p>
+                    <button onclick="showHideElement('errormessage', 'none')">
+                        <span>Got it</span>
+                    </button>
                 </div>
             </div>
         </div>

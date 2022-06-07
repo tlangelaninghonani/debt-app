@@ -103,6 +103,24 @@
                         <span class="title-small">Matt</span><br>
                         <span>Debt Counsellor</span>
                     </div>
+                    <div class="text-align-center">
+                        <img class="profile-pic-small" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
+                        <div class="breaker"></div>
+                        <span class="title-small">Conan</span><br>
+                        <span>Debt Counsellor</span>
+                    </div>
+                    <div class="text-align-center">
+                        <img class="profile-pic-small" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
+                        <div class="breaker"></div>
+                        <span class="title-small">Jerry</span><br>
+                        <span>Debt Counsellor</span>
+                    </div>
+                    <div class="text-align-center">
+                        <img class="profile-pic-small" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
+                        <div class="breaker"></div>
+                        <span class="title-small">Samatha</span><br>
+                        <span>Debt Counsellor</span>
+                    </div>
                 </div>
                 <div class="breaker"></div>
                 <div class="text-align-left">

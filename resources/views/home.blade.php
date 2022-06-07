@@ -93,9 +93,9 @@
                 store
                 </span>
                 <div>
-                    <span class="title-small">Giyani</span><br>
+                    <span class="title-small">Giyani (Headquarters), Limpopo</span><br>
                     <span>CBD, near Mopani Spar</span><br>
-                    <span>08:30 PM - 17:00 PM</span>
+                    <span class="dark">08:30 PM - 17:00 PM</span>
                 </div>
             </div>
             <a href="https://goo.gl/maps/tTWwFhcM8bG7GFHb9" target="_blank">
@@ -111,9 +111,9 @@
                 store
                 </span>
                 <div>
-                    <span class="title-small">Polokwane Central</span><br>
-                    <span>19 Library Gardens Cnr Schoeman and Grobler St</span><br>
-                    <span>08:30 PM - 17:00 PM</span>
+                    <span class="title-small">Polokwane, Limpopo</span><br>
+                    <span>19 Library Gardens Cnr Hans Van Rensburg & Grobler Polokwane Central, Polokwane, 0700</span><br>
+                    <span class="dark">08:30 PM - 17:00 PM</span>
                 </div>
             </div>
             <a href="https://goo.gl/maps/cipZyWgF4Sprtt8n8">
@@ -123,6 +123,23 @@
             </a>
         </div>
         <div class="breaker"></div>
+        <div class="display-flex-space-between">
+            <div class="display-flex">
+                <span class="material-icons-sharp icon-mid">
+                store
+                </span>
+                <div>
+                    <span class="title-small">Pretoria, Gauteng</span><br>
+                    <span>Office 0118 Banking Towers, 190 Thabo Sehume Street Pretoria CBD, Pretoria, 0002</span><br>
+                    <span class="dark">08:30 PM - 17:00 PM</span>
+                </div>
+            </div>
+            <a href="https://goo.gl/maps/cipZyWgF4Sprtt8n8">
+                <span class="material-icons-sharp action-icon">
+                my_location
+                </span>
+            </a>
+        </div>
     </div>
     @include("components.nav_bottom")
 </body>

@@ -35,6 +35,13 @@ return new class extends Migration
             $table->string("income_before_deductions");
             $table->string("income_after_deductions");
 
+            $table->string("identity_document");
+            $table->string("identity_document_filename");
+            $table->string("payslip_document");
+            $table->string("payslip_document_filename");
+            $table->string("statement_document");
+            $table->string("statement_document_filename");
+
             $table->timestamps();
         });
     }

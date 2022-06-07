@@ -63,8 +63,6 @@
                 </div>
             </div>
             <div class="breaker"></div>
-            <hr>
-            <div class="breaker"></div>
             <span class="slogan">Personal</span>
             <div class="breaker"></div>
             <form id="updateform" action="/account/update" method="POST">

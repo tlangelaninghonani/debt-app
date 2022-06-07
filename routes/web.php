@@ -16,7 +16,13 @@ use Illuminate\Support\Facades\Session;
 
 Route::get("/sign_out", function(){
     Session::flush();
+
     return redirect("sign_in");
+});
+
+Route::get("/design", function(){
+
+    return view("design");
 });
 
 Route::get("/", [App\Http\Controllers\ClientController::class, "welcome"]);

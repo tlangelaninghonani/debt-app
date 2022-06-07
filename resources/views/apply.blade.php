@@ -21,13 +21,14 @@
                 <div class="breaker"></div>
                 <span>Successfully applied</span>
                 <div class="breaker"></div>
-                <div class="display-flex-end" onclick="redirect('/home')">
+                <div class="display-flex-end" onclick="redirect('/apply')">
                     <button class="display-flex-center">
                         <span>Done</span>
                     </button>
                 </div>
             </div>
         </div>
+        {{ Session::forget("success") }}
     @endif
     <div class="observer"></div>
     <div class="header display-flex-space-between">
@@ -88,6 +89,35 @@
                 <div class="breaker"></div>
                 <span>Income before deductions - <span class="dark">R {{ number_format($application->income_before_deductions, 2, ".", " ") }}</span></span><br>
                 <span>Income after deductions - <span class="dark">R {{ number_format($application->income_after_deductions, 2, ".", " ") }}</span></span><br>
+                <div class="breaker"></div>
+                <span class="slogan">Documents</span><br>
+                <div class="breaker"></div>
+                <div class="display-flex-space-between">
+                    <span>Copy of Identity - <span class="dark">{{ $application->identity_document_filename }}</span></span>
+                    <a href="/accounts/accounts_documents/{{ $application->identity_document }}" target="_blank">
+                        <span class="material-icons-sharp action-icon">
+                        open_in_new
+                        </span>
+                    </a>
+                </div>
+                <div class="breaker"></div>
+                <div class="display-flex-space-between">
+                    <span>Copy of Payslip - <span class="dark">{{ $application->payslip_document_filename }}</span></span>
+                    <a href="/accounts/accounts_documents/{{ $application->payslip_document }}" target="_blank">
+                        <span class="material-icons-sharp action-icon">
+                        open_in_new
+                        </span>
+                    </a>
+                </div>
+                <div class="breaker"></div>
+                <div class="display-flex-space-between">
+                    <span>Copy of Bank statement - <span class="dark">{{ $application->statement_document_filename }}</span></span>
+                    <a href="/accounts/accounts_documents/{{ $application->statement_document }}" target="_blank">
+                        <span class="material-icons-sharp action-icon">
+                        open_in_new
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     @else
@@ -108,7 +138,7 @@
             <div class="breaker"></div>
             <span class="slogan">Personal</span><br>
             <div class="breaker"></div>
-            <form id="applyform" action="/apply" method="POST">
+            <form id="applyform" action="/apply" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method("POST")
                 <div class="input-contain">
@@ -240,9 +270,10 @@
                 <span class="slogan">Copy of your Identity</span>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between mid-gap">
-                    <span>Upload a <span class="kanit">certified</span> copy of your Identity *</span>
+                    <span id="identitypreview">Upload a <span class="dark">certified</span> copy of your Identity *</span>
+                    <input type="file" id="identity" name="identity" class="display-none" onchange="preview('identitypreview', event)" accept="application/pdf">
                     <div>
-                        <span class="material-icons-sharp action-icon">
+                        <span class="material-icons-sharp action-icon" onclick="upload('identity')">
                         cloud
                         </span>
                     </div>
@@ -251,9 +282,10 @@
                 <span class="slogan">Copy of your Payslip</span>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between mid-gap">
-                    <span>Upload a <span class="kanit">3 months certified</span> copy of your Payslip *</span>
+                    <span id="payslippreview">Upload a <span class="dark">3 months certified</span> copy of your Payslip *</span>
+                    <input type="file" id="payslip" name="payslip" class="display-none" onchange="preview('payslippreview', event)" accept="application/pdf">
                     <div>
-                        <span class="material-icons-sharp action-icon">
+                        <span class="material-icons-sharp action-icon" onclick="upload('payslip')">
                         cloud
                         </span>
                     </div>
@@ -262,9 +294,10 @@
                 <span class="slogan">Copy of your Bank Statement</span>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between mid-gap">
-                    <span>Upload a <span class="kanit">3 months certified</span> copy of your Bank Statement *</span>
+                    <span id="statementpreview">Upload a <span class="dark">3 months certified</span> copy of your Bank Statement *</span>
+                    <input type="file" id="statement" name="statement" class="display-none" onchange="preview('statementpreview', event)" accept="application/pdf">
                     <div>
-                        <span class="material-icons-sharp action-icon">
+                        <span class="material-icons-sharp action-icon" onclick="upload('statement')">
                         cloud
                         </span>
                     </div>
@@ -275,13 +308,26 @@
                         <span id="checkbox" onclick="check()" class="material-icons-sharp cursor-pointer">
                         check_box_outline_blank
                         </span>
-                        <span>By continuing, i agree with the <span class="kanit">terms and conditions</span></span>
+                        <span>By continuing, i agree with the <span class="dark">terms and conditions</span></span>
                     </div>
                 </div>
                 <script>
                     function check(){
-                        document.querySelector("#checkbox").innerHTML = "task_alt";
-                        document.querySelector("#checkbox").classList.add("primary-color");
+                        if(document.querySelector("#checkbox").innerHTML !== "task_alt"){
+                            document.querySelector("#checkbox").innerHTML = "task_alt";
+                            document.querySelector("#checkbox").classList.add("primary-color");
+                        }else{
+                            document.querySelector("#checkbox").innerHTML = "check_box_outline_blank";
+                            document.querySelector("#checkbox").classList.remove("primary-color");
+                        }
+                    }
+                    function upload(fileId){
+                        document.querySelector("#"+fileId).click();
+                    }
+                    function preview(previewId, event){
+                        if((event.target.files).length > 0){
+                            document.querySelector("#"+previewId).innerHTML = event.target.files[0].name;
+                        }
                     }
                 </script>
                 <div class="breaker"></div>

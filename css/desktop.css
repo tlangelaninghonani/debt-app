@@ -18,8 +18,7 @@
     --padding: 25px;
     --gap: 10px;
     --mid-gap: 25px;
-    --input-color: rgb(245, 245, 245);
-    --silver-color: rgb(250, 250, 250);
+    --input-color: rgb(250, 250, 250);
     --radius: 40px;
     --shadow-4: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     --shadow-tailwind: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(50, 50, 50, 0.06) 0px 1px 2px 0px;
@@ -253,7 +252,7 @@ body{
 .input-contain{
     display: flex;
     align-items: center;
-    background-color: var(--silver-color);
+    background-color: var(--input-color);
     border-radius: 40px;
     padding-right: var(--padding);
     gap: var(--gap);
@@ -308,7 +307,7 @@ input:not(input[type=range]), select{
     padding: 25px;
     border: none;
     width: 100%;
-    background-color: var(--silver-color);
+    background-color: var(--input-color);
     border-radius: 40px;
 }
 
@@ -399,11 +398,10 @@ button * {
     width: 0%;
     background-color: white;
     z-index: 99999999;
-    box-shadow: var(--shadow-tailwind);
     padding: var(--padding);
     transition: 0.2s;
     white-space: nowrap;
-    padding-top: 35px;
+    border-left: 1px solid var(--input-color);
 }
 
 .loader-binder{
@@ -931,5 +929,31 @@ hr{
     padding: var(--padding);
 }
 
+.design-container{
+    padding: var(--padding);
+    background-color: var(--feint);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+.design-container *{
+    color: white;
+}
 
+.design-slogan{
+    font-family: 'Poller One', cursive;
+    font-size: 100px;
+}
+
+.design-slogan-primary-color{
+    font-family: 'Poller One', cursive;
+    font-size: 100px;
+    color: var(--primary-color);
+}
