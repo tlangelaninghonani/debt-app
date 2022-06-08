@@ -38,7 +38,7 @@
             @endif
             <div>
                 <span class="slogan-small"><span class="slogan-small-color">Hi</span>, {{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Your status - <span>Creditor notification</span></span>
+                <span>Your status - <span>Application</span></span>
             </div>
         </div>
         <div class="breaker"></div>
