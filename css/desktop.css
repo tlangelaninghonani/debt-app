@@ -241,13 +241,11 @@ body{
 
 .empty-account{
     font-size: 105px !important;
-    color: var(--input-color);
     margin-left: -5px;
 }
 
 .empty-account-mid{
     font-size: 150px !important;
-    color: var(--input-color);
 }
 
 .input-contain{
