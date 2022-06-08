@@ -402,12 +402,15 @@ button * {
     top: 0;
     transition: top ease .3s, transform ease;
     width: 0%;
-    background-color: white;
+    background-color: var(--feint);
     z-index: 99999999;
     padding: var(--padding);
     transition: 0.2s;
     white-space: nowrap;
-    border-left: 1px solid var(--input-color);
+}
+
+.menu *{
+    color: white;
 }
 
 .loader-binder{
