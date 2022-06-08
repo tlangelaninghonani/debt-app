@@ -72,7 +72,7 @@
                 <div>
                     <span class="title-small">Capitec Bank Limited</span><br>
                     <span>Indebt of <span class="dark">R 180 000.00</span></span><br>
-                    <span>Installment - <span class="darkr">R 2 000.00</span></span>
+                    <span>Installment - <span class="dark">R 2 000.00</span></span>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -83,7 +83,7 @@
                 <div>
                     <span class="title-small">Mjinga Finance</span><br>
                     <span>Indebt of <span class="dark">R 50 000.00</span></span><br>
-                    <span>Installment - <span class="darkr">R 1 000.00</span></span>
+                    <span>Installment - <span class="dark">R 1 000.00</span></span>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -94,7 +94,7 @@
                 <div>
                     <span class="title-small">The Helping Hand Debt Counsellors</span><br>
                     <span>Aftercare of <span class="dark">R 1 000.00 / PM</span></span><br>
-                    <span>Installment - <span class="darkr">R 2 000.00</span></span>
+                    <span>Installment - <span class="dark">R 2 000.00</span></span>
                 </div>
             </div>
         </div>
