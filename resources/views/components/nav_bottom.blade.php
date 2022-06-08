@@ -15,7 +15,7 @@
                     <div class="focused-nav"></div>
                 @endif
                 <span class="material-icons-sharp">
-                autorenew
+                cloud
                 </span><br>
                 <span class="helvetica">Status</span>
             </div>

@@ -93,7 +93,7 @@
                 </span>
                 <div>
                     <span class="title-small">The Helping Hand Debt Counsellors</span><br>
-                    <span>Aftercare of <span class="dark">R 1 000.00 / PM</span></span><br>
+                    <span>Aftercare of <span class="dark">R 1 000.00 &#183; PM</span></span><br>
                 </div>
             </div>
         </div>
