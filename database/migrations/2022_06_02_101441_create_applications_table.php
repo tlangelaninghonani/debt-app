@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
             $table->string("account_id");
+            $table->string("id_number");
             $table->string("alternative_phone_number")->nullable();
             $table->string("marital_status");
             $table->string("number_of_dependants");
@@ -41,6 +42,8 @@ return new class extends Migration
             $table->string("payslip_document_filename");
             $table->string("statement_document");
             $table->string("statement_document_filename");
+
+            $table->boolean("submit")->default(false);
 
             $table->timestamps();
         });

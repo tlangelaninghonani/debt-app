@@ -52,10 +52,10 @@
             <div class="banner-content-apply" style="height: 250px">
                 <div class="text-align-center">
                     <span class="material-icons-sharp icon-big">
-                    watch_later
+                    info
                     </span>
                     <div class="breaker"></div>
-                    <span class="slogan-small">Applied, <span class="slogan-small-color">awaiting</span> approval</span>
+                    <span class="slogan-small">Confirm your <span class="slogan-small-color">information</span></span>
                 </div>
             </div>
         </div>
@@ -63,6 +63,7 @@
             <div>
                 <span class="slogan">Personal</span><br>
                 <div class="breaker"></div>
+                <span>ID number - <span class="dark">{{ $application->id_number }}</span></span><br>
                 <span>Alternative phone number - <span class="dark">{{ $application->alternative_phone_number }}</span></span><br>
                 <span>Merital status - <span class="dark">{{ $application->marital_status }}</span></span><br>
                 <span>number of dependants - <span class="dark">{{ $application->number_of_dependants }}</span></span><br>
@@ -94,30 +95,52 @@
                 <div class="breaker"></div>
                 <div class="display-flex-space-between">
                     <span>Copy of Identity - <span class="dark">{{ $application->identity_document_filename }}</span></span>
-                    <a href="/accounts/accounts_documents/{{ $application->identity_document }}" target="_blank">
-                        <span class="material-icons-sharp action-icon">
+                    <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->identity_document }}" target="_blank">
+                        <span class="material-icons-sharp">
                         open_in_new
-                        </span>
+                        </span><br>
+                        <span>View</span>
                     </a>
                 </div>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between">
                     <span>Copy of Payslip - <span class="dark">{{ $application->payslip_document_filename }}</span></span>
-                    <a href="/accounts/accounts_documents/{{ $application->payslip_document }}" target="_blank">
-                        <span class="material-icons-sharp action-icon">
+                    <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->payslip_document }}" target="_blank">
+                        <span class="material-icons-sharp">
                         open_in_new
-                        </span>
+                        </span><br>
+                        <span>View</span>
                     </a>
                 </div>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between">
                     <span>Copy of Bank statement - <span class="dark">{{ $application->statement_document_filename }}</span></span>
-                    <a href="/accounts/accounts_documents/{{ $application->statement_document }}" target="_blank">
-                        <span class="material-icons-sharp action-icon">
+                    <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->statement_document }}" target="_blank">
+                        <span class="material-icons-sharp">
                         open_in_new
-                        </span>
+                        </span><br>
+                        <span>View</span>
                     </a>
                 </div>
+                <div class="breaker"></div>
+                <form id="submitform" action="/application/submit" method="POST">
+                    @csrf
+                    @method("POST")
+                    <div class="display-flex-space-evenly">
+                        <div class="text-align-center">
+                            <span class="material-icons-sharp action-icon-margin">
+                            edit
+                            </span><br>
+                            <span>Edit info</span>
+                        </div>
+                        <div class="text-align-center" onclick="submitForm('submitform')">
+                            <span class="material-icons-sharp action-icon-margin">
+                            task_alt
+                            </span><br>
+                            <span>Confirm</span>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     @else
@@ -141,6 +164,10 @@
             <form id="applyform" action="/apply" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method("POST")
+                <div class="input-contain">
+                    <input type="number" id="idnumber" name="idnumber" placeholder="Type your ID number">
+                </div>
+                <div class="breaker"></div>
                 <div class="input-contain">
                     <input type="number" id="alternativephonenumber" name="alternativephonenumber" placeholder="Type your alternative Phone number">
                 </div>

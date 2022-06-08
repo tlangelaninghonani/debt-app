@@ -6,7 +6,7 @@
                 error
                 </span>
                 <div class="breaker"></div>
-                <span class="slogan">Something went wrong</span><br>
+                <span class="slogan">Something went <span class="slogan-primary-color">wrong</span></span><br>
                 <div class="breaker"></div>
                 <span>{{ Session::get("errormessage") }}</span>
                 <div class="breaker"></div>

@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use App\Models\Application;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
             "desktopCss" => "/css/desktop.css",
             "desktopJs" => "/js/desktop.js",
             "logo" => "/logo.png",
+            "application" => new Application()
         );
         View::share("links", $links);
     }

@@ -8,24 +8,40 @@
         </span><br>
         <span class="helvetica">Home</span>
     </div>
-    <div class="text-align-center relative" onclick="redirect('/status')">
-        @if(Route::getfacaderoot()->current()->uri() == "status")
-            <div class="focused-nav"></div>
+    @if($links['application']::where("account_id", Session::get("accountid"))->exists())
+        @if($links['application']::where("account_id", Session::get("accountid"))->first()->submit)
+            <div class="text-align-center relative" onclick="redirect('/status')">
+                @if(Route::getfacaderoot()->current()->uri() == "status")
+                    <div class="focused-nav"></div>
+                @endif
+                <span class="material-icons-sharp">
+                autorenew
+                </span><br>
+                <span class="helvetica">Status</span>
+            </div>
         @endif
-        <span class="material-icons-sharp">
-        autorenew
-        </span><br>
-        <span class="helvetica">Status</span>
-    </div>
-    <div class="text-align-center relative" onclick="redirect('/apply')">
-        @if(Route::getfacaderoot()->current()->uri() == "apply")
-            <div class="focused-nav"></div>
-        @endif
-        <span class="material-icons-sharp">
-        folder
-        </span><br>
-        <span class="helvetica">Apply</span>
-    </div>
+        @if(! $links['application']::where("account_id", Session::get("accountid"))->first()->submit)
+            <div class="text-align-center relative" onclick="redirect('/apply')">
+                @if(Route::getfacaderoot()->current()->uri() == "apply")
+                    <div class="focused-nav"></div>
+                @endif
+                <span class="material-icons-sharp">
+                folder
+                </span><br>
+                <span class="helvetica">Apply</span>
+            </div> 
+        @endif 
+    @else
+        <div class="text-align-center relative" onclick="redirect('/apply')">
+            @if(Route::getfacaderoot()->current()->uri() == "apply")
+                <div class="focused-nav"></div>
+            @endif
+            <span class="material-icons-sharp">
+            folder
+            </span><br>
+            <span class="helvetica">Apply</span>
+        </div>
+    @endif
     <div class="text-align-center relative" onclick="redirect('/meet')">
         @if(Route::getfacaderoot()->current()->uri() == "meet")
             <div class="focused-nav"></div>

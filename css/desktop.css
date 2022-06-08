@@ -18,7 +18,7 @@
     --padding: 25px;
     --gap: 10px;
     --mid-gap: 25px;
-    --input-color: rgb(250, 250, 250);
+    --input-color: rgb(247, 247, 247);
     --radius: 40px;
     --shadow-4: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     --shadow-tailwind: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(50, 50, 50, 0.06) 0px 1px 2px 0px;
@@ -361,6 +361,14 @@ button * {
     background-color: var(--feint);
 }
 
+.action-icon-margin{
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--feint);
+    margin-bottom: 15px;
+}
+
 .error-message{
     position: fixed;
     top: 0;
@@ -664,8 +672,19 @@ img{
 }
 
 .number-mid{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'MyFontHeavy';
+}
+
+.number-big{
+    font-size: 45px;
+    font-family: 'MyFontHeavy';
+}
+
+.view-all-statuses{
+    position: absolute;
+    top: 95px;
+    right: var(--padding);
 }
 
 .display-flex-center{
@@ -714,7 +733,7 @@ img{
 }
 
 .back-img{
-    background-image: url("https://www.creditlimitsinternational.com/wp-content/uploads/2019/11/kent-debt-collection-agency.jpg");
+    background-image: url("https://www.cpacanada.ca/-/media/cpa-digital-hub/featured-images/2020/06/hub_06_10_lovenmoney-hero-700x525.jpg?h=525&w=700&la=en&hash=4883A1009B2B2DEE1694D93D051C03FB20B79060");
     background-size: cover;
     background-position: center;
 }

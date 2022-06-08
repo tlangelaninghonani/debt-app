@@ -56,7 +56,8 @@
                 </span>
                 <span class="material-icons-sharp icon-mid">
                 store
-                </span><br>
+                </span>
+                <div class="breaker"></div>
                 <span>Visit your nearest <span class="primary-color">branch</span> to edit your plan</span>
             </div>
         </div>
@@ -64,27 +65,40 @@
         <span class="slogan">Indebted to</span>
         <div class="breaker"></div>
         <div>
-            <div class="display-flex-align">
+            <div class="display-flex">
                 <span class="material-icons-sharp icon-mid">
                 apartment
                 </span>
                 <div>
                     <span class="title-small">Capitec Bank Limited</span><br>
-                    <span>Indebt of <span>R 180 000.00</span></span>
+                    <span>Indebt of <span class="dark">R 180 000.00</span></span><br>
+                    <span>Installment - <span class="darkr">R 2 000.00</span></span>
                 </div>
             </div>
             <div class="breaker"></div>
-            <div class="display-flex-align">
+            <div class="display-flex">
                 <span class="material-icons-sharp icon-mid">
                 apartment
                 </span>
                 <div>
-                    <span class="title-small">Mjinga Trade Centre</span><br>
-                    <span>Indebt of <span>R 50 000.00</span></span>
+                    <span class="title-small">Mjinga Finance</span><br>
+                    <span>Indebt of <span class="dark">R 50 000.00</span></span><br>
+                    <span>Installment - <span class="darkr">R 1 000.00</span></span>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex">
+                <span class="material-icons-sharp icon-mid">
+                maps_home_work
+                </span>
+                <div>
+                    <span class="title-small">The Helping Hand Debt Counsellors</span><br>
+                    <span>Aftercare of <span class="dark">R 1 000.00 / PM</span></span><br>
+                    <span>Installment - <span class="darkr">R 2 000.00</span></span>
                 </div>
             </div>
         </div>
-        <div class="breaker"></div>
+        <!--<div class="breaker"></div>
         <span class="slogan">Our branches</span>
         <div class="breaker"></div>
         <div class="display-flex-space-between">
@@ -139,7 +153,7 @@
                 my_location
                 </span>
             </a>
-        </div>
+        </div>-->
     </div>
     @include("components.nav_bottom")
 </body>

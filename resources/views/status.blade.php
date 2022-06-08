@@ -29,24 +29,30 @@
     </div>
     <div class="container">
         <div class="view-bottom">
-            <p>
-                <div class="display-flex-center">
-                    <div class="status position-relative">
-                        <div class="text-align-center">
-                            <span class="number-mid nowrap">02</span><br>
-                            <span>Percent</span>
-                        </div>
+            <div class="display-flex-center">
+                <div class="status position-relative">
+                    <div class="text-align-center">
+                        <span class="number-big nowrap">A</span><br>
+                        <span>Status code</span>
                     </div>
                 </div>
-            </p>
-            <br>
-            <p>
-                <div class="text-align-center">
-                    <span class="slogan">Creditor notification</span>
-                    <div class="breaker"></div>
-                    <span>Debt Counsellor notifies <span class="dark">Credit Providers</span> and <span class="dark">Credit Bureau</span> of the consumers application for <span class="dark">Debt Review</span></span>
+                <div class="text-align-center view-all-statuses">
+                    <span class="material-icons-sharp">
+                    autorenew
+                    </span><br>
+                    <span>View all <br> status</span>
                 </div>
-            </p>
+            </div>
+            <div class="breaker"></div>
+            <div class="text-align-center">
+                <span class="slogan">Application</span>
+                <div class="breaker"></div>
+                <span>Applied for Debt Counselling and being assessed</span>
+            </div>
+            <div class="breaker"></div>
+            <button type="button">
+                <span>Download statement</span>
+            </button>
         </div>
     </div>
     @include("components.nav_bottom")

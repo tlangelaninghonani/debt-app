@@ -32,7 +32,17 @@ class ClientController extends Controller
             return redirect("/sign_in");
         }
 
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Session::get("accountid"));
+        $application = Application::where("account_id", $account->id)->first();  
+        
+        if($application){
+            if(! $application->submit){
+                
+                return redirect("/apply");
+            }
+        }else{
+            return redirect("/apply");
+        }
 
         return view("status", [
             "account" => $account
@@ -53,7 +63,14 @@ class ClientController extends Controller
         }
 
         $account = Account::find(Session::get("accountid")); 
-        $application = Application::where("account_id", $account->id)->first();   
+        $application = Application::where("account_id", $account->id)->first();  
+        
+        if($application){
+            if($application->submit){
+                
+                return redirect("/status");
+            }
+        }
 
         return view("apply", [
             "account" => $account,
@@ -67,6 +84,7 @@ class ClientController extends Controller
         
         $application = new Application();
         $application->account_id = $account->id;
+        $application->id_number = $req->idnumber;
         $application->alternative_phone_number = $req->alternativephonenumber;
         $application->marital_status = $req->maritalstatus;
         $application->number_of_dependants = $req->numberofdependants;
@@ -110,6 +128,17 @@ class ClientController extends Controller
 
         return back();
 
+    }
+
+    public function submit(){
+        $account = Account::find(Session::get("accountid")); 
+        $application = Application::where("account_id", $account->id)->first();
+
+        $application->submit = true;
+
+        $application->save();
+
+        return back();
     }
 
     public function meet(){

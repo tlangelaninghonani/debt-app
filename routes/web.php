@@ -34,6 +34,7 @@ Route::get("/meet", [App\Http\Controllers\ClientController::class, "meet"]);
 Route::get("/setup_account_picture", [App\Http\Controllers\ClientController::class, "setupAccountPicture"]);
 Route::post("/apply", [App\Http\Controllers\ClientController::class, "apply"]);
 Route::post("/meet", [App\Http\Controllers\ClientController::class, "schedule"]);
+Route::post("/application/submit", [App\Http\Controllers\ClientController::class, "submit"]);
 Route::post("/meet/cancel", [App\Http\Controllers\ClientController::class, "meetingCancel"]);
 
 Route::get("/account", [App\Http\Controllers\AccountController::class, "account"]);
