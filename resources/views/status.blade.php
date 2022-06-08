@@ -38,7 +38,7 @@
                 </div>
                 <div class="text-align-center view-all-statuses" onclick="redirect('/statuses')">
                     <span class="material-icons-sharp">
-                    autorenew
+                    cloud_sync
                     </span><br>
                     <span>View all <br> statuses</span>
                 </div>
