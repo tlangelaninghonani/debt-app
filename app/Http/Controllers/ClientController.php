@@ -33,7 +33,11 @@ class ClientController extends Controller
             return redirect("/sign_in");
         } 
 
-        return view("statuses");
+        $account = Account::find(Cookie::get("accountid"));
+
+        return view("statuses", [
+            "account" => $account
+        ]);
     }
 
     public function status(){
