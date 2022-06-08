@@ -62,15 +62,13 @@
             </div>
         </div>
         <div class="breaker"></div>
-        <span class="slogan">Indebted to</span>
-        <div class="breaker"></div>
         <div>
             <div class="display-flex">
                 <span class="material-icons-sharp icon-mid">
                 apartment
                 </span>
                 <div>
-                    <span class="title-small">Capitec Bank Limited</span><br>
+                    <span class="slogan-small">Capitec Bank Limited</span><br>
                     <span>Indebt of <span class="dark">R 180 000.00</span></span><br>
                     <span>Installment - <span class="dark">R 2 000.00</span></span>
                 </div>
@@ -81,7 +79,7 @@
                 apartment
                 </span>
                 <div>
-                    <span class="title-small">Mjinga Finance</span><br>
+                    <span class="slogan-small">Mjinga Finance</span><br>
                     <span>Indebt of <span class="dark">R 50 000.00</span></span><br>
                     <span>Installment - <span class="dark">R 1 000.00</span></span>
                 </div>
@@ -92,7 +90,7 @@
                 maps_home_work
                 </span>
                 <div>
-                    <span class="title-small">The Helping Hand Debt Counsellors</span><br>
+                    <span class="slogan-small">The Helping Hand Debt Counsellors</span><br>
                     <span>Aftercare of <span class="dark">R 1 000.00 &#183; PM</span></span><br>
                 </div>
             </div>
