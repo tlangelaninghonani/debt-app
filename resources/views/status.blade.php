@@ -40,7 +40,7 @@
                     <span class="material-icons-sharp">
                     autorenew
                     </span><br>
-                    <span>View all <br> status</span>
+                    <span>View all <br> statuses</span>
                 </div>
             </div>
             <div class="breaker"></div>
