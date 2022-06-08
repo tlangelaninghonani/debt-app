@@ -45,14 +45,14 @@
                         <span class="material-icons-sharp empty-account-mid">
                         account_circle
                         </span>
-                        <div>
+                        <!--<div>
                             <div class="text-align-center" onclick="redirect('/setup_account_picture')">
                                 <span class="material-icons-sharp ">
                                 cloud
                                 </span><br>
                                 <span>Upload</span>
                             </div>
-                        </div>
+                        </div>-->
                     @endif
                 </div>
                 <div class="breaker"></div>

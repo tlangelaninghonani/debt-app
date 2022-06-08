@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Account;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
 
 class AccountController extends Controller
 {
 
     public function signUpIndex(){
-        if(Session::has("signed")){
+        if(Cookie::has("signed")){
             return redirect("/home");
         }
 
@@ -79,13 +80,16 @@ class AccountController extends Controller
             $account->password = Hash::make($req->password);
             $account->save();
 
-            Session::put("signed", true);
-            Session::put("accountid", $account->id);
+            Cookie::queue(Cookie::make("signed", true, 43200));
+            Cookie::queue(Cookie::make("accountid", $account->id, 43200));
+
             Session::put("setuppicture", true);
 
-            return view("setup_account_picture", [
+            return redirect("/home");
+
+            /*return view("setup_account_picture", [
                 "account" => $account
-            ]);
+            ]);*/
         }else{
             Session::put("error", true);
             Session::put("errormessage", "Please fill in all required fields");
@@ -95,7 +99,7 @@ class AccountController extends Controller
     }
 
     public function signInIndex(){
-        if(Session::has("signed")){
+        if(Cookie::has("signed")){
             return redirect("/home");
         }
 
@@ -107,8 +111,8 @@ class AccountController extends Controller
             $account = Account::where("phone_number", strtolower(str_replace(" ", "", $req->phonenumber)))->first();
             if($account){
                 if(Hash::check($req->password, $account->password)){
-                    Session::put("signed", true);
-                    Session::put("accountid", $account->id);
+                    Cookie::queue(Cookie::make("signed", true, 43200));
+                    Cookie::queue(Cookie::make("accountid", $account->id, 43200));
 
                     return redirect("/home");
                 }
@@ -126,11 +130,11 @@ class AccountController extends Controller
     }
 
     public function account(){
-        if(! Session::has("signed")){
+        if(! Cookie::has("signed")){
             return redirect("/sign_in");
         }
 
-        $account = Account::find(Session::get("accountid"));
+        $account = Account::find(Cookie::get("signed"));
 
         return view("account", [
             "account" => $account

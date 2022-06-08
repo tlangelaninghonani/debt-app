@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\DB;
 use App\Models\Account;
 use App\Models\Application;
@@ -12,7 +13,7 @@ use App\Models\Meeting;
 class ClientController extends Controller
 {
     public function welcome(){
-        if(Session::has("signed")){
+        if(Cookie::has("signed")){
             return redirect("/home");
         }
 
@@ -20,7 +21,7 @@ class ClientController extends Controller
     }
 
     public function setupAccountPicture(){
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
 
         return view("setup_account_picture", [
             "account" => $account
@@ -28,11 +29,11 @@ class ClientController extends Controller
     }
 
     public function status(){
-        if(! Session::has("signed")){
+        if(! Cookie::has("signed")){
             return redirect("/sign_in");
         }
 
-        $account = Account::find(Session::get("accountid"));
+        $account = Account::find(Cookie::get("accountid"));
         $application = Application::where("account_id", $account->id)->first();  
         
         if($application){
@@ -50,7 +51,7 @@ class ClientController extends Controller
     }
 
     public function feeds(){
-        if(! Session::has("signed")){
+        if(! Cookie::has("signed")){
             return redirect("/sign_in");
         }
 
@@ -58,11 +59,11 @@ class ClientController extends Controller
     }
 
     public function applyIndex(){
-        if(! Session::has("signed")){
+        if(! Cookie::has("signed")){
             return redirect("/sign_in");
         }
 
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
         $application = Application::where("account_id", $account->id)->first();  
         
         if($application){
@@ -80,7 +81,7 @@ class ClientController extends Controller
 
     public function apply(Request $req){
 
-        $account = Account::find(Session::get("accountid"));        
+        $account = Account::find(Cookie::get("accountid"));        
         
         $application = new Application();
         $application->account_id = $account->id;
@@ -131,7 +132,7 @@ class ClientController extends Controller
     }
 
     public function submit(){
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
         $application = Application::where("account_id", $account->id)->first();
 
         $application->submit = true;
@@ -142,10 +143,10 @@ class ClientController extends Controller
     }
 
     public function meet(){
-        if(! Session::has("signed")){
+        if(! Cookie::has("signed")){
             return redirect("/sign_in");
         }
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
 
         return view("meet", [
             "account" => $account,
@@ -155,7 +156,7 @@ class ClientController extends Controller
 
     public function schedule(Request $req){
         
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
 
         $meeting = new Meeting();
         $meeting->account_id = $account->id;
@@ -170,7 +171,7 @@ class ClientController extends Controller
     }
 
     public function meetingCancel(){
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
 
         DB::table("meetings")->where("account_id", $account->id)->delete();
 
@@ -178,11 +179,11 @@ class ClientController extends Controller
     }
 
     public function home(){
-        if(! Session::has("signed")){
+        if(! Cookie::has("signed")){
             return redirect("/sign_in");
         }
 
-        $account = Account::find(Session::get("accountid"));
+        $account = Account::find(Cookie::get("accountid"));
 
         return view("home", [
             "account" => $account

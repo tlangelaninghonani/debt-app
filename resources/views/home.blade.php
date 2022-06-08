@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="container view-bottom">
-        <div class="display-flex-align mid-gap">
+        <div class="display-flex-align gap">
             @if($account->account_picture != "")
                 <img class="profile-pic-small" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
             @else

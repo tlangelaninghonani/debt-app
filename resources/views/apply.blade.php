@@ -150,7 +150,7 @@
             </div>
         </div>
         <div class="container view-bottom">
-            <div class="display-flex-space-around">
+            <!--<div class="display-flex-space-around">
                 <div class="focused to-focus" onclick="applicants(this)">
                     <span>Main applicant</span>
                 </div>
@@ -158,7 +158,7 @@
                     <span>Spouce</span>
                 </div>
             </div>
-            <div class="breaker"></div>
+            <div class="breaker"></div>-->
             <span class="slogan">Personal</span><br>
             <div class="breaker"></div>
             <form id="applyform" action="/apply" method="POST" enctype="multipart/form-data">

@@ -8,8 +8,8 @@
         </span><br>
         <span class="helvetica">Home</span>
     </div>
-    @if($links['application']::where("account_id", Session::get("accountid"))->exists())
-        @if($links['application']::where("account_id", Session::get("accountid"))->first()->submit)
+    @if($links['application']::where("account_id", Cookie::get("accountid"))->exists())
+        @if($links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/status')">
                 @if(Route::getfacaderoot()->current()->uri() == "status")
                     <div class="focused-nav"></div>
@@ -20,7 +20,7 @@
                 <span class="helvetica">Status</span>
             </div>
         @endif
-        @if(! $links['application']::where("account_id", Session::get("accountid"))->first()->submit)
+        @if(! $links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/apply')">
                 @if(Route::getfacaderoot()->current()->uri() == "apply")
                     <div class="focused-nav"></div>

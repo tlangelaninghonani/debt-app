@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Session;
 Route::get("/sign_out", function(){
     Session::flush();
 
+    Cookie::queue(Cookie::forget("signed"));
+    Cookie::queue(Cookie::forget("accountid"));
+
     return redirect("sign_in");
 });
 
@@ -31,7 +34,7 @@ Route::get("/feeds", [App\Http\Controllers\ClientController::class, "feeds"]);
 Route::get("/apply", [App\Http\Controllers\ClientController::class, "applyIndex"]);
 Route::get("/home", [App\Http\Controllers\ClientController::class, "home"]);
 Route::get("/meet", [App\Http\Controllers\ClientController::class, "meet"]);
-Route::get("/setup_account_picture", [App\Http\Controllers\ClientController::class, "setupAccountPicture"]);
+//Route::get("/setup_account_picture", [App\Http\Controllers\ClientController::class, "setupAccountPicture"]);
 Route::post("/apply", [App\Http\Controllers\ClientController::class, "apply"]);
 Route::post("/meet", [App\Http\Controllers\ClientController::class, "schedule"]);
 Route::post("/application/submit", [App\Http\Controllers\ClientController::class, "submit"]);
