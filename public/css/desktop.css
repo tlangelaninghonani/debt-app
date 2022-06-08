@@ -404,15 +404,10 @@ button * {
     top: 0;
     transition: top ease .3s, transform ease;
     width: 0%;
-    background-color: var(--feint);
+    background-color: white;
     z-index: 99999999;
     padding: var(--padding);
     transition: 0.2s;
-    white-space: nowrap;
-}
-
-.menu *{
-    color: white;
 }
 
 .loader-binder{
