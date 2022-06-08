@@ -397,6 +397,14 @@ button * {
     width: 150px;
 }
 
+.my-font-align{
+    padding-top: 4px;
+}
+
+.header-title{
+    padding-top: 4px;
+}
+
 .menu{
     position: fixed;
     right: -50px;
