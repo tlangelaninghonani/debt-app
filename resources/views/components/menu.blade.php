@@ -36,6 +36,6 @@
         <span class="material-icons-sharp">
         power_settings_new
         </span>
-        <span>Sign out</span>
+        <span class="my-font-align">Sign out</span>
     </div>
 </div>
