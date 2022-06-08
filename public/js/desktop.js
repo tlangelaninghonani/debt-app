@@ -49,10 +49,10 @@ function showHideElement(id, styleDisplay){
 
 function menu(mode){
     if(mode == "open"){
-        document.querySelector("#menu").style.width = "65%";
+        document.querySelector("#menu").style.width = "60%";
         document.querySelector("#menu").style.right = "0";
     }else{
         document.querySelector("#menu").style.width = "0";
-        document.querySelector("#menu").style.right = "-65px";
+        document.querySelector("#menu").style.right = "-60px";
     }
 }

@@ -5,18 +5,9 @@
             close
             </span>
         </div>
-        <div class="display-flex-align gap">
-            @if($account->account_picture != "")
-                <img class="profile-pic-small" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
-            @else
-                <span class="material-icons-sharp empty-account">
-                account_circle
-                </span>
-            @endif
-            <div>
-                <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Your status - <span>Application</span></span>
-            </div>
+        <div cl>
+            <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
+            <span>Your status - <span>Application</span></span>
         </div>
     </div>
     <div class="breaker"></div>
