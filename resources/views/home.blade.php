@@ -57,7 +57,7 @@
                 <span class="material-icons-sharp icon-mid">
                 store
                 </span>
-                <div class="breaker"></div>
+                <br>
                 <span>Visit your nearest <span class="primary-color">branch</span> to edit your plan</span>
             </div>
         </div>
