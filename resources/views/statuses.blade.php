@@ -32,7 +32,7 @@
     </div>
     <div class="container">
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">A</span>
+            <span class="number-big nowrap">A</span>
             <div>
                 <span class="slogan-small">Application</span>
                 <div class="breaker"></div>
@@ -41,7 +41,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">A1</span>
+            <span class="number-big nowrap">A1</span>
             <div>
                 <span class="slogan-small">Voluntary withdrawal</span>
                 <div class="breaker"></div>
@@ -50,7 +50,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">B</span>
+            <span class="number-big nowrap">B</span>
             <div>
                 <span class="slogan-small">Rejection</span>
                 <div class="breaker"></div>
@@ -59,7 +59,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">C</span>
+            <span class="number-big nowrap">C</span>
             <div>
                 <span class="slogan-small">Over-indebtness</span>
                 <div class="breaker"></div>
@@ -68,7 +68,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">D3</span>
+            <span class="number-big nowrap">D3</span>
             <div>
                 <span class="slogan-small">Court</span>
                 <div class="breaker"></div>
@@ -77,7 +77,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">D4</span>
+            <span class="number-big nowrap">D4</span>
             <div>
                 <span class="slogan-small">Court order granted</span>
                 <div class="breaker"></div>
@@ -86,7 +86,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">F1</span>
+            <span class="number-big nowrap">F1</span>
             <div>
                 <span class="slogan-small">Mortgage</span>
                 <div class="breaker"></div>
@@ -95,7 +95,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">F2</span>
+            <span class="number-big nowrap">F2</span>
             <div>
                 <span class="slogan-small">Debt restructure completed</span>
                 <div class="breaker"></div>
@@ -104,7 +104,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">G</span>
+            <span class="number-big nowrap">G</span>
             <div>
                 <span class="slogan-small">Rescinded debt review</span>
                 <div class="breaker"></div>
@@ -113,7 +113,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">G1</span>
+            <span class="number-big nowrap">G1</span>
             <div>
                 <span class="slogan-small">Application rejected</span>
                 <div class="breaker"></div>
@@ -122,14 +122,14 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">I</span>
+            <span class="number-big nowrap">I</span>
             <div>
                 <span class="slogan-small">Consumer deceased</span>
             </div>
         </div>
         <div class="breaker"></div>
         <div class="display-flex mid-gap">
-            <span class="number-big nowrap" style="margin-top: -6px">J</span>
+            <span class="number-big nowrap">J</span>
             <div>
                 <span class="slogan-small">Consumer sequestrated</span>
             </div>
