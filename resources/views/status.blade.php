@@ -36,7 +36,7 @@
                         <span>Status code</span>
                     </div>
                 </div>
-                <div class="text-align-center view-all-statuses">
+                <div class="text-align-center view-all-statuses" onclick="redirect('/statuses')">
                     <span class="material-icons-sharp">
                     autorenew
                     </span><br>

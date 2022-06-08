@@ -30,6 +30,7 @@ Route::get("/design", function(){
 
 Route::get("/", [App\Http\Controllers\ClientController::class, "welcome"]);
 Route::get("/status", [App\Http\Controllers\ClientController::class, "status"]);
+Route::get("/statuses", [App\Http\Controllers\ClientController::class, "statuses"]);
 Route::get("/feeds", [App\Http\Controllers\ClientController::class, "feeds"]);
 Route::get("/apply", [App\Http\Controllers\ClientController::class, "applyIndex"]);
 Route::get("/home", [App\Http\Controllers\ClientController::class, "home"]);

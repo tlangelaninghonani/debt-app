@@ -28,6 +28,14 @@ class ClientController extends Controller
         ]);
     }
 
+    public function statuses(){
+        if(! Cookie::has("signed")){
+            return redirect("/sign_in");
+        } 
+
+        return view("statuses");
+    }
+
     public function status(){
         if(! Cookie::has("signed")){
             return redirect("/sign_in");
