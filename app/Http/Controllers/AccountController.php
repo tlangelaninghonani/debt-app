@@ -143,7 +143,7 @@ class AccountController extends Controller
 
     public function update(Request $req){
 
-        $account = Account::find(Session::get("accountid")); 
+        $account = Account::find(Cookie::get("accountid")); 
 
         if($req->firstname != "" && $req->lastname != "" && 
         $req->phonenumber != "" && $req->emailaddress != ""){
@@ -219,7 +219,7 @@ class AccountController extends Controller
     }
 
     public function remove(){
-        $account = Account::find(Session::get("accountid"));
+        $account = Account::find(Cookie::get("accountid"));
         $account->account_picture = "";
 
         $account->save();
@@ -229,7 +229,7 @@ class AccountController extends Controller
 
     public function upload(Request $req){
 
-        $account = Account::find(Session::get("accountid"));
+        $account = Account::find(Cookie::get("accountid"));
 
         if($req->file("picture")){
             $file = $req->file("picture");
