@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="display-flex mid-gap highlight">
+        <div class="display-flex mid-gap">
             <span class="number-big nowrap">A</span>
             <div>
                 <span class="slogan-small">Application</span>
