@@ -69,7 +69,7 @@
                 </form>
             @else
                 <span>Schedule a <span class="primary-color">Virtual Meeting</span> with a Debt Counsellor on Google Meet</span>
-                <div class="breaker"></div>
+                <!--<div class="breaker"></div>
                 <span class="slogan-small">Debt counsellors</span>
                 <div class="family">
                     <div class="text-align-center">
@@ -121,7 +121,7 @@
                         <span class="title-small">Samatha</span><br>
                         <span>Debt Counsellor</span>
                     </div>
-                </div>
+                </div>-->
                 <div class="breaker"></div>
                 <div class="text-align-left">
                     <span class="slogan-small">Meeting date and time</span>
