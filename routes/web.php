@@ -28,6 +28,11 @@ Route::get("/design", function(){
     return view("design");
 });
 
+Route::get("/offline", function(){
+
+    return view("offline");
+});
+
 Route::get("/", [App\Http\Controllers\ClientController::class, "welcome"]);
 Route::get("/status", [App\Http\Controllers\ClientController::class, "status"]);
 Route::get("/statuses", [App\Http\Controllers\ClientController::class, "statuses"]);

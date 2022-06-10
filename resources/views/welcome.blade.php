@@ -1,3 +1,8 @@
+<script>
+     if(! navigator.onLine){
+        window.location.href = "/offline";
+    }
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
