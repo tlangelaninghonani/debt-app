@@ -31,7 +31,7 @@
         {{ Session::forget("success") }}
     @endif
     <div class="observer"></div>
-    <div class="header display-flex-space-between">
+    <div class="header display-flex-space-between" style="border-bottom: none !important">
         <div class="display-flex-align mid-gap">
             <span class="header-title">Apply</span>
         </div>
@@ -39,9 +39,9 @@
             <span class="material-icons-sharp" onclick="refreshPage()">
             refresh
             </span>
-            <span class="material-icons-sharp">
+            <!--<span class="material-icons-sharp">
             notifications
-            </span>
+            </span>-->
             <span class="material-icons-sharp" onclick="menu('open')">
             more_horiz
             </span>
@@ -96,7 +96,7 @@
                 <div class="display-flex-space-between">
                     <span>Copy of Identity - <span class="dark">{{ $application->identity_document_filename }}</span></span>
                     <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->identity_document }}" target="_blank">
-                        <span class="material-icons-sharp">
+                        <span class="material-icons-sharp action-icon-margin">
                         open_in_new
                         </span><br>
                         <span>View</span>
@@ -106,7 +106,7 @@
                 <div class="display-flex-space-between">
                     <span>Copy of Payslip - <span class="dark">{{ $application->payslip_document_filename }}</span></span>
                     <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->payslip_document }}" target="_blank">
-                        <span class="material-icons-sharp">
+                        <span class="material-icons-sharp action-icon-margin">
                         open_in_new
                         </span><br>
                         <span>View</span>
@@ -116,7 +116,7 @@
                 <div class="display-flex-space-between">
                     <span>Copy of Bank statement - <span class="dark">{{ $application->statement_document_filename }}</span></span>
                     <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->statement_document }}" target="_blank">
-                        <span class="material-icons-sharp">
+                        <span class="material-icons-sharp action-icon-margin">
                         open_in_new
                         </span><br>
                         <span>View</span>
@@ -126,21 +126,15 @@
                 <form id="submitform" action="/application/submit" method="POST">
                     @csrf
                     @method("POST")
-                    <div class="display-flex-space-evenly">
-                        <div class="text-align-center">
-                            <span class="material-icons-sharp action-icon-margin">
-                            edit
-                            </span><br>
-                            <span>Edit info</span>
-                        </div>
-                        <div class="text-align-center" onclick="submitForm('submitform')">
-                            <span class="material-icons-sharp action-icon-margin">
-                            task_alt
-                            </span><br>
-                            <span>Confirm</span>
-                        </div>
-                    </div>
                 </form>
+                <button class="button-feint">
+                    <span>Edit information</span>
+                </button>
+                <div class="breaker"></div>
+                <button onclick="submitForm('submitform')">
+                    <span>Confirm</span>
+                </button>
+                
             </div>
         </div>
     @else
@@ -335,7 +329,7 @@
                         <span id="checkbox" onclick="check()" class="material-icons-sharp cursor-pointer">
                         check_box_outline_blank
                         </span>
-                        <span>By continuing, i agree with the <span class="dark">terms and conditions</span></span>
+                        <span>By continuing, i agree with the <span class="dark">Terms and Conditions</span></span>
                     </div>
                 </div>
                 <script>

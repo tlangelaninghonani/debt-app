@@ -16,9 +16,9 @@
     <div class="header display-flex-space-between">
         <span class="header-title">Feeds</span>
         <div class="display-flex-align mid-gap" style="padding-top: 2px">
-            <span class="material-icons-sharp">
+            <!--<span class="material-icons-sharp">
             notifications
-            </span>
+            </span>-->
             <span class="material-icons-sharp" onclick="menu('open')">
             more_horiz
             </span>

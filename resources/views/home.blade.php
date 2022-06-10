@@ -19,9 +19,9 @@
             <span class="material-icons-sharp" onclick="refreshPage()">
             refresh
             </span>
-            <span class="material-icons-sharp">
+            <!--<span class="material-icons-sharp">
             notifications
-            </span>
+            </span>-->
             <span class="material-icons-sharp" onclick="menu('open')">
             more_horiz
             </span>
@@ -63,6 +63,8 @@
         </div>
         <div class="breaker"></div>
         <div>
+            <span class="slogan">Indebted to</span>
+            <div class="breaker"></div>
             <div class="display-flex">
                 <span class="material-icons-sharp icon-mid">
                 apartment
@@ -95,62 +97,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="breaker"></div>
-        <span class="slogan">Our branches</span>
-        <div class="breaker"></div>
-        <div class="display-flex-space-between">
-            <div class="display-flex">
-                <span class="material-icons-sharp icon-mid">
-                store
-                </span>
-                <div>
-                    <span class="title-small">Giyani (Headq...), Limpopo</span><br>
-                    <span>CBD, near Mopani Spar</span><br>
-                    <span class="dark">08:30 PM - 17:00 PM</span>
-                </div>
-            </div>
-            <a href="https://goo.gl/maps/tTWwFhcM8bG7GFHb9" target="_blank">
-                <span class="material-icons-sharp action-icon">
-                my_location
-                </span>
-            </a>
-        </div>
-        <div class="breaker"></div>
-        <div class="display-flex-space-between">
-            <div class="display-flex">
-                <span class="material-icons-sharp icon-mid">
-                store
-                </span>
-                <div>
-                    <span class="title-small">Polokwane, Limpopo</span><br>
-                    <span>19 Library Gardens Cnr Hans Van Rensburg & Grobler Polokwane Central, Polokwane, 0700</span><br>
-                    <span class="dark">08:30 PM - 17:00 PM</span>
-                </div>
-            </div>
-            <a href="https://goo.gl/maps/cipZyWgF4Sprtt8n8">
-                <span class="material-icons-sharp action-icon">
-                my_location
-                </span>
-            </a>
-        </div>
-        <div class="breaker"></div>
-        <div class="display-flex-space-between">
-            <div class="display-flex">
-                <span class="material-icons-sharp icon-mid">
-                store
-                </span>
-                <div>
-                    <span class="title-small">Pretoria, Gauteng</span><br>
-                    <span>Office 0118 Banking Towers, 190 Thabo Sehume Street Pretoria CBD, Pretoria, 0002</span><br>
-                    <span class="dark">08:30 PM - 17:00 PM</span>
-                </div>
-            </div>
-            <a href="https://goo.gl/maps/31gMhB8KrieQV6248">
-                <span class="material-icons-sharp action-icon">
-                my_location
-                </span>
-            </a>
-        </div>-->
     </div>
     @include("components.nav_bottom")
 </body>

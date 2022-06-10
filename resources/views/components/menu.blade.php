@@ -11,25 +11,18 @@
         </div>
     </div>
     <div class="breaker"></div>
-    <div class="display-flex-align">
+    <div class="display-flex-align" onclick="redirect('/branches')">
         <span class="material-icons-sharp">
         store
         </span>
         <span class="my-font-align">Find a branch</span>
     </div>
     <div class="breaker"></div>
-    <div class="display-flex-align">
+    <div class="display-flex-align" id="share">
         <span class="material-icons-sharp">
         favorite
         </span>
         <span class="my-font-align">Refer to a friend</span>
-    </div>
-    <div class="breaker"></div>
-    <div class="display-flex-align" onclick="redirect('/terms')">
-        <span class="material-icons-sharp">
-        policy
-        </span>
-        <span class="my-font-align">Terms</span>
     </div>
     <div class="breaker"></div>
     <div class="display-flex-align" onclick="redirect('/sign_out')">
@@ -39,3 +32,19 @@
         <span class="my-font-align">Sign out</span>
     </div>
 </div>
+<script>
+    let shareButton = document.querySelector("#share");
+    shareButton.addEventListener('click', event => {
+        if (navigator.share) {
+            navigator.share({
+            title: "Do you feel as if you've bitten off more than you can chew? The Helping Hand Debt Councellors can offer you a debt solution that works",
+            url: 'https://debt-counsellors-app.herokuapp.com/'
+            }).then(() => {
+            
+            })
+            .catch(console.error);
+        } else {
+            // fallback
+        }
+    });
+</script>

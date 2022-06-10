@@ -40,6 +40,18 @@ class ClientController extends Controller
         ]);
     }
 
+    public function branches(){
+        if(! Cookie::has("signed")){
+            return redirect("/sign_in");
+        } 
+
+        $account = Account::find(Cookie::get("accountid"));
+
+        return view("branches", [
+            "account" => $account
+        ]);
+    }
+
     public function status(){
         if(! Cookie::has("signed")){
             return redirect("/sign_in");
