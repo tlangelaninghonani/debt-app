@@ -42,9 +42,15 @@
                             </div>
                         </div>
                     @else
-                        <span class="material-icons-sharp empty-account-mid">
-                        account_circle
-                        </span>
+                        @if($account->gender == "Male")
+                            <span class="material-icons-sharp empty-account-mid">
+                            face
+                            </span>
+                        @else
+                            <span class="material-icons-sharp empty-account-mid">
+                            face_4
+                            </span>
+                        @endif
                         <!--<div>
                             <div class="text-align-center" onclick="redirect('/setup_account_picture')">
                                 <span class="material-icons-sharp ">
@@ -55,11 +61,10 @@
                         </div>-->
                     @endif
                 </div>
-                <div class="breaker"></div>
                 <div>
                     <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
-                    <span>Phone number - <span>{{ $account->phone_number }}</span></span><br>
-                    <span>Email address - <span>{{ $account->email_address }}</span></span><br>
+                    <span>Phone number - <span class="dark">{{ $account->phone_number }}</span></span><br>
+                    <span>Email address - <span class="dark">{{ $account->email_address }}</span></span><br>
                 </div>
             </div>
             <div class="breaker"></div>

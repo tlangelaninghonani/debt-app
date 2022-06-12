@@ -44,6 +44,13 @@ class AccountController extends Controller
                 return back(); 
             }
 
+            if($req->gender == ""){
+                Session::put("error", true);
+                Session::put("errormessage", "Please select your gender");
+
+                return back(); 
+            }
+
             if(Account::where("phone_number", str_replace(" ", "", $req->phonenumber))->exists()){
                 Session::put("error", true);
                 Session::put("errormessage", "Account already exists, Sign in instead");
@@ -77,6 +84,7 @@ class AccountController extends Controller
             $account->last_name = ucfirst(strtolower($req->lastname));
             $account->phone_number = str_replace(" ", "", $req->phonenumber);
             $account->email_address = strtolower($req->emailaddress);
+            $account->gender = $req->gender;
             $account->password = Hash::make($req->password);
             $account->save();
 

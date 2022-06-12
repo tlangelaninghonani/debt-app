@@ -55,9 +55,15 @@
         @if(Route::getfacaderoot()->current()->uri() == "account")
             <div class="focused-nav"></div>
         @endif
-        <span class="material-icons-sharp">
-        account_circle
-        </span><br>
+        @if($account->gender == "Male")
+            <span class="material-icons-sharp">
+            face
+            </span><br>
+        @else
+            <span class="material-icons-sharp">
+            face_4
+            </span><br>
+        @endif
         <span class="helvetica">Profile</span>
     </div>
 </div>

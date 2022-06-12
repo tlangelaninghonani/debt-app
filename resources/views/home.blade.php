@@ -32,13 +32,20 @@
             @if($account->account_picture != "")
                 <img class="profile-pic-small" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
             @else
-                <span class="material-icons-sharp empty-account">
-                face
-                </span>
+                @if($account->gender == "Male")
+                    <span class="material-icons-sharp empty-account">
+                    face
+                    </span>
+                @else
+                    <span class="material-icons-sharp empty-account">
+                    face_4
+                    </span>
+                @endif
             @endif
             <div>
                 <span class="slogan-small"><span class="slogan-small-color">Hi</span>, {{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Your status - <span>Application</span></span>
+                <span>Phone number - <span class="dark">{{ $account->phone_number }}</span></span><br>
+                <span>Email address - <span class="dark">{{ $account->email_address }}</span></span><br>
             </div>
         </div>
         <div class="breaker"></div>
@@ -80,6 +87,12 @@
                 store
                 </span><br>
                 <span>Branches</span>
+            </div>
+            <div class="text-align-center" onclick="redirect('/sign_out')">
+                <span class="material-icons-sharp action-icon-margin">
+                power_settings_new
+                </span><br>
+                <span>Sign out</span>
             </div>
         </div>
         <div class="breaker"></div>
