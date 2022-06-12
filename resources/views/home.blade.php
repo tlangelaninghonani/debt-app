@@ -75,17 +75,11 @@
                 </span><br>
                 <span>WhatsApp</span>
             </div>
-            <div class="text-align-center" onclick="redirect('/statuses')">
+            <div class="text-align-center" onclick="redirect('/branches')">
                 <span class="material-icons-sharp action-icon-margin">
-                update
+                store
                 </span><br>
-                <span>Statuses</span>
-            </div>
-            <div class="text-align-center" onclick="redirect('/sign_out')">
-                <span class="material-icons-sharp action-icon-margin">
-                power_settings_new
-                </span><br>
-                <span>Sign out</span>
+                <span>Branches</span>
             </div>
         </div>
         <div class="breaker"></div>
