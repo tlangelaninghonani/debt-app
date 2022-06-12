@@ -18,10 +18,10 @@
     --padding: 25px;
     --gap: 10px;
     --mid-gap: 25px;
-    --input-color: rgb(245, 245, 245);
+    --input-color: rgb(248, 248, 248);
     --radius: 40px;
     --shadow-4: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    --shadow-tailwind: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(50, 50, 50, 0.06) 0px 1px 2px 0px;
+    --shadow-tailwind: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     --header-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     --primary-color: rgb(248, 121, 9);
     --feint: rgb(50, 50, 50);
@@ -101,7 +101,8 @@ body{
     right: 0;
     background-color: white !important;
     z-index: 10;
-    border-bottom: 1px solid var(--input-color);
+    /*border-bottom: 1px solid var(--input-color);*/
+    box-shadow: var(--shadow-tailwind);
 }
 
 .w-auto{
@@ -883,8 +884,9 @@ a{
     left: 0;
     right: 0;
     padding: var(--padding);
-    border-top: 1px solid var(--input-color);
+    /*border-top: 1px solid var(--input-color);*/
     background-color: white;
+    box-shadow: var(--shadow-tailwind);
 }
 
 .loader {
