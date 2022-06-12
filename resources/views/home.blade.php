@@ -44,8 +44,7 @@
             @endif
             <div>
                 <span class="slogan-small"><span class="slogan-small-color">Hi</span>, {{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Phone number - <span class="dark">{{ $account->phone_number }}</span></span><br>
-                <span>Email address - <span class="dark">{{ $account->email_address }}</span></span><br>
+                <span>Your status - <span>Application</span></span>
             </div>
         </div>
         <div class="breaker"></div>
