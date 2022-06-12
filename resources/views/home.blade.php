@@ -33,7 +33,7 @@
                 <img class="profile-pic-small" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
             @else
                 <span class="material-icons-sharp empty-account">
-                account_circle
+                face
                 </span>
             @endif
             <div>

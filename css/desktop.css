@@ -18,11 +18,10 @@
     --padding: 25px;
     --gap: 10px;
     --mid-gap: 25px;
-    --input-color: rgb(248, 248, 248);
+    --input-color: rgb(245, 245, 245);
     --radius: 40px;
-    --shadow-4: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --radius-circle: 50%;
     --shadow-tailwind: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-    --header-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     --primary-color: rgb(248, 121, 9);
     --feint: rgb(50, 50, 50);
     --primary-feint: rgb(255, 243, 233);
@@ -62,7 +61,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     background-color: var(--primary-color);
 }
 
@@ -76,7 +75,7 @@ body{
     left: 0;
     bottom: 0;
     right: 0;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     border-top: 4px solid rgb(8, 8, 8);
     border-right: 4px solid transparent;
     box-sizing: border-box;
@@ -164,7 +163,7 @@ body{
 .debt-apply{
     position: absolute;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     color: white;
     background-color: black;
     top: -10px;
@@ -182,7 +181,7 @@ body{
 
 .icon-shadow{
     padding: 25px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     box-shadow: var(--shadow-tailwind);
 }
 
@@ -191,7 +190,7 @@ body{
     width: 150px;
     height: 150px;
     background-color: black;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
 }
 
 .dot-2{
@@ -199,7 +198,7 @@ body{
     width: 150px;
     height: 150px;
     background-color: black;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     right: -20px;
     top: 300px;
 }
@@ -209,7 +208,7 @@ body{
     width: 150px;
     height: 150px;
     background-color: black;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     right: 0;
     bottom: 150px;
 }
@@ -233,7 +232,7 @@ body{
     right: 0;
     background-color: var(--input-color);
     padding: 10px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
 }
 
 .empty-account{
@@ -255,7 +254,7 @@ body{
     display: flex;
     align-items: center;
     background-color: var(--input-color);
-    border-radius: 40px;
+    border-radius: var(--radius);
     gap: var(--gap);
 }
 
@@ -267,7 +266,7 @@ body{
 .icon-binder{
     background-color: var(--input-color);
     padding: 10px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
 }
 
 .shadow{
@@ -309,7 +308,7 @@ input:not(input[type=range]), select{
     border: none;
     width: 100%;
     background-color: var(--input-color);
-    border-radius: 40px;
+    border-radius: var(--radius);
 }
 
 .installment{
@@ -358,14 +357,14 @@ button * {
 
 .action-icon{
     padding: 20px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     color: white;
     background-color: var(--feint);
 }
 
 .action-icon-margin{
     padding: 20px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     color: white;
     background-color: var(--feint);
     margin-bottom: 15px;
@@ -555,7 +554,7 @@ img{
     min-height: 24px;
     max-width: 24px;
     max-height: 24px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
 }
 
 .profile-pic-small{
@@ -564,7 +563,7 @@ img{
     min-height: 90px;
     max-width: 90px;
     max-height: 90px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
 }
 
 .profile-pic-small:hover {
@@ -579,7 +578,7 @@ img{
     min-height: 120px;
     max-width: 120px;
     max-height: 120px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
 }
 
 .profile-pic-mid:hover {
@@ -591,7 +590,7 @@ img{
 .profile-img{
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     box-shadow: var(--shadow-tailwind);
 }
 
@@ -937,7 +936,7 @@ a{
     height: 30px;
     background: white;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     border: 12px solid var(--feint);
 }
 
