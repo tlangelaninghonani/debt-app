@@ -21,14 +21,12 @@
 
         <div class="dot-3"></div>
     </div>-->
-    <div class="container back-img position-fixed">
-        <div class="img-filter display-flex-center">
+    <div class="container position-fixed">
+        <div class=" display-flex-center">
             <div class="text-align-center">
                 <div>
                     <div class="display-flex-center">
-                        <div class="logo-container">
-                            <img class="logo-img" src="/pro_logo.png" alt="">
-                        </div>
+                        <img class="logo-img" src="/pro_logo.png" alt="">
                     </div>
                     <div class="breaker"></div>
                     <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
