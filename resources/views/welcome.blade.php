@@ -26,7 +26,7 @@
             <div class="text-align-center">
                 <div>
                     <div class="display-flex-center">
-                        <img class="logo-img" src="/pro_logo.png" alt="">
+                        <img class="logo-img" src="/new_logo.png" alt="">
                     </div>
                     <div class="breaker"></div>
                     <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
