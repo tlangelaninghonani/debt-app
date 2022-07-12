@@ -10,6 +10,9 @@ var googleIconsSharp = document.createElement("link");
 googleIconsSharp.rel = "stylesheet";
 googleIconsSharp.href = "https://fonts.googleapis.com/icon?family=Material+Icons+Sharp";
 
+var googleIconsSymbols = document.createElement("link");
+googleIconsSymbols.rel = "stylesheet";
+googleIconsSymbols.href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,600,1,-25";
 
 var jQuery = document.createElement("script");
 jQuery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
@@ -17,6 +20,7 @@ jQuery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
 document.getElementsByTagName("head")[0].appendChild(googleIcons);
 document.getElementsByTagName("head")[0].appendChild(googleIconsRound);
 document.getElementsByTagName("head")[0].appendChild(googleIconsSharp);
+document.getElementsByTagName("head")[0].appendChild(googleIconsSymbols);
 document.getElementsByTagName("head")[0].appendChild(jQuery);
 
 function loader(){

@@ -32,15 +32,9 @@
             @if($account->account_picture != "")
                 <img class="profile-pic-small" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
             @else
-                @if($account->gender == "Male")
-                    <span class="material-icons-sharp empty-account">
-                    face
-                    </span>
-                @else
-                    <span class="material-icons-sharp empty-account">
-                    face_4
-                    </span>
-                @endif
+                <span class="material-icons-sharp empty-account">
+                account_circle
+                </span>
             @endif
             <div>
                 <span class="slogan-small"><span class="slogan-small-color">Hi</span>, {{ $account->first_name." ".$account->last_name }}</span><br>
@@ -49,7 +43,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex-space-between">
-            <div class="installment">
+            <div class="">
                 <div>
                     <span class="nowrap">Overall installment plan</span><br>
                     <span class="number-mid nowrap">R 8 000.00</span><br>
@@ -67,7 +61,7 @@
                 <span>Visit your nearest <span class="primary-color">branch</span> to edit your plan</span>
             </div>
         </div>
-        <div class="breaker"></div>
+        <!--<div class="breaker"></div>
         <div>
             <span class="slogan">Indebted to</span>
             <div class="breaker"></div>
@@ -76,7 +70,7 @@
                 apartment
                 </span>
                 <div>
-                    <span class="title-small">Capitec Bank Limited</span><br>
+                    <span class="poller">Capitec Bank Limited</span><br>
                     <span>Indebt of <span class="dark">R 180 000.00</span></span><br>
                     <span>Installment - <span class="dark">R 2 000.00</span></span>
                 </div>
@@ -87,7 +81,7 @@
                 apartment
                 </span>
                 <div>
-                    <span class="title-small">Mjinga Finance</span><br>
+                    <span class="poller">Mjinga Finance</span><br>
                     <span>Indebt of <span class="dark">R 50 000.00</span></span><br>
                     <span>Installment - <span class="dark">R 1 000.00</span></span>
                 </div>
@@ -98,11 +92,11 @@
                 maps_home_work
                 </span>
                 <div>
-                    <span class="title-small">The Helping Hand Debt Counsellors</span><br>
+                    <span class="poller">The Helping Hand Debt Counsellors</span><br>
                     <span>Aftercare of <span class="dark">R 1 000.00 &#183; PM</span></span><br>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     @include("components.nav_bottom")
 </body>

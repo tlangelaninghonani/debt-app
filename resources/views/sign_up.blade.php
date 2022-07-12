@@ -42,57 +42,12 @@
                         <input type="email" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your Email address">
                     </div>
                     <div class="breaker"></div>
-                    <div class="display-flex-space-evenly">
-                        <div class="text-align-center">
-                            <span class="material-icons-sharp empty-account" style="margin-bottom: 15px;">
-                            face
-                            </span><br>
-                            <span>Male</span><br>
-                            <span id="checkbox1" onclick="check()" class="material-icons-sharp cursor-pointer" style="margin-top: 15px;">
-                            check_box_outline_blank
-                            </span>
-                        </div>
-                        <div class="text-align-center">
-                            <span class="material-icons-sharp empty-account" style="margin-bottom: 15px;">
-                            face_4
-                            </span><br>
-                            <span>Female</span><br>
-                            <span id="checkbox2" onclick="check2()" class="material-icons-sharp cursor-pointer" style="margin-top: 15px;">
-                            check_box_outline_blank
-                            </span>
-                        </div>
+                    <div class="input-contain">
+                        <select name="gender" id="gender" class="w-100">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
                     </div>
-                    <input type="hidden" id="gender" name="gender">
-                    <script>
-                        function check(){
-                            if(document.querySelector("#checkbox1").innerHTML !== "task_alt"){
-                                document.querySelector("#checkbox1").innerHTML = "task_alt";
-                                document.querySelector("#checkbox1").classList.add("primary-color");
-
-                                document.querySelector("#checkbox2").innerHTML = "check_box_outline_blank";
-                                document.querySelector("#checkbox2").classList.remove("primary-color");
-
-                                document.querySelector("#gender").value = "Male";
-                            }else{
-                                document.querySelector("#checkbox1").innerHTML = "check_box_outline_blank";
-                                document.querySelector("#checkbox1").classList.remove("primary-color");
-                            }
-                        }
-                        function check2(){
-                            if(document.querySelector("#checkbox2").innerHTML !== "task_alt"){
-                                document.querySelector("#checkbox2").innerHTML = "task_alt";
-                                document.querySelector("#checkbox2").classList.add("primary-color");
-
-                                document.querySelector("#checkbox1").innerHTML = "check_box_outline_blank";
-                                document.querySelector("#checkbox1").classList.remove("primary-color");
-
-                                document.querySelector("#gender").value = "Female";
-                            }else{
-                                document.querySelector("#checkbox2").innerHTML = "check_box_outline_blank";
-                                document.querySelector("#checkbox2").classList.remove("primary-color");
-                            }
-                        }
-                    </script>
                     <div class="breaker"></div>
                     <span class="slogan">Setup a <span class="slogan-primary-color">Sign in</span> password</span><br>
                     <span>Password should be at least 6 characters long</span>

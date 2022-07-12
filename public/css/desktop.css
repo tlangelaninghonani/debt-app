@@ -23,7 +23,7 @@
     --radius: 40px;
     --radius-circle: 50%;
     --shadow-tailwind: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-    --primary-color: rgb(248, 121, 9);
+    --primary-color: rgb(253, 118, 0);
     --feint: rgb(50, 50, 50);
     --primary-feint: rgb(255, 243, 233);
 }
@@ -474,7 +474,7 @@ input:-webkit-autofill:active{
 }
 
 .w-100{
-    width: 100%;
+    width: 100% !important;
 }
 
 .kanit{
@@ -496,7 +496,11 @@ img{
 
 .slogan{
     font-family: 'Poller One', cursive;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.poller{
+    font-family: 'Poller One', cursive;
 }
 
 .slogan-small{
@@ -512,7 +516,7 @@ img{
 
 .slogan-primary-color{
     font-family: 'Poller One', cursive;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--primary-color) !important;
 }
 
@@ -698,7 +702,7 @@ img{
 }
 
 .number-mid{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'MyFontHeavy';
 }
 

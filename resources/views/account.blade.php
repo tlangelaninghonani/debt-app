@@ -42,15 +42,9 @@
                             </div>
                         </div>
                     @else
-                        @if($account->gender == "Male")
-                            <span class="material-icons-sharp empty-account-mid">
-                            face
-                            </span>
-                        @else
-                            <span class="material-icons-sharp empty-account-mid">
-                            face_4
-                            </span>
-                        @endif
+                        <span class="material-icons-sharp empty-account">
+                        account_circle
+                        </span>
                         <!--<div>
                             <div class="text-align-center" onclick="redirect('/setup_account_picture')">
                                 <span class="material-icons-sharp ">
