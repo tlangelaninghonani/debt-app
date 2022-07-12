@@ -25,10 +25,10 @@
         <div class="img-filter display-flex-center">
             <div class="text-align-center">
                 <div>
-                    <div class="text-align-center">
-                        <span class="material-icons-sharp icon-big">
-                        pan_tool
-                        </span>
+                    <div class="display-flex-center">
+                        <div class="logo-container">
+                            <img class="logo-img" src="/logo.png" alt="">
+                        </div>
                     </div>
                     <div class="breaker"></div>
                     <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>

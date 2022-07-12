@@ -68,33 +68,6 @@
             </div>
         </div>
         <div class="breaker"></div>
-        <div class="display-flex-space-between">
-            <a href="tel:0158120127" class="text-align-center">
-                <span class="material-icons-sharp action-icon-margin">
-                call
-                </span><br>
-                <span>Call</span>
-            </a>
-            <div class="text-align-center">
-                <span class="material-icons-sharp action-icon-margin">
-                whatsapp
-                </span><br>
-                <span>WhatsApp</span>
-            </div>
-            <div class="text-align-center" onclick="redirect('/branches')">
-                <span class="material-icons-sharp action-icon-margin">
-                store
-                </span><br>
-                <span>Branches</span>
-            </div>
-            <div class="text-align-center" onclick="redirect('/sign_out')">
-                <span class="material-icons-sharp action-icon-margin">
-                power_settings_new
-                </span><br>
-                <span>Sign out</span>
-            </div>
-        </div>
-        <div class="breaker"></div>
         <div>
             <span class="slogan">Indebted to</span>
             <div class="breaker"></div>
