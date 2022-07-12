@@ -27,7 +27,7 @@
                 <div>
                     <div class="display-flex-center">
                         <div class="logo-container">
-                            <img class="logo-img" src="/logo.png" alt="">
+                            <img class="logo-img" src="/pro_logo.png" alt="">
                         </div>
                     </div>
                     <div class="breaker"></div>
