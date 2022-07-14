@@ -1018,7 +1018,7 @@ hr{
     transform: rotate(20deg);
 }
 
-/*.logo-orange-line{
+.logo-orange-line{
     border: 10px solid var(--primary-color);
     position: absolute;
     top: 0;
@@ -1038,7 +1038,7 @@ hr{
     left: 0;
     margin: 30px;
     border-radius: 50%;
-}*/
+}
 
 
 
