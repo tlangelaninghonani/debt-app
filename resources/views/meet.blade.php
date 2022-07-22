@@ -68,7 +68,7 @@
                     </button>
                 </form>
             @else
-                <span>Schedule a <span class="primary-color">Virtual Meeting</span> with a Debt Counsellor on <span class="title-small">Google Meet</span></span>
+                <span>Schedule a Virtual Meeting with a Debt Counsellor on <span class="primary-color">Google Meet</span></span>
                 <!--<div class="breaker"></div>
                 <span class="slogan-small">Debt counsellors</span>
                 <div class="family">

@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="breaker"></div>
-            <div class="text-align-center">
+            <div>
                 <span class="slogan">Sign in</span>
             </div>
             <div class="breaker"></div>

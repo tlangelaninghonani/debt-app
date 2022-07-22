@@ -43,7 +43,7 @@
         </div>
         <div class="breaker"></div>
         <div class="display-flex-space-between">
-            <div class="">
+            <div class="installment">
                 <div>
                     <span class="nowrap">Overall installment plan</span><br>
                     <span class="number-mid nowrap">R 8 000.00</span><br>
