@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: 'MyFontBdCond';
+    src: url('/Helvetica-Neue-LT-Com-77-Bold-Condensed.ttf') format('WOFF');
+}
+
+@font-face {
     font-family: 'MyFontHeavy';
     src: url('/HelveticaNeueLTPro-HvEx.otf') format('WOFF');
 }
@@ -501,28 +506,28 @@ img{
 }
 
 .slogan{
-    font-family: 'Poller One', cursive;
-    font-size: 20px;
+    font-family: "MyFontBdCond";
+    font-size: 25px;
 }
 
 .poller{
-    font-family: 'Poller One', cursive;
+    font-family: "MyFontBdCond";
 }
 
 .slogan-small{
-    font-family: 'Poller One', cursive;
-    font-size: 20px;
+    font-family: "MyFontBdCond";
+    font-size: 25px;
 }
 
 .slogan-small-color{
-    font-family: 'Poller One', cursive;
-    font-size: 20px;
+    font-family: "MyFontBdCond";
+    font-size: 25px;
     color: var(--primary-color) !important;
 }
 
 .slogan-primary-color{
-    font-family: 'Poller One', cursive;
-    font-size: 20px;
+    font-family: "MyFontBdCond";
+    font-size: 25px;
     color: var(--primary-color) !important;
 }
 

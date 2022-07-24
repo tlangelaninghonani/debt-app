@@ -33,7 +33,7 @@
                 <div class="status position-relative">
                     <div class="text-align-center">
                         <span class="number-big nowrap">A</span><br>
-                        <span>Status code</span>
+                        <span>Status <br> code</span>
                     </div>
                 </div>
                 <div class="text-align-center view-all-statuses" onclick="redirect('/statuses')">
