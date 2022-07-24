@@ -20,6 +20,11 @@
     src: url('/HelveticaNeueLTPro-HvEx.otf') format('WOFF');
 }
 
+@font-face {
+    font-family: 'ProductSansBd';
+    src: url('/Product Sans Bold.ttf') format('WOFF');
+}
+
 :root{
     --padding: 25px;
     --gap: 10px;
@@ -506,27 +511,27 @@ img{
 }
 
 .slogan{
-    font-family: "MyFontBdCond";
+    font-family: "ProductSansBd";
     font-size: 25px;
 }
 
 .poller{
-    font-family: "MyFontBdCond";
+    font-family: "ProductSansBd";
 }
 
 .slogan-small{
-    font-family: "MyFontBdCond";
+    font-family: "ProductSansBd";
     font-size: 25px;
 }
 
 .slogan-small-color{
-    font-family: "MyFontBdCond";
+    font-family: "ProductSansBd";
     font-size: 25px;
     color: var(--primary-color) !important;
 }
 
 .slogan-primary-color{
-    font-family: "MyFontBdCond";
+    font-family: "ProductSansBd";
     font-size: 25px;
     color: var(--primary-color) !important;
 }
