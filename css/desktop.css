@@ -859,7 +859,7 @@ img{
 }
 
 .focused{
-    border-bottom: 2px solid var(--primary-color) !important;
+    border-bottom: 1px solid var(--primary-color) !important;
 }
 
 a{
@@ -873,7 +873,7 @@ a{
     left: 0;
     right: 0;
     background-color: var(--primary-color);
-    height: 2px;
+    height: 1px;
     top: -26px;
 }
 

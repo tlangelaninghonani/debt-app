@@ -3,7 +3,7 @@
         @if(Route::getfacaderoot()->current()->uri() == "home")
             <div class="focused-nav"></div>
         @endif
-        <span class="material-symbols-sharp">
+        <span class="material-icons-sharp">
         home
         </span><br>
         <span class="helvetica">Home</span>
@@ -50,6 +50,15 @@
         videocam
         </span><br>
         <span class="helvetica">Meet</span>
+    </div>
+    <div class="text-align-center relative" onclick="redirect('/meet')">
+        @if(Route::getfacaderoot()->current()->uri() == "docs")
+            <div class="focused-nav"></div>
+        @endif
+        <span class="material-icons-sharp">
+        folder
+        </span><br>
+        <span class="helvetica">Docs</span>
     </div>
     <div class="text-align-center relative" onclick="redirect('/account')">
         @if(Route::getfacaderoot()->current()->uri() == "account")

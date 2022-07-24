@@ -55,6 +55,7 @@
                         </div>-->
                     @endif
                 </div>
+                <div class="breaker"></div>
                 <div>
                     <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
                     <span>Phone number - <span class="dark">{{ $account->phone_number }}</span></span><br>
