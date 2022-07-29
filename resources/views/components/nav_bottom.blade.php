@@ -4,9 +4,9 @@
             <div class="focused-nav"></div>
         @endif
         <span class="material-icons-sharp">
-        home
+        dashboard
         </span><br>
-        <span class="helvetica">Home</span>
+        <span class="helvetica">Dash</span>
     </div>
     @if($links['application']::where("account_id", Cookie::get("accountid"))->exists())
         @if($links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
@@ -26,7 +26,7 @@
                     <div class="focused-nav"></div>
                 @endif
                 <span class="material-icons-sharp">
-                folder
+                ios_share
                 </span><br>
                 <span class="helvetica">Apply</span>
             </div> 
@@ -37,7 +37,7 @@
                 <div class="focused-nav"></div>
             @endif
             <span class="material-icons-sharp">
-            folder
+            ios_share
             </span><br>
             <span class="helvetica">Apply</span>
         </div>

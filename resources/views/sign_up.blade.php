@@ -61,12 +61,13 @@
                     </div>
                     <div class="breaker"></div>
                     <div class="display-flex-space-between mid-gap">
-                        <div class="text-align-center" onclick="redirect('/sign_in')">
-                            <span class="nowrap">Sign in</span>
-                        </div>
                         <button type="button" class="primal-color display-flex-center" onclick="submitForm('signupform')">
                             <span>Sign up</span>
                         </button>
+                    </div>
+                    <div class="breaker"></div>
+                    <div>
+                        <span class="nowrap" onclick="redirect('/sign_in')">Sign in instead</span>
                     </div>
                 </form>
             </div>

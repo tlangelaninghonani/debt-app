@@ -36,12 +36,6 @@
                         <span>Status <br> code</span>
                     </div>
                 </div>
-                <div class="text-align-center view-all-statuses" onclick="redirect('/statuses')">
-                    <span class="material-icons-sharp">
-                    update
-                    </span><br>
-                    <span>View all <br> statuses</span>
-                </div>
             </div>
             <div class="breaker"></div>
             <div class="text-align-center">
@@ -49,10 +43,6 @@
                 <div class="breaker"></div>
                 <span>Applied for Debt Counselling and being assessed</span>
             </div>
-            <div class="breaker"></div>
-            <button type="button">
-                <span>Download statement</span>
-            </button>
         </div>
     </div>
     @include("components.nav_bottom")

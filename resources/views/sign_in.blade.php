@@ -19,12 +19,11 @@
                     <span class="slogan">Pay what <span class="slogan-primary-color">you</span> can afford</span>
                 </div>
             </div>
-            <div class="breaker"></div>
-            <div>
-                <span class="slogan">Sign in</span>
-            </div>
-            <div class="breaker"></div>
-            <div class="">
+            <div class="curver">
+                <div>
+                    <span class="slogan">Sign in</span>
+                </div>
+                <div class="breaker"></div>
                 <form id="signinform" action="/sign_in" method="POST">
                     @csrf
                     @method("POST")
@@ -45,12 +44,13 @@
                     </div>
                     <div class="breaker"></div>
                     <div class="display-flex-space-between mid-gap">
-                        <div class="text-align-center" onclick="redirect('/sign_up')">
-                            <span class="nowrap">Sign up</span>
-                        </div>
                         <button type="button" class="primal-color display-flex-center" onclick="submitForm('signinform')">
                             <span>Sign in</span>
                         </button>
+                    </div>
+                    <div class="breaker"></div>
+                    <div>
+                        <span class="nowrap" onclick="redirect('/sign_up')">Sign up instead</span>
                     </div>
                 </form>
             </div>

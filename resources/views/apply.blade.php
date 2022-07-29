@@ -30,11 +30,11 @@
         </div>
         {{ Session::forget("success") }}
     @endif
-    <div class="observer"></div>
-    <div class="header display-flex-space-between" style="border-bottom: none !important">
-        <div class="display-flex-align mid-gap">
-            <span class="header-title">Apply</span>
-        </div>
+    <div class="header display-flex-space-between">
+        <span class="material-icons-sharp" onclick="redirectBack()">
+        arrow_back
+        </span>
+        <span class="header-title">Apply</span>
         <div class="display-flex-align mid-gap">
             <span class="material-icons-sharp" onclick="refreshPage()">
             refresh
@@ -278,7 +278,7 @@
                     <span>Around <span class="dark" id="incomebefore">R 1000.00</span></span>
                 </div>
                 <div class="breaker"></div>
-                <input class="w-100 slider" name="incomebeforedeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomebefore')"><br>
+                <input class="w-100 slider" name="incomebeforedeductions" type="range" min="1000" max="20000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomebefore')"><br>
                 <div class="breaker"></div>
                 <span class="slogan">Income after deductions</span><br>
                 <div class="breaker"></div>
@@ -286,7 +286,7 @@
                     <span>Around <span class="dark" id="incomeafter">R 1000.00</span></span>
                 </div>
                 <div class="breaker"></div>
-                <input class="w-100 slider" name="incomeafterdeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomeafter')"><br>
+                <input class="w-100 slider" name="incomeafterdeductions" type="range" min="1000" max="20000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomeafter')"><br>
                 <div class="breaker"></div>
                 <span class="slogan">Copy of your Identity</span>
                 <div class="breaker"></div>

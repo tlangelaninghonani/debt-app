@@ -25,13 +25,6 @@
         <span class="my-font-align">Refer to a friend</span>
     </div>
     <div class="breaker"></div>
-    <div class="display-flex-align" onclick="redirect('/statuses')">
-        <span class="material-icons-sharp">
-        update
-        </span>
-        <span class="my-font-align">Statuses</span>
-    </div>
-    <div class="breaker"></div>
     <div class="display-flex-align" onclick="redirect('/sign_out')">
         <span class="material-icons-sharp">
         power_settings_new

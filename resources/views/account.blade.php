@@ -57,7 +57,7 @@
                 </div>
                 <div class="breaker"></div>
                 <div>
-                    <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
+                    <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
                     <span>Phone number - <span class="dark">{{ $account->phone_number }}</span></span><br>
                     <span>Email address - <span class="dark">{{ $account->email_address }}</span></span><br>
                 </div>
@@ -84,7 +84,7 @@
                     <input type="text" id="email" name="emailaddress" autocomplete="off" value="{{ $account->email_address }}" placeholder="Type your Email address">
                 </div>
                 <div class="breaker"></div>
-                <span class="slogan">Change your password</span>
+                <span class="slogan">Change your <span class="slogan-primary-color">password</span></span>
                 <div class="breaker"></div>
                 <div class="input-contain">
                     <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your Password">
