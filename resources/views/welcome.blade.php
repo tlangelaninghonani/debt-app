@@ -21,24 +21,22 @@
 
         <div class="dot-3"></div>
     </div>-->
-    <div class="container position-fixed">
-        <div class=" display-flex-center">
-            <div class="text-align-center">
-                <div>
-                    <div class="display-flex-center">
-                        <img class="logo-img" src="/logo_refactored.png" alt="">
-                    </div>
+    <div class="container position-fixed display-flex-center">
+        <div class="text-align-center">
+            <div>
+                <div class="display-flex-center">
+                    <img class="logo-img" src="/logo_refactored.png" alt="">
+                </div>
+                <div class="breaker"></div>
+                <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
+                <div class="breaker"></div>
+                <div class="curved-top">
+                    <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
                     <div class="breaker"></div>
-                    <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
-                    <div class="breaker"></div>
-                    <div class="curved-top">
-                        <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
-                        <div class="breaker"></div>
-                        <div class="display-flex-end">
-                            <button class="display-flex-center" onclick="(redirect('/sign_in'))">
-                                <span>Get started</span>
-                            </button>
-                        </div>
+                    <div class="display-flex-end">
+                        <button class="display-flex-center" onclick="(redirect('/sign_in'))">
+                            <span>Get started</span>
+                        </button>
                     </div>
                 </div>
             </div>
