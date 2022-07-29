@@ -19,11 +19,12 @@
                     <span class="slogan">Pay what <span class="slogan-primary-color">you</span> can afford</span>
                 </div>
             </div>
-            <div class="curver">
-                <div>
-                    <span class="slogan">Sign in</span>
-                </div>
-                <div class="breaker"></div>
+            <div class="breaker"></div>
+            <div>
+                <span class="slogan">Sign in</span>
+            </div>
+            <div class="breaker"></div>
+            <div class="">
                 <form id="signinform" action="/sign_in" method="POST">
                     @csrf
                     @method("POST")
