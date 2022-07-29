@@ -16,7 +16,12 @@
         <div class="padding">
             <div class="top-banner-2">
                 <div class="banner-content">
-                    <span class="slogan">Let us be your <span class="slogan-primary-color">Helping Hand</span></span>
+                    <div>
+                    <div class="display-flex-center position-relative">
+                            <div class="logo-back"></div>
+                            <img class="logo-img-abs" src="/logo_refactored.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="breaker"></div>

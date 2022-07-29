@@ -16,7 +16,12 @@
         <div class="padding">
             <div class="top-banner">
                 <div class="banner-content">
-                    <span class="slogan">Pay what <span class="slogan-primary-color">you</span> can afford</span>
+                    <div>
+                    <div class="display-flex-center position-relative">
+                            <div class="logo-back"></div>
+                            <img class="logo-img-abs" src="/logo_refactored.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="breaker"></div>

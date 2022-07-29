@@ -230,6 +230,14 @@ body{
     position: relative;
 }
 
+.logo-back{
+    position: absolute;
+    background-color: white;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
 .edge-fit{
     margin: 0 -25px;
     padding: var(--padding);
@@ -581,9 +589,14 @@ img{
     border-radius: var(--radius-circle);
 }
 
-
 .logo-img{
-    width: 100%;
+    width: 250px;
+}
+
+.logo-img-abs{
+    width: 250px;
+    position: absolute;
+    z-index: 100;
 }
 
 .profile-pic-small:hover {
@@ -782,7 +795,6 @@ img{
 }
 
 .top-banner{
-   padding: var(--padding);
    margin: -25px;
    margin-bottom: 0;
    background-image: url("https://www.creditlimitsinternational.com/wp-content/uploads/2019/11/kent-debt-collection-agency.jpg");
@@ -791,7 +803,6 @@ img{
 }
 
 .top-banner-2{
-    padding: var(--padding);
     margin: -25px;
     margin-bottom: 0;
     background-image: url("https://images.ctfassets.net/csd0v5p1fzif/4lP3W3a3FuROwQtLnQd4m4/6303f1e5b38f911adfe113ad5775deaf/how-to-become-debt-free-4.jpeg");
@@ -804,7 +815,7 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 320px;
 }
 
 .banner-content *{
@@ -812,7 +823,6 @@ img{
 }
 
 .top-banner-apply{
-    padding: var(--padding);
     margin-top: -25px;
     margin-bottom: 0;
     background-image: url("https://www.bankrate.com/2019/12/23162555/10-ways-to-get-out-of-debt1-840x720.jpg");
@@ -821,7 +831,6 @@ img{
  }
 
  .top-banner-apply-2{
-    padding: var(--padding);
     margin-top: -25px;
     margin-bottom: 0;
     background-image: url("https://m.foolcdn.com/media/affiliates/images/Woman_on_laptop_K6Be3BQ.width-1200.jpg");
@@ -834,7 +843,7 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 320px;
 }
 
 .banner-content-apply *{
