@@ -1,35 +1,38 @@
 <div class="menu" id="menu">
-    <div class="highlight" style="margin-top: -25px">
+    <div class="container">
         <div class="display-flex-end">
             <span class="material-symbols-sharp" onclick="menu('close')">
             close
             </span>
         </div>
-        <div cl>
-            <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
-            <span>Your status - <span>Application</span></span>
+        <div class="display-flex-align">
+            <img src="/svg/account_circle.svg" class="ill-svg-img" alt="" style="width: 100px !important"><br>
+            <div>
+                <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
+                <span>Your status - <span>Application</span></span>
+            </div>
         </div>
-    </div>
-    <div class="breaker"></div>
-    <div class="display-flex-align" onclick="redirect('/branches')">
-        <span class="material-symbols-sharp">
-        store
-        </span>
-        <span class="my-font-align">Find a branch</span>
-    </div>
-    <div class="breaker"></div>
-    <div class="display-flex-align" id="share">
-        <span class="material-symbols-sharp">
-        favorite
-        </span>
-        <span class="my-font-align">Refer to a friend</span>
-    </div>
-    <div class="breaker"></div>
-    <div class="display-flex-align" onclick="redirect('/sign_out')">
-        <span class="material-symbols-sharp">
-        power_settings_new
-        </span>
-        <span class="my-font-align">Sign out</span>
+        <div class="breaker"></div>
+        <div class="display-flex-align" onclick="redirect('/branches')">
+            <span class="material-symbols-sharp">
+            store
+            </span>
+            <span class="my-font-align">Find a branch</span>
+        </div>
+        <div class="breaker"></div>
+        <div class="display-flex-align" id="share">
+            <span class="material-symbols-sharp">
+            favorite
+            </span>
+            <span class="my-font-align">Refer to a friend</span>
+        </div>
+        <div class="breaker"></div>
+        <div class="display-flex-align" onclick="redirect('/sign_out')">
+            <span class="material-symbols-sharp">
+            power_settings_new
+            </span>
+            <span class="my-font-align">Sign out</span>
+        </div>
     </div>
 </div>
 <script>

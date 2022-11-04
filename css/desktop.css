@@ -278,12 +278,6 @@ body{
     margin-bottom: 15px;
 }
 
-.highlight{
-    background-color: var(--input-color);
-    margin: 0 -25px;
-    padding: var(--padding);
-}
-
 .input-contain{
     display: flex;
     align-items: center;
@@ -434,15 +428,13 @@ button * {
 
 .menu{
     position: fixed;
-    right: -50px;
     bottom: 0;
     top: 0;
-    width: 0%;
+    right: 0;
+    width: 0;
     transition: 0.1s;
     background-color: white;
     z-index: 99999999;
-    padding: var(--padding);
-    
 }
 
 .loader-binder{

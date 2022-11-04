@@ -47,11 +47,14 @@ function showHideElement(id, styleDisplay){
 }
 
 function menu(mode){
+
     if(mode == "open"){
-        document.querySelector("#menu").style.width = "60%";
-        document.querySelector("#menu").style.right = "0";
+
+        document.querySelector("#menu").style.width = "100%";
     }else{
+        
         document.querySelector("#menu").style.width = "0";
-        document.querySelector("#menu").style.right = "-60px";
+        document.querySelector("#menu").style.right = "0";
+        document.querySelector("#menu").style.padding = "0";
     }
 }
