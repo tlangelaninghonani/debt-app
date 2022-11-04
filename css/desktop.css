@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
 @font-face {
     font-family: 'MyFont';
     src: url('/Helvetica-Neue-LT-Com-63-Medium-Extended.otf') format('WOFF');
@@ -13,11 +15,6 @@
     src: url('/Helvetica-Neue-LT-Com-77-Bold-Condensed.ttf') format('WOFF');
 }
 
-@font-face {
-    font-family: 'MyFontHeavy';
-    src: url('/HelveticaNeueLTPro-HvEx.otf') format('WOFF');
-}
-
 :root{
     --padding: 25px;
     --gap: 10px;
@@ -27,9 +24,32 @@
     --radius-circle: 50%;
     --shadow-tailwind: rgba(190, 190, 190, 0.05) 0px 1px 1px 0px;
     --primary-color: rgb(253, 118, 0);
-    --feint: rgb(50, 50, 50);
+    --feint: rgb(40, 40, 40);
     --primary-feint: rgb(255, 243, 233);
     --placeholder-color: rgb(176, 176, 176);
+    --font-family: 'Poller One', cursive;
+    --banner-height: 50vh;
+    --bottom-curve: 160px;
+}
+
+.ill-svg{
+    transition: 0.1s;
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.ill-svg:hover{
+    transform: scale(1.1);
+}
+
+.ill-svg-img{
+    transition: 0.1s;
+}
+
+.ill-svg-img:hover{
+    transform: scale(1.1);
+    position: relative;
+    z-index: 200;
 }
 
 .mid-gap{
@@ -61,8 +81,8 @@ body{
 
 .status{
     width: auto;
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +129,14 @@ body{
     right: 0;
     background-color: white !important;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /*border-bottom: 1px solid var(--input-color);*/
-    box-shadow: var(--shadow-tailwind);
+}
+
+.header-home *{
+    color: white;
 }
 
 .w-auto{
@@ -133,7 +159,6 @@ body{
 
 .button-white{
     background-color: white;
-    box-shadow: var(--shadow-tailwind);
     padding-top: 17px;
     padding-bottom: 17px;
 }
@@ -191,7 +216,6 @@ body{
 .icon-shadow{
     padding: 25px;
     border-radius: var(--radius-circle);
-    box-shadow: var(--shadow-tailwind);
 }
 
 .dot-1{
@@ -230,14 +254,6 @@ body{
     position: relative;
 }
 
-.logo-back{
-    position: absolute;
-    background-color: white;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-}
-
 .edge-fit{
     margin: 0 -25px;
     padding: var(--padding);
@@ -263,7 +279,7 @@ body{
 }
 
 .highlight{
-    background-color: var(--primary-feint);
+    background-color: var(--input-color);
     margin: 0 -25px;
     padding: var(--padding);
 }
@@ -288,15 +304,13 @@ body{
 }
 
 .shadow{
-    box-shadow: var(--shadow-tailwind);
 }
 
 .shadow-tailwind{
-    box-shadow: var(--shadow-tailwind);
 }
 
 .icon-big{
-    font-size: 140px !important;
+    font-size: 110px !important;
 }
 
 .icon-profile{
@@ -329,26 +343,13 @@ input:not(input[type=range]), select{
     border-radius: var(--radius);
 }
 
-.installment{
-    background-color: var(--primary-color);
-    padding: var(--padding);
-    margin-left: -25px;
-    border-top-right-radius: 120px;
-    border-bottom-right-radius: 120px;
-}
-
 select{
     -webkit-appearance: none;
-}
-
-.installment *{
-    color: white;
 }
 
 .development{
     text-align: center;
     padding: var(--padding);
-    box-shadow: var(--shadow-tailwind);
     padding-top: 5px;
 }
 
@@ -378,6 +379,14 @@ button * {
     border-radius: var(--radius-circle);
     color: white;
     background-color: var(--feint);
+}
+
+.action-icon-opacity{
+    padding: 20px;
+    border-radius: var(--radius-circle);
+    color: white;
+    background-color: var(--feint);
+    opacity: 0.9;
 }
 
 .action-icon-margin{
@@ -410,13 +419,13 @@ button * {
 .development-padding{
     padding-top: 40px;
 }
-fsign
+
 .logo{
     width: 150px;
 }
 
 .my-font-align{
-    padding-top: 5px;
+    padding-top: 4px;
 }
 
 .header-title{
@@ -428,9 +437,8 @@ fsign
     right: -50px;
     bottom: 0;
     top: 0;
-    transition: top ease .3s, transform ease;
     width: 0%;
-    transition: 0.2s;
+    transition: 0.1s;
     background-color: white;
     z-index: 99999999;
     padding: var(--padding);
@@ -450,6 +458,7 @@ fsign
     align-items: center;
     text-align: center;
     z-index: 9999999999;
+    opacity: 0.9;
 }
 
 .loader-content{
@@ -512,27 +521,23 @@ img{
 }
 
 .slogan{
-    font-family: "MyFontBdCond";
-    text-transform: uppercase;
+    font-family: var(--font-family);
     font-size: 25px;
 }
 
 .slogan-small{
-    font-family: "MyFontBdCond";
-    text-transform: uppercase;
+    font-family: var(--font-family);
     font-size: 25px;
 }
 
 .slogan-small-color{
-    font-family: "MyFontBdCond";
-    text-transform: uppercase;
+    font-family: var(--font-family);
     font-size: 25px;
     color: var(--primary-color) !important;
 }
 
 .slogan-primary-color{
-    font-family: "MyFontBdCond";
-    text-transform: uppercase;
+    font-family: var(--font-family);
     font-size: 25px;
     color: var(--primary-color) !important;
 }
@@ -572,7 +577,7 @@ img{
 }
 
 .profile-pic-smallest{
-    transition: transform .2s;
+    transition: transform .1s;
     min-width: 24px;
     min-height: 24px;
     max-width: 24px;
@@ -581,7 +586,7 @@ img{
 }
 
 .profile-pic-small{
-    transition: transform .2s;
+    transition: transform .1s;
     min-width: 90px;
     min-height: 90px;
     max-width: 90px;
@@ -589,20 +594,37 @@ img{
     border-radius: var(--radius-circle);
 }
 
-.logo-img{
-    width: 250px;
+.logo-back{
+    position: absolute;
+    background-color: white;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.logo-img-abs{
-    width: 250px;
+.logo-img{
     position: absolute;
+    width: 250px;
     z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-transition{
+    position: relative;
+    transition: 0.1s;
+}
+
+.logo-transition:hover{
+    transform: scale(1.1);
 }
 
 .profile-pic-small:hover {
-    -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.3); /* Safari 3-8 */
-    transform: scale(1.3); 
+    transform: scale(1.1); 
 }
 
 .profile-pic-mid{
@@ -624,7 +646,6 @@ img{
     width: 150px;
     height: 150px;
     border-radius: var(--radius-circle);
-    box-shadow: var(--shadow-tailwind);
 }
 
 .vert-seperator{
@@ -647,7 +668,6 @@ img{
 }
 
 .curved{
-    box-shadow: var(--shadow-tailwind);
     padding: var(--padding);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -725,12 +745,72 @@ img{
 
 .number-mid{
     font-size: 20px;
-    font-family: 'MyFontHeavy';
+    font-family: 'MyFontBd';
+}
+
+.home-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("https://wallpapercave.com/wp/wp8175027.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-home{
+    padding: var(--padding);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(var(--feint), transparent);
+}
+
+.installment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: var(--radius-circle);
+    margin-top: 74px;
+    opacity: 0.9;
+    background-color: var(--feint);
+    margin-bottom: 92px;
+}
+
+.bottom-nav-home{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--padding);
+    background-color: transparent;
+    background-image: linear-gradient(transparent, var(--feint));
+}
+
+.bottom-nav-home *{
+    color: white;
+}
+
+.installment *{
+    color: white;
 }
 
 .number-big{
-    font-size: 35px;
-    font-family: 'MyFontHeavy';
+    font-size: 25px;
+    font-family: 'MyFontBd';
 }
 
 .view-all-statuses{
@@ -794,60 +874,34 @@ img{
     color: white;
 }
 
-.top-banner{
-   margin: -25px;
-   margin-bottom: 0;
-   background-image: url("https://www.creditlimitsinternational.com/wp-content/uploads/2019/11/kent-debt-collection-agency.jpg");
-   background-size: cover;
-   background-position: center;
+.top-banner-welcome{
+    background-image: url("https://florinroebig.com/wp-content/uploads/2020/01/personal-injury-attorneys-1170x670.jpg");
+    background-size: cover;
+    background-position: center;
+    height: var(--banner-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.top-banner-2{
-    margin: -25px;
-    margin-bottom: 0;
+.top-banner-sign-in{
+    background-image: url("https://www.creditlimitsinternational.com/wp-content/uploads/2019/11/kent-debt-collection-agency.jpg");
+    background-size: cover;
+    background-position: center;
+    height: var(--banner-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner-sign-up{
     background-image: url("https://images.ctfassets.net/csd0v5p1fzif/4lP3W3a3FuROwQtLnQd4m4/6303f1e5b38f911adfe113ad5775deaf/how-to-become-debt-free-4.jpeg");
     background-size: cover;
     background-position: center;
- }
-
-.banner-content{
+    height: var(--banner-height);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 320px;
-}
-
-.banner-content *{
-    color: white;
-}
-
-.top-banner-apply{
-    margin-top: -25px;
-    margin-bottom: 0;
-    background-image: url("https://www.bankrate.com/2019/12/23162555/10-ways-to-get-out-of-debt1-840x720.jpg");
-    background-size: cover;
-    background-position: center;
- }
-
- .top-banner-apply-2{
-    margin-top: -25px;
-    margin-bottom: 0;
-    background-image: url("https://m.foolcdn.com/media/affiliates/images/Woman_on_laptop_K6Be3BQ.width-1200.jpg");
-    background-size: cover;
-    background-position: center;
- }
-
-.banner-content-apply{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 320px;
-}
-
-.banner-content-apply *{
-    color: white;
 }
 
 .img-filter{
@@ -867,6 +921,7 @@ img{
 
 .focused{
     border-bottom: 2px solid var(--primary-color) !important;
+    border-radius: var(--radius);
 }
 
 a{
@@ -882,6 +937,7 @@ a{
     background-color: var(--primary-color);
     height: 2px;
     top: -26px;
+    border-radius: 40px;
 }
 
 .to-focus:hover{
@@ -912,9 +968,7 @@ a{
     left: 0;
     right: 0;
     padding: var(--padding);
-    /*border-top: 1px solid var(--input-color);*/
-    background-color: white;
-    box-shadow: var(--shadow-tailwind);
+    background-color: var(--input-color);
 }
 
 .loader {
@@ -1007,6 +1061,7 @@ hr{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--feint);
 }
 
 .design-slogan{
@@ -1020,9 +1075,9 @@ hr{
     color: var(--primary-color);
 }
 
-
-
-
+.poller-one{
+    font-family: 'Poller One', cursive;
+}
 
 .logo-background{
     width: 500px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +14,8 @@
     @include("components.menu")
     @include("components.loader")
     <div class="observer"></div>
-    <div class="header display-flex-space-between">
-        <span class="header-title">Your status</span>
-        <div class="display-flex-align mid-gap" style="padding-top: 2px">
-            <span class="material-icons-sharp" onclick="refreshPage()">
-            refresh
-            </span>
-            <!--<span class="material-icons-sharp">
-            notifications
-            </span>-->
-            <span class="material-icons-sharp" onclick="menu('open')">
-            more_horiz
-            </span>
-        </div>
+    <div class="header">
+        @include("components.header")
     </div>
     <div class="container">
         <div class="view-bottom">

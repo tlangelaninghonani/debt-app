@@ -1,4 +1,4 @@
-<div class="bottom-nav display-flex-space-between">
+<div class="bottom-nav-home display-flex-space-between">
     <div class="text-align-center relative" onclick="redirect('/home')">
         @if(Route::getfacaderoot()->current()->uri() == "home")
             <div class="focused-nav"></div>

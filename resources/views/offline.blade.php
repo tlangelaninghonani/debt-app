@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
     <div class="position-fixed padding h-100">
         <div class="display-flex-center h-100">
             <div class="text-align-center w-100">
-                <span class="material-icons-sharp icon-big">
+                <span class="material-symbols-sharp icon-big">
                 wifi_off
                 </span>
                 <div class="breaker"></div>

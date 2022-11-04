@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
     @if(Session::has("success"))
         <div class="applied" id="applied">
             <div class="text-align-center w-100">
-                <span class="material-icons-sharp icon-big">
+                <span class="material-symbols-sharp icon-big">
                 done
                 </span>
                 <div class="breaker"></div>
@@ -30,34 +31,14 @@
         </div>
         {{ Session::forget("success") }}
     @endif
-    <div class="header display-flex-space-between">
-        <span class="material-icons-sharp" onclick="redirectBack()">
-        arrow_back
-        </span>
-        <span class="header-title">Apply</span>
-        <div class="display-flex-align mid-gap">
-            <span class="material-icons-sharp" onclick="refreshPage()">
-            refresh
-            </span>
-            <!--<span class="material-icons-sharp">
-            notifications
-            </span>-->
-            <span class="material-icons-sharp" onclick="menu('open')">
-            more_horiz
-            </span>
-        </div>
+    <div class="header">
+        @include("components.header")
     </div>
     @if($application)
-        <div class="top-banner-apply-2">
-            <div class="banner-content-apply" style="height: 250px">
-                <div class="text-align-center">
-                    <span class="material-icons-sharp icon-big">
-                    info
-                    </span>
-                    <div class="breaker"></div>
-                    <span class="slogan-small">Confirm your <span class="slogan-small-color">information</span></span>
-                </div>
-            </div>
+        <div class="text-align-center">
+            <img src="/svg/267.svg" class="ill-svg" alt=""><br>
+            <span>Please confirm your <span class="primary-color">information</span> before submitting</span>
+            <div class="breaker"></div>
         </div>
         <div class="container view-bottom">
             <div>
@@ -96,7 +77,7 @@
                 <div class="display-flex-space-between">
                     <span>Copy of Identity - <span class="dark">{{ $application->identity_document_filename }}</span></span>
                     <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->identity_document }}" target="_blank">
-                        <span class="material-icons-sharp action-icon-margin">
+                        <span class="material-symbols-sharp action-icon-margin">
                         open_in_new
                         </span><br>
                         <span>View</span>
@@ -106,7 +87,7 @@
                 <div class="display-flex-space-between">
                     <span>Copy of Payslip - <span class="dark">{{ $application->payslip_document_filename }}</span></span>
                     <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->payslip_document }}" target="_blank">
-                        <span class="material-icons-sharp action-icon-margin">
+                        <span class="material-symbols-sharp action-icon-margin">
                         open_in_new
                         </span><br>
                         <span>View</span>
@@ -116,7 +97,7 @@
                 <div class="display-flex-space-between">
                     <span>Copy of Bank statement - <span class="dark">{{ $application->statement_document_filename }}</span></span>
                     <a class="text-align-center" href="/accounts/accounts_documents/{{ $application->statement_document }}" target="_blank">
-                        <span class="material-icons-sharp action-icon-margin">
+                        <span class="material-symbols-sharp action-icon-margin">
                         open_in_new
                         </span><br>
                         <span>View</span>
@@ -132,16 +113,16 @@
                 </button>
                 <div class="breaker"></div>
                 <button onclick="submitForm('submitform')">
-                    <span>Confirm</span>
+                    <span>Submit</span>
                 </button>
                 
             </div>
         </div>
     @else
-        <div class="top-banner-apply">
-            <div class="banner-content-apply" style="height: 250px">
-                <span class="slogan">We will be with you <span class="slogan-primary-color">all</span> the way</span>
-            </div>
+        <div class="text-align-center">
+            <img src="/svg/233.svg" class="ill-svg" alt=""><br>
+            <span>We will be with you <span class="primary-color">all</span> the way</span>
+            <div class="breaker"></div>
         </div>
         <div class="container view-bottom">
             <!--<div class="display-flex-space-around">
@@ -294,7 +275,7 @@
                     <span id="identitypreview">Upload a <span class="dark">certified</span> copy of your Identity *</span>
                     <input type="file" id="identity" name="identity" class="display-none" onchange="preview('identitypreview', event)" accept="application/pdf">
                     <div>
-                        <span class="material-icons-sharp action-icon" onclick="upload('identity')">
+                        <span class="material-symbols-sharp action-icon" onclick="upload('identity')">
                         cloud
                         </span>
                     </div>
@@ -306,7 +287,7 @@
                     <span id="payslippreview">Upload a <span class="dark">3 months certified</span> copy of your Payslip *</span>
                     <input type="file" id="payslip" name="payslip" class="display-none" onchange="preview('payslippreview', event)" accept="application/pdf">
                     <div>
-                        <span class="material-icons-sharp action-icon" onclick="upload('payslip')">
+                        <span class="material-symbols-sharp action-icon" onclick="upload('payslip')">
                         cloud
                         </span>
                     </div>
@@ -318,7 +299,7 @@
                     <span id="statementpreview">Upload a <span class="dark">3 months certified</span> copy of your Bank Statement *</span>
                     <input type="file" id="statement" name="statement" class="display-none" onchange="preview('statementpreview', event)" accept="application/pdf">
                     <div>
-                        <span class="material-icons-sharp action-icon" onclick="upload('statement')">
+                        <span class="material-symbols-sharp action-icon" onclick="upload('statement')">
                         cloud
                         </span>
                     </div>
@@ -326,7 +307,7 @@
                 <div class="breaker"></div>
                 <div>
                     <div class="display-flex">
-                        <span id="checkbox" onclick="check()" class="material-icons-sharp cursor-pointer">
+                        <span id="checkbox" onclick="check()" class="material-symbols-sharp cursor-pointer">
                         check_box_outline_blank
                         </span>
                         <span>By continuing, i agree with the <span class="dark">Terms and Conditions</span></span>

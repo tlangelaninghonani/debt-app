@@ -1,7 +1,7 @@
 <div class="menu" id="menu">
     <div class="highlight" style="margin-top: -25px">
         <div class="display-flex-end">
-            <span class="material-icons-sharp" onclick="menu('close')">
+            <span class="material-symbols-sharp" onclick="menu('close')">
             close
             </span>
         </div>
@@ -12,21 +12,21 @@
     </div>
     <div class="breaker"></div>
     <div class="display-flex-align" onclick="redirect('/branches')">
-        <span class="material-icons-sharp">
+        <span class="material-symbols-sharp">
         store
         </span>
         <span class="my-font-align">Find a branch</span>
     </div>
     <div class="breaker"></div>
     <div class="display-flex-align" id="share">
-        <span class="material-icons-sharp">
+        <span class="material-symbols-sharp">
         favorite
         </span>
         <span class="my-font-align">Refer to a friend</span>
     </div>
     <div class="breaker"></div>
     <div class="display-flex-align" onclick="redirect('/sign_out')">
-        <span class="material-icons-sharp">
+        <span class="material-symbols-sharp">
         power_settings_new
         </span>
         <span class="my-font-align">Sign out</span>

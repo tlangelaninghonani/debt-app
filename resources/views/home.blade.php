@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +14,24 @@
     @include("components.menu")
     @include("components.loader")
     <div class="observer"></div>
-    <div class="header display-flex-space-between">
-        <span class="header-title">Home</span>
-        <div class="display-flex-align mid-gap">
-            <span class="material-icons-sharp" onclick="refreshPage()">
-            refresh
-            </span>
-            <!--<span class="material-icons-sharp">
-            notifications
-            </span>-->
-            <span class="material-icons-sharp" onclick="menu('open')">
-            more_horiz
-            </span>
+    <div class="header-home">
+        @include("components.header_banner_back")
+    </div>
+    <div class="home-container">
+        <div>
+            <div class="installment">
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp icon-big">
+                    task_alt
+                    </span><br>
+                    <div class="breaker"></div>
+                    <span>Reduced to</span><br>
+                    <span class="number-big">R 5 600.00</span><br>
+                    <span>From <span>R 10 000.00</span></span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container view-bottom">
-        
-    </div>
-    @include("components.nav_bottom")
+    @include("components.nav_bottom_home")
 </body>
 </html>

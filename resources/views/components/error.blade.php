@@ -2,7 +2,7 @@
     <div class="error-message display-flex-center" id="errormessage">
         <div class="padding w-100">
             <div class="text-align-center">
-                <span class="material-icons-sharp icon-big">
+                <span class="material-symbols-sharp icon-big">
                 error
                 </span>
                 <div class="breaker"></div>

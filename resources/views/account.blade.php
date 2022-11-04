@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +14,8 @@
     @include("components.menu")
     @include("components.loader")
     @include("components.error")
-    <div class="header display-flex-space-between">
-        <span class="header-title">Profile</span>
-        <div class="display-flex-align mid-gap">
-            <span class="material-icons-sharp" onclick="refreshPage()">
-            refresh
-            </span>
-            <!--<span class="material-icons-sharp">
-            notifications
-            </span>-->
-            <span class="material-icons-sharp" onclick="menu('open')">
-            more_horiz
-            </span>
-        </div>
+    <div class="header">
+        @include("components.header")
     </div>
     <div class="container view-bottom">
         <div class="position-relative radius">
@@ -35,19 +25,19 @@
                         <img class="profile-pic-mid" src="/accounts/accounts_pictures/{{ $account->account_picture }}" alt="">
                         <div>
                             <div class="text-align-center" onclick="redirect('/setup_account_picture')">
-                                <span class="material-icons-sharp ">
+                                <span class="material-symbols-sharp ">
                                 edit
                                 </span><br>
                                 <span>Edit</span>
                             </div>
                         </div>
                     @else
-                        <span class="material-icons-sharp empty-account">
-                        account_circle
-                        </span>
+                        <div class="text-align-center">
+                            <img src="/svg/account_circle.svg" class="ill-svg-img" alt="" style="width: 180px !important"><br>
+                        </div>
                         <!--<div>
                             <div class="text-align-center" onclick="redirect('/setup_account_picture')">
-                                <span class="material-icons-sharp ">
+                                <span class="material-symbols-sharp ">
                                 cloud
                                 </span><br>
                                 <span>Upload</span>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +17,10 @@
     <div class="header display-flex-space-between">
         <span class="header-title">Feeds</span>
         <div class="display-flex-align mid-gap" style="padding-top: 2px">
-            <!--<span class="material-icons-sharp">
+            <!--<span class="material-symbols-sharp">
             notifications
             </span>-->
-            <span class="material-icons-sharp" onclick="menu('open')">
+            <span class="material-symbols-sharp" onclick="menu('open')">
             more_horiz
             </span>
         </div>
@@ -31,7 +32,7 @@
                 <label class="placeholder-text">
                     <div class="text">Search feeds</div>
                 </label>
-                <span class="material-icons-sharp" style="padding-top: 3px">
+                <span class="material-symbols-sharp" style="padding-top: 3px">
                 search
                 </span>
             </div>
@@ -76,34 +77,34 @@
     </div>
     <div class="bottom-nav display-flex-space-between">
         <div class="text-align-center" onclick="redirect('/home')">
-            <span class="material-icons-sharp">
+            <span class="material-symbols-sharp">
             home
             </span><br>
             <span class="helvetica">Home</span>
         </div>
         <div class="text-align-center" onclick="redirect('/status')">
-            <span class="material-icons-sharp">
+            <span class="material-symbols-sharp">
             watch_later
             </span><br>
             <span class="helvetica">Status</span>
         </div>
         <div class="text-align-center position-relative" onclick="redirect('/apply')">
-            <span class="material-icons-sharp debt-apply">
+            <span class="material-symbols-sharp debt-apply">
             folder
             </span>
-            <span class="material-icons-sharp" style="color: white">
+            <span class="material-symbols-sharp" style="color: white">
             folder
             </span><br>
             <span class="helvetica">Apply</span>
         </div>
         <div class="text-align-center" onclick="redirect('/feeds')">
-            <span class="material-icons-sharp">
+            <span class="material-symbols-sharp">
             forum
             </span><br>
             <span class="helvetica">Feeds</span>
         </div>
         <div class="text-align-center" onclick="redirect('/profile')">
-            <span class="material-icons-sharp">
+            <span class="material-symbols-sharp">
             account_circle
             </span><br>
             <span class="helvetica">Profile</span>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('components.address_bar_color')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
     @if(Session::has("success"))
         <div class="applied" id="applied">
             <div class="text-align-center w-100">
-                <span class="material-icons-sharp icon-big">
+                <span class="material-symbols-sharp icon-big">
                 done
                 </span>
                 <div class="breaker"></div>
@@ -34,27 +35,15 @@
         {{ Session::forget("success") }}
     @endif
     <div class="observer"></div>
-    <div class="header display-flex-space-between">
-        <span class="header-title">Shecdule a meeting</span>
-        <div class="display-flex-align mid-gap">
-            <span class="material-icons-sharp" onclick="refreshPage()">
-            refresh
-            </span>
-            <!--<span class="material-icons-sharp">
-            notifications
-            </span>-->
-            <span class="material-icons-sharp" onclick="menu('open')">
-            more_horiz
-            </span>
-        </div>
+    <div class="header">
+        @include("components.header")
     </div>
     <div class="container view-bottom">
         <div class="text-align-center">
-            <span class="material-icons-sharp icon-big google-meet">
-            videocam
-            </span> 
-            <div class="breaker"></div>
             @if($meeting)
+                <div class="text-align-center">
+                    <img src="/svg/241.svg" class="ill-svg" alt=""><br>
+                </div>
                 <span class="slogan-small"><span class="slogan-small-color">Meeting</span> scheduled</span>
                 <div class="breaker"></div>
                 <span>Date - <span class="dark">{{ $meeting->meeting_date }}</span></span><br>
@@ -68,7 +57,10 @@
                     </button>
                 </form>
             @else
-                <span>Schedule a Virtual Meeting with a Debt Counsellor on <span class="primary-color">Google Meet</span></span>
+                <div class="text-align-center">
+                    <img src="/svg/149.svg" class="ill-svg" alt=""><br>
+                </div>
+                <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color">Google Meet</span></span>
                 <div class="family">
                     <div class="text-align-center">
                         <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
