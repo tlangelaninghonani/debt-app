@@ -2,17 +2,12 @@
 
 @font-face {
     font-family: 'MyFont';
-    src: url('/Helvetica-Neue-LT-Com-63-Medium-Extended.otf') format('WOFF');
+    src: url('/Helvetica-Neue-LT-Com-63-Medium-Extended.woff2') format('WOFF2');
 }
 
 @font-face {
     font-family: 'MyFontBd';
-    src: url('/HelveticaNeueLTPro-BdEx.otf') format('WOFF');
-}
-
-@font-face {
-    font-family: 'MyFontBdCond';
-    src: url('/Helvetica-Neue-LT-Com-77-Bold-Condensed.ttf') format('WOFF');
+    src: url('/HelveticaNeueLTPro-HvEx.woff2') format('WOFF2');
 }
 
 :root{
@@ -86,8 +81,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: var(--radius-circle);
-    background-color: var(--feint);
+    border-radius: 38% 62% 63% 37% / 51% 61% 39% 49% ;
+    background-color: var(--primary-color);
+    transition: 0.1s;
+}
+
+.status:hover{
+    transform: scale(1.1);
 }
 
 .status *{
@@ -110,6 +110,17 @@ body{
 .container-not-top{
     padding: var(--padding);
     padding-top: 0;
+}
+
+.float-bottom-right{
+    text-align: center;
+    position: fixed;
+    bottom: 117px;
+    right: var(--padding);
+}
+
+.float-bottom-right *{
+    color: white;
 }
 
 .android-top{
@@ -183,6 +194,17 @@ body{
 
 .float-right{
     float: right;
+}
+
+.button-style{
+    border-radius: var(--radius);
+    background-color: var(--input-color);
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    width: auto;
+    padding: 0 var(--padding);
+    gap: var(--mid-gap);
 }
 
 .curved-top{
@@ -362,6 +384,10 @@ button{
     border-radius: var(--radius);
     width: 100%;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
 }
 
 button * {
@@ -369,18 +395,20 @@ button * {
 }
 
 .action-icon{
-    padding: 20px;
-    border-radius: var(--radius-circle);
+    padding: 20.5px;
+    border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
     color: white;
     background-color: var(--feint);
+    margin-bottom: 8px;
 }
 
 .action-icon-opacity{
-    padding: 20px;
-    border-radius: var(--radius-circle);
+    padding: 20.5px;
+    border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
     color: white;
-    background-color: var(--feint);
+    background-color: var(--primary-color);
     opacity: 0.9;
+    margin-bottom: 8px;
 }
 
 .action-icon-margin{
@@ -437,33 +465,14 @@ button * {
     z-index: 99999999;
 }
 
-.loader-binder{
-    background-color: white;
+.greeting{
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 500;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 9999999999;
-    opacity: 0.9;
+    top: 99px;
+    left: var(--padding);
 }
 
-.loader-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: var(--padding);
+.greeting *{
+    color: white;
 }
 
 .top-patcher{
@@ -646,9 +655,8 @@ img{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 92px;
     overflow: auto;
-    z-index: 20;
 }
 
 .h-100{
@@ -744,9 +752,6 @@ img{
     right: 0;
     background-image: url("https://wallpapercave.com/wp/wp8175027.jpg");
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -760,7 +765,18 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(var(--feint), transparent);
+}
+
+.home-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .installment{
@@ -771,11 +787,10 @@ img{
     min-height: 300px;
     max-width: 300px;
     max-height: 300px;
-    border-radius: var(--radius-circle);
+    border-radius: 68% 32% 40% 60% / 47% 40% 60% 53% ;
     margin-top: 74px;
     opacity: 0.9;
     background-color: var(--feint);
-    margin-bottom: 92px;
 }
 
 .bottom-nav-home{
@@ -785,7 +800,6 @@ img{
     right: 0;
     padding: var(--padding);
     background-color: transparent;
-    background-image: linear-gradient(transparent, var(--feint));
 }
 
 .bottom-nav-home *{
@@ -959,6 +973,35 @@ a{
     background-color: var(--input-color);
 }
 
+.loader-binder{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999999999;
+    opacity: 0.9;
+}
+
+.loader-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding);
+}
+
 .loader {
     width: 65px;
     height: 65px;
@@ -1038,7 +1081,7 @@ hr{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--feint);
+    background-color: #fff;
 }
 
 .design-slogan{
@@ -1057,8 +1100,10 @@ hr{
 }
 
 .logo-background{
-    width: 500px;
-    height: 500px;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
     background-color: var(--feint);
     border-radius: 50%;
     position: relative;
@@ -1066,6 +1111,20 @@ hr{
     justify-content: center;
     align-items: center;
     transform: rotate(20deg);
+}
+
+.logo-background-mobile{
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: var(--feint);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.3) rotate(20deg);
 }
 
 .logo-orange-line{
@@ -1089,12 +1148,6 @@ hr{
     margin: 30px;
     border-radius: 50%;
 }
-
-
-
-
-
-
 
 .logo-left-symbol{
     background-color: white;

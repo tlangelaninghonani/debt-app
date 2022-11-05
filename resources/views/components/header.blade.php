@@ -23,9 +23,9 @@
     <span class="material-symbols-sharp" onclick="refreshPage()">
     refresh
     </span>
-    <!--<span class="material-symbols-sharp">
+    <span class="material-symbols-sharp">
     notifications
-    </span>-->
+    </span>
     <span class="material-icons-sharp" onclick="menu('open')">
     more_horiz
     </span>

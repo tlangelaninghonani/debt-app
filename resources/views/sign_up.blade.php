@@ -14,10 +14,8 @@
     @include("components.error")
     @include("components.loader")
     <div class="top-banner-sign-up">
-        <div class="display-flex-center logo-transition position-relative">
-                <div class="logo-back"></div>
-                <img class="logo-img" src="/logo_transparent.png" alt="">
-            </div>
+        <div class="logo-background-mobile">
+            @include("components.logo")
         </div>
     </div>
     <div class="container">
@@ -51,7 +49,8 @@
                     </select>
                 </div>
                 <div class="breaker"></div>
-                <span class="slogan">Setup a <span class="slogan-primary-color">Sign in</span> password</span><br>
+                <span class="slogan">Setup a <span class="slogan-primary-color">password</span></span><br>
+                <div class="breaker"></div>
                 <span>Password should be at least 6 characters long</span>
                 <div class="breaker"></div>
                 <div class="input-contain">
@@ -68,7 +67,7 @@
                     </button>
                 </div>
                 <div class="breaker"></div>
-                <div>
+                <div class="text-align-center">
                     <span class="nowrap" onclick="redirect('/sign_in')">Sign in instead</span>
                 </div>
             </form>

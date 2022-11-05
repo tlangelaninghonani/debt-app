@@ -17,8 +17,8 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="container">
-        <div class="view-bottom">
+    <div class="position-fixed display-flex-center">
+        <div class="container">
             <div class="display-flex-center">
                 <div class="status position-relative">
                     <div class="text-align-center">
@@ -31,7 +31,24 @@
             <div class="text-align-center">
                 <span class="slogan">Application</span>
                 <div class="breaker"></div>
-                <span>Applied for Debt Counselling and being assessed</span>
+                <span>Applied for Debt Counselling</span>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-center">
+            <div class="button-style">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        open_in_new
+                        </span><br>
+                        <span>Learn more</span> 
+                    </div>
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        call
+                        </span><br>
+                        <span>Contact us</span> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>

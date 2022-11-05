@@ -74,7 +74,7 @@
                     <input type="text" id="email" name="emailaddress" autocomplete="off" value="{{ $account->email_address }}" placeholder="Type your Email address">
                 </div>
                 <div class="breaker"></div>
-                <span class="slogan">Change your <span class="slogan-primary-color">password</span></span>
+                <span class="slogan">Update your <span class="slogan-primary-color">password</span></span>
                 <div class="breaker"></div>
                 <div class="input-contain">
                     <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your Password">

@@ -18,18 +18,29 @@
         @include("components.header_banner_back")
     </div>
     <div class="home-container">
-        <div>
-            <div class="installment">
-                <div class="text-align-center">
-                    <span class="material-symbols-sharp icon-big">
-                    task_alt
-                    </span><br>
-                    <div class="breaker"></div>
-                    <span>Reduced to</span><br>
-                    <span class="number-big">R 5 600.00</span><br>
-                    <span>From <span>R 10 000.00</span></span>
+        <div class="greeting">
+            <span class="slogan">Good morning <br> Tlangelani</span>
+        </div>
+        <div class="home-content">
+            <div>
+                <div class="installment">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp icon-big">
+                        task_alt
+                        </span><br>
+                        <div class="breaker"></div>
+                        <span>Reduced to</span><br>
+                        <span class="number-big">R 5 600.00</span><br>
+                        <span>From <span>R 10 000.00</span></span>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="float-bottom-right">
+            <span class="material-symbols-sharp action-icon-opacity">
+            domain
+            </span><br>
+            <span>Debts</span>
         </div>
     </div>
     @include("components.nav_bottom_home")

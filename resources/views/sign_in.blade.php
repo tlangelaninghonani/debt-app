@@ -14,10 +14,8 @@
     @include("components.error")
     @include("components.loader")
     <div class="top-banner-sign-in">
-        <div class="display-flex-center logo-transition position-relative">
-                <div class="logo-back"></div>
-                <img class="logo-img" src="/logo_transparent.png" alt="">
-            </div>
+        <div class="logo-background-mobile">
+            @include("components.logo")
         </div>
     </div>
     <div class="container">
@@ -39,20 +37,19 @@
                     </div>
                     <div class="text-align-center">
                         <span class="material-symbols-sharp">
-                        replay
+                        restart_alt
                         </span><br>
                         <span>Reset</span>
                     </div>
                 </div>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between mid-gap">
+                    <div class="text-align-center">
+                        <span class="nowrap" onclick="redirect('/sign_up')">Sign up instead</span>
+                    </div>
                     <button type="button" class="primal-color display-flex-center" onclick="submitForm('signinform')">
                         <span>Sign in</span>
                     </button>
-                </div>
-                <div class="breaker"></div>
-                <div>
-                    <span class="nowrap" onclick="redirect('/sign_up')">Sign up instead</span>
                 </div>
             </form>
         </div>
