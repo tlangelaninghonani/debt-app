@@ -940,6 +940,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .top-banner-sign-in{
@@ -950,6 +951,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .top-banner-sign-up{
@@ -960,6 +962,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .img-filter{
@@ -1178,6 +1181,14 @@ hr{
 
 .logo-background-mobile-binder{
     transition: 0.1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-background-mobile{
@@ -1193,7 +1204,6 @@ hr{
     align-items: center;
     transform: scale(0.3) rotate(20deg);
     transition: 0.1s;
-    margin-bottom: 65px;
     opacity: 0.9;
 }
 
