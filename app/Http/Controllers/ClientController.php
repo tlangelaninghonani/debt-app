@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Account;
 use App\Models\Application;
 use App\Models\Meeting;
+use App\Models\Doc;
 
 class ClientController extends Controller
 {
@@ -18,14 +19,6 @@ class ClientController extends Controller
         }
 
         return view("welcome");
-    }
-
-    public function setupAccountPicture(){
-        $account = Account::find(Cookie::get("accountid")); 
-
-        return view("setup_account_picture", [
-            "account" => $account
-        ]);
     }
 
     public function statuses(){
@@ -105,12 +98,11 @@ class ClientController extends Controller
 
     public function apply(Request $req){
 
-        $account = Account::find(Cookie::get("accountid"));        
+        $account = Account::find(Cookie::get("accountid"));
         
         $application = new Application();
         $application->account_id = $account->id;
         $application->id_number = $req->idnumber;
-        $application->alternative_phone_number = $req->alternativephonenumber;
         $application->marital_status = $req->maritalstatus;
         $application->number_of_dependants = $req->numberofdependants;
         
@@ -121,35 +113,61 @@ class ClientController extends Controller
         $application->company_name = $req->companyname;
         $application->company_province = $req->companyprovince;
         $application->company_town = $req->companytown;
-        $application->company_tel = $req->companytel;
+        $application->company_contact = $req->companytel;
         $application->position_held = $req->positionheld;
         $application->type_of_employment = $req->typeofemployment;
-        $application->employment_length = $req->employmentlength;
+        
+        if($req->employmentlength != ""){
+            $application->employment_length = $req->employmentlength;
+        }
 
         $application->income_before_deductions = $req->incomebeforedeductions;
         $application->income_after_deductions = $req->incomeafterdeductions;
 
+        $application->save();
+
+        Session::put("success", true);
+
+        return back();
+
+    }
+
+    public function docs(){
+
+        $account = Account::find(Cookie::get("accountid"));
+
+        return view("docs", [
+            "account" => $account,
+        ]);
+    }
+
+    public function uploadDocs(Request $req){
+
+        $account = Account::find(Cookie::get("accountid"));
+
+        $docs = new Doc();
+
         $file = $req->file("identity");
         $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
         $file->move("accounts/accounts_documents", $filename);
-        $application->identity_document = $filename;
-        $application->identity_document_filename = $file->getClientOriginalName();
+
+        $docs->account_id = $account->id;
+        $docs->identity_document = $filename;
+        $docs->identity_document_filename = $file->getClientOriginalName();
 
         $file = $req->file("payslip");
         $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
         $file->move("accounts/accounts_documents", $filename);
-        $application->payslip_document = $filename;
-        $application->payslip_document_filename = $file->getClientOriginalName();
+        $docs->payslip_document = $filename;
+        $docs->payslip_document_filename = $file->getClientOriginalName();
 
         $file = $req->file("statement");
         $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
         $file->move("accounts/accounts_documents", $filename);
-        $application->statement_document = $filename;
-        $application->statement_document_filename = $file->getClientOriginalName();
+        $docs->statement_document = $filename;
+        $docs->statement_document_filename = $file->getClientOriginalName();
 
-        $application->save();
-
-        Session::put("success", true);
+        $docs->save();
 
         return back();
 

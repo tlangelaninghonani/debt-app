@@ -13,6 +13,9 @@
 @if(Route::getfacaderoot()->current()->uri() == "status")
     <span class="header-title">Status</span>
 @endif
+@if(Route::getfacaderoot()->current()->uri() == "docs")
+    <span class="header-title">Docs</span>
+@endif
 @if(Route::getfacaderoot()->current()->uri() == "branches")
     <span class="material-symbols-sharp" onclick="redirectBack()">
     arrow_back

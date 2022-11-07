@@ -19,8 +19,10 @@
 <body> 
     <div>
         <div class="top-banner-welcome">
-            <div class="logo-background-mobile">
-                @include("components.logo")
+            <div class="logo-background-mobile-binder">
+                <div class="logo-background-mobile">
+                    @include("components.logo")
+                </div>
             </div>
         </div>
         <div class="container display-flex-center">
@@ -28,7 +30,7 @@
                 <div>
                     <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
                     <div class="breaker"></div>
-                    <div class="curved-top">
+                    <div>
                         <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
                         <div class="breaker"></div>
                         <span class="material-symbols-sharp action-icon" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" onclick="redirect('/sign_in')">

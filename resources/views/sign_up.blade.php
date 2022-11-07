@@ -14,12 +14,13 @@
     @include("components.error")
     @include("components.loader")
     <div class="top-banner-sign-up">
-        <div class="logo-background-mobile">
-            @include("components.logo")
+        <div class="logo-background-mobile-binder">
+            <div class="logo-background-mobile">
+                @include("components.logo")
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="breaker"></div>
         <span class="slogan">Personal</span>
         <div class="breaker"></div>
         <div class="">
@@ -27,25 +28,27 @@
                 @csrf
                 @method("POST")
                 <div class="input-contain">
-                    <input type="text" id="firstname" name="firstname" autocomplete="off" value="" placeholder="Type your First name">
+                    <input type="text" id="firstname" name="firstname" autocomplete="off" value="" placeholder="Type your first name">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="text" id="lastname" name="lastname" autocomplete="off" value="" placeholder="Type your Last name">
+                    <input type="text" id="lastname" name="lastname" autocomplete="off" value="" placeholder="Type your last name">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Type your Phone number">
+                    <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Type your phone number">
                 </div>
                 <div class="breaker"></div>
-                <div class="input-contain">
-                    <input type="email" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your Email address">
+                <div class="input-contain" style="padding-right: var(--padding)">
+                    <input type="email" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your email address">
+                    <span class="side-message">Optional</span>
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
                     <select name="gender" id="gender" class="w-100">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <div class="breaker"></div>
@@ -54,16 +57,19 @@
                 <span>Password should be at least 6 characters long</span>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your Password">
+                    <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your password">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="password" id="confirmpassword" name="confirmpassword" autocomplete="off" value="" placeholder="Repeat your Password">
+                    <input type="password" id="confirmpassword" name="confirmpassword" autocomplete="off" value="" placeholder="Repeat your password">
                 </div>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between mid-gap">
-                    <button type="button" class="primal-color display-flex-center" onclick="submitForm('signupform')">
+                    <button type="button" class="button-icon-space" onclick="submitForm('signupform')">
                         <span>Sign up</span>
+                        <span class="material-symbols-sharp">
+                        east
+                        </span>
                     </button>
                 </div>
                 <div class="breaker"></div>

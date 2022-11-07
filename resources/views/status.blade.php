@@ -36,18 +36,17 @@
             <div class="breaker"></div>
             <div class="display-flex-center">
             <div class="button-style">
-                    <div class="text-align-center">
-                        <span class="material-symbols-sharp">
-                        open_in_new
-                        </span><br>
-                        <span>Learn more</span> 
-                    </div>
-                    <div class="text-align-center">
-                        <span class="material-symbols-sharp">
-                        call
-                        </span><br>
-                        <span>Contact us</span> 
-                    </div>
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp">
+                    open_in_new
+                    </span><br>
+                    <span>Learn more</span> 
+                </div>
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp">
+                    call
+                    </span><br>
+                    <span>Contact us</span> 
                 </div>
             </div>
         </div>

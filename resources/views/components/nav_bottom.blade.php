@@ -8,6 +8,15 @@
         </span><br>
         <span class="helvetica">Home</span>
     </div>
+    <div class="text-align-center relative" onclick="redirect('/meet')">
+        @if(Route::getfacaderoot()->current()->uri() == "meet")
+            <div class="focused-nav"></div>
+        @endif
+        <span class="material-symbols-sharp">
+        videocam
+        </span><br>
+        <span class="helvetica">Meet</span>
+    </div>
     @if($links['application']::where("account_id", Cookie::get("accountid"))->exists())
         @if($links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/status')">
@@ -23,35 +32,24 @@
         @if(! $links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/apply')">
                 @if(Route::getfacaderoot()->current()->uri() == "apply")
-                    <div class="focused-nav"></div>
+                    <!--<div class="focused-nav"></div>-->
                 @endif
-                <span class="material-symbols-sharp">
+                <span class="material-symbols-sharp action-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
                 ios_share
-                </span><br>
-                <span class="helvetica">Apply</span>
+                </span>
             </div> 
         @endif 
     @else
         <div class="text-align-center relative" onclick="redirect('/apply')">
             @if(Route::getfacaderoot()->current()->uri() == "apply")
-                <div class="focused-nav"></div>
+                <!--<div class="focused-nav"></div>-->
             @endif
-            <span class="material-symbols-sharp">
+            <span class="material-symbols-sharp action-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
             ios_share
-            </span><br>
-            <span class="helvetica">Apply</span>
+            </span>
         </div>
     @endif
-    <div class="text-align-center relative" onclick="redirect('/meet')">
-        @if(Route::getfacaderoot()->current()->uri() == "meet")
-            <div class="focused-nav"></div>
-        @endif
-        <span class="material-symbols-sharp">
-        videocam
-        </span><br>
-        <span class="helvetica">Meet</span>
-    </div>
-    <div class="text-align-center relative" onclick="redirect('/meet')">
+    <div class="text-align-center relative" onclick="redirect('/docs')">
         @if(Route::getfacaderoot()->current()->uri() == "docs")
             <div class="focused-nav"></div>
         @endif

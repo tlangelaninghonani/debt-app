@@ -53,6 +53,16 @@
 
 body{
     margin: 0;
+    animation: visible 0.4s;
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 *{
@@ -112,14 +122,17 @@ body{
     padding-top: 0;
 }
 
-.float-bottom-right{
-    text-align: center;
+.float-bottom{
     position: fixed;
     bottom: 117px;
     right: var(--padding);
+    left: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.float-bottom-right *{
+.float-bottom *{
     color: white;
 }
 
@@ -188,8 +201,37 @@ body{
 }
 
 .button-icon{
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    background-color: var(--feint);
+    padding: 20.5px 40px;
+    border: none;
+    color: white;
+    gap: var(--gap);
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: var(--radius);
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.button-icon-space{
+    background-color: var(--feint);
+    padding: 20.5px 40px;
+    border: none;
+    color: white;
+    gap: var(--gap);
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: var(--radius);
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
 }
 
 .float-right{
@@ -207,13 +249,12 @@ body{
     gap: var(--mid-gap);
 }
 
-.curved-top{
-    border-top-right-radius: var(--radius);
-    border-top-left-radius: var(--radius);
+.side-message{
+    color: var(--placeholder-color);
 }
 
-.curved-top-right{
-    border-top-right-radius: 40px !important;
+.button-style *{
+    color: var(--feint);
 }
 
 .debt-apply{
@@ -326,7 +367,7 @@ body{
 }
 
 .icon-big{
-    font-size: 110px !important;
+    font-size: 120px !important;
 }
 
 .icon-profile{
@@ -402,11 +443,19 @@ button * {
     margin-bottom: 8px;
 }
 
-.action-icon-opacity{
+.action-icon-primary{
     padding: 20.5px;
     border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
     color: white;
     background-color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.action-icon-opacity{
+    padding: 20.5px;
+    border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
+    color: white;
+    background-color: var(--feint);
     opacity: 0.9;
     margin-bottom: 8px;
 }
@@ -467,7 +516,7 @@ button * {
 
 .greeting{
     position: fixed;
-    top: 99px;
+    top: 123px;
     left: var(--padding);
 }
 
@@ -522,10 +571,6 @@ img{
     font-size: 25px;
 }
 
-.slogan-small{
-    font-family: var(--font-family);
-    font-size: 25px;
-}
 
 .slogan-small-color{
     font-family: var(--font-family);
@@ -663,13 +708,6 @@ img{
     height: 100%;
 }
 
-.curved{
-    padding: var(--padding);
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    margin: 0 -25px;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -754,6 +792,9 @@ img{
     background-size: cover;
 }
 
+.home-container .button-style{
+    opacity: 0.9;
+}
 
 .header-home{
     padding: var(--padding);
@@ -790,7 +831,7 @@ img{
     border-radius: 68% 32% 40% 60% / 47% 40% 60% 53% ;
     margin-top: 74px;
     opacity: 0.9;
-    background-color: var(--feint);
+    background-color: var(--primary-color);
 }
 
 .bottom-nav-home{
@@ -798,13 +839,20 @@ img{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: var(--padding);
-    background-color: transparent;
+    padding: 0 var(--padding);
+    height: 92px;
 }
 
 .bottom-nav-home *{
     color: white;
 }
+
+/*.docs{
+    margin: 0 -25px;
+    background-color: var(--input-color);
+    padding: var(--padding);
+    border-radius: var(--radius);
+}*/
 
 .installment *{
     color: white;
@@ -876,6 +924,14 @@ img{
     color: white;
 }
 
+.curved{
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
 .top-banner-welcome{
     background-image: url("https://florinroebig.com/wp-content/uploads/2020/01/personal-injury-attorneys-1170x670.jpg");
     background-size: cover;
@@ -887,7 +943,7 @@ img{
 }
 
 .top-banner-sign-in{
-    background-image: url("https://www.creditlimitsinternational.com/wp-content/uploads/2019/11/kent-debt-collection-agency.jpg");
+    background-image: url("https://s28126.pcdn.co/blogs/ask-experian/wp-content/uploads/Couple-Smile-At-Advisor-While-Man-Shakes-Hand.jpg");
     background-size: cover;
     background-position: center;
     height: var(--banner-height);
@@ -931,15 +987,19 @@ a{
     text-decoration: none;
 }
 
+.account-design *{
+    color: white !important;
+}
+
 .focused-nav{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--primary-color);
-    height: 2px;
-    top: -26px;
-    border-radius: 40px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50% 50% 49% 51% / 66% 66% 34% 34% ;
 }
 
 .to-focus:hover{
@@ -969,8 +1029,11 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: var(--padding);
+    padding: 0 var(--padding);
+    height: 92px;
     background-color: var(--input-color);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
 }
 
 .loader-binder{
@@ -1113,6 +1176,10 @@ hr{
     transform: rotate(20deg);
 }
 
+.logo-background-mobile-binder{
+    transition: 0.1s;
+}
+
 .logo-background-mobile{
     min-width: 500px;
     min-height: 500px;
@@ -1125,9 +1192,16 @@ hr{
     justify-content: center;
     align-items: center;
     transform: scale(0.3) rotate(20deg);
+    transition: 0.1s;
+    margin-bottom: 65px;
+    opacity: 0.9;
 }
 
-.logo-orange-line{
+.logo-background-mobile-binder:hover{
+    transform: scale(1.1);
+}
+
+/*.logo-orange-line{
     border: 10px solid var(--primary-color);
     position: absolute;
     top: 0;
@@ -1147,7 +1221,7 @@ hr{
     left: 0;
     margin: 30px;
     border-radius: 50%;
-}
+}*/
 
 .logo-left-symbol{
     background-color: white;

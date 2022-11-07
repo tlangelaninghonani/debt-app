@@ -14,13 +14,15 @@
     @include("components.error")
     @include("components.loader")
     <div class="top-banner-sign-in">
-        <div class="logo-background-mobile">
-            @include("components.logo")
+        <div class="logo-background-mobile-binder">
+            <div class="logo-background-mobile">
+                @include("components.logo")
+            </div>
         </div>
     </div>
     <div class="container">
         <div>
-            <span class="slogan">Sign in</span>
+            <span class="slogan">Sign <span class="slogan-primary-color">in</span></span>
         </div>
         <div class="breaker"></div>
         <div class="">
@@ -28,12 +30,12 @@
                 @csrf
                 @method("POST")
                 <div class="input-contain">
-                    <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Type your Phone number">
+                    <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Type your phone number">
                 </div>
                 <div class="breaker"></div>
                 <div class="display-flex-align">
                     <div class="input-contain w-100">
-                        <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your Password">
+                        <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your password">
                     </div>
                     <div class="text-align-center">
                         <span class="material-symbols-sharp">

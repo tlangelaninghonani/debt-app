@@ -20,28 +20,31 @@ class AccountController extends Controller
     }
     
     public function signUp(Request $req){
+
         if($req->firstname != "" && $req->lastname != "" && 
-        $req->phonenumber != "" && $req->emailaddress != "" && $req->password != ""){
+        $req->phonenumber != "" && $req->password != ""){
 
             if(strlen(str_replace(" ", "", $req->phonenumber)) != 10){
                 Session::put("error", true);
-                Session::put("errormessage", "Invalid Phone number");
+                Session::put("errormessage", "Phone number should be 10 digits");
 
                 return back(); 
             }
 
-            if(! strpos(strtolower($req->emailaddress), "@")){
-                Session::put("error", true);
-                Session::put("errormessage", "Invalid email address");
-
-                return back(); 
-            }
-
-            if(! strpos(strtolower($req->emailaddress), ".")){
-                Session::put("error", true);
-                Session::put("errormessage", "Invalid email address");
-
-                return back(); 
+            if($req->emailaddress != ""){
+                if(! strpos(strtolower($req->emailaddress), "@")){
+                    Session::put("error", true);
+                    Session::put("errormessage", "Invalid email address");
+    
+                    return back(); 
+                }
+    
+                if(! strpos(strtolower($req->emailaddress), ".")){
+                    Session::put("error", true);
+                    Session::put("errormessage", "Invalid email address");
+    
+                    return back(); 
+                }
             }
 
             if($req->gender == ""){
@@ -53,14 +56,14 @@ class AccountController extends Controller
 
             if(Account::where("phone_number", str_replace(" ", "", $req->phonenumber))->exists()){
                 Session::put("error", true);
-                Session::put("errormessage", "Account already exists, Sign in instead");
+                Session::put("errormessage", "Account already exists, sign in instead");
 
                 return back();
             }
 
             if(Account::where("email_address", str_replace(" ", "", strtolower($req->email)))->exists()){
                 Session::put("error", true);
-                Session::put("errormessage", "Account already exists, Sign in instead");
+                Session::put("errormessage", "Account already exists, sign in instead");
 
                 return back();
             }
@@ -74,7 +77,7 @@ class AccountController extends Controller
 
             if($req->password != $req->confirmpassword){
                 Session::put("error", true);
-                Session::put("errormessage", "Mismatching Passwords");
+                Session::put("errormessage", "Mismatching passwords");
 
                 return back(); 
             }
@@ -95,9 +98,6 @@ class AccountController extends Controller
 
             return redirect("/home");
 
-            /*return view("setup_account_picture", [
-                "account" => $account
-            ]);*/
         }else{
             Session::put("error", true);
             Session::put("errormessage", "Please fill in all required fields");
@@ -154,7 +154,7 @@ class AccountController extends Controller
         $account = Account::find(Cookie::get("accountid")); 
 
         if($req->firstname != "" && $req->lastname != "" && 
-        $req->phonenumber != "" && $req->emailaddress != ""){
+        $req->phonenumber != ""){
             
 
             if(strlen(str_replace(" ", "", $req->phonenumber)) != 10){
@@ -164,18 +164,20 @@ class AccountController extends Controller
                 return back(); 
             }
 
-            if(! strpos(strtolower($req->emailaddress), "@")){
-                Session::put("error", true);
-                Session::put("errormessage", "Invalid email address");
-
-                return back(); 
-            }
-
-            if(! strpos(strtolower($req->emailaddress), ".")){
-                Session::put("error", true);
-                Session::put("errormessage", "Invalid email address");
-
-                return back(); 
+            if($req->emailaddress != ""){
+                if(! strpos(strtolower($req->emailaddress), "@")){
+                    Session::put("error", true);
+                    Session::put("errormessage", "Invalid email address");
+    
+                    return back(); 
+                }
+    
+                if(! strpos(strtolower($req->emailaddress), ".")){
+                    Session::put("error", true);
+                    Session::put("errormessage", "Invalid email address");
+    
+                    return back(); 
+                }
             }
 
             if(Account::where("id", "!=", $account->id)->where("phone_number", str_replace(" ", "", $req->phonenumber))->exists()){
@@ -223,39 +225,6 @@ class AccountController extends Controller
             Session::put("errormessage", "Please fill in all required fields");
 
             return back();
-        }
-    }
-
-    public function remove(){
-        $account = Account::find(Cookie::get("accountid"));
-        $account->account_picture = "";
-
-        $account->save();
-
-        return redirect("/account");
-    }
-
-    public function upload(Request $req){
-
-        $account = Account::find(Cookie::get("accountid"));
-
-        if($req->file("picture")){
-            $file = $req->file("picture");
-            $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
-            $file->move("accounts/accounts_pictures", $filename);
-
-            $account->account_picture = $filename;
-
-            $account->save();
-            
-            if(Session::has("setuppicture")){
-                Session::forget("setuppicture");
-
-                return redirect("/home");
-            }else{
-
-                return redirect("/account");
-            }
         }
     }
 }

@@ -6,9 +6,11 @@
             </span>
         </div>
         <div class="display-flex-align">
-            <img src="/svg/account_circle.svg" class="ill-svg-img" alt="" style="width: 100px !important"><br>
+            <span class="material-symbols-sharp icon-big">
+            account_circle
+            </span>
             <div>
-                <span class="slogan-small">{{ $account->first_name." ".$account->last_name }}</span><br>
+                <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
                 <span>Your status - <span>Application</span></span>
             </div>
         </div>

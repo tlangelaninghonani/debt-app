@@ -20,7 +20,7 @@
                 done
                 </span>
                 <div class="breaker"></div>
-                <span class="slogan-small">Meeting scheduled</span>
+                <span class="slogan">Meeting scheduled</span>
                 <div class="breaker"></div>
                 <span>Date - <span class="dark">{{ $meeting->meeting_date }}</span></span><br>
                 <span>Time - <span class="dark">{{ $meeting->meeting_time }}</span></span><br>
@@ -38,13 +38,13 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="container view-bottom">
+    <div class="container-not-top view-bottom">
         <div class="text-align-center">
             @if($meeting)
                 <div class="text-align-center">
                     <img src="/svg/241.svg" class="ill-svg" alt=""><br>
                 </div>
-                <span class="slogan-small">Meeting scheduled</span>
+                <span class="slogan">Meeting scheduled</span>
                 <div class="breaker"></div>
                 <span>Date - <span class="dark">{{ $meeting->meeting_date }}</span></span><br>
                 <span>Time - <span class="dark">{{ $meeting->meeting_time }}</span></span><br>
@@ -142,8 +142,11 @@
                         </div>
                     </div>
                     <div class="breaker"></div>
-                    <button type="button" onclick="submitForm('meetform')">
+                    <button type="button" class="button-icon-space" onclick="submitForm('meetform')">
                         <span>Schedule</span>
+                        <span class="material-symbols-sharp">
+                        east
+                        </span>
                     </button>
                 </form>
             @endif

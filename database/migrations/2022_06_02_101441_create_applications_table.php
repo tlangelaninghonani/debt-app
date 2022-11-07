@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string("account_id");
             $table->string("id_number");
-            $table->string("alternative_phone_number")->nullable();
             $table->string("marital_status");
             $table->string("number_of_dependants");
 
@@ -28,20 +27,13 @@ return new class extends Migration
             $table->string("company_name");
             $table->string("company_province");
             $table->string("company_town");
-            $table->string("company_tel");
+            $table->string("company_contact");
             $table->string("position_held");
             $table->string("type_of_employment");
             $table->string("employment_length")->nullable();
 
             $table->string("income_before_deductions");
             $table->string("income_after_deductions");
-
-            $table->string("identity_document");
-            $table->string("identity_document_filename");
-            $table->string("payslip_document");
-            $table->string("payslip_document_filename");
-            $table->string("statement_document");
-            $table->string("statement_document_filename");
 
             $table->boolean("submit")->default(false);
 

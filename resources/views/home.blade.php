@@ -15,7 +15,7 @@
     @include("components.loader")
     <div class="observer"></div>
     <div class="header-home">
-        @include("components.header_banner_back")
+        @include("components.header_banner_background")
     </div>
     <div class="home-container">
         <div class="greeting">
@@ -36,11 +36,33 @@
                 </div>
             </div>
         </div>
-        <div class="float-bottom-right">
-            <span class="material-symbols-sharp action-icon-opacity">
-            domain
-            </span><br>
-            <span>Debts</span>
+        <div class="float-bottom display-flex-center">
+            <div class="button-style">
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp">
+                    update
+                    </span><br>
+                    <span>Update</span> 
+                </div>
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp">
+                    call
+                    </span><br>
+                    <span>Contact us</span> 
+                </div>
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp">
+                    domain
+                    </span><br>
+                    <span>Debts</span> 
+                </div>
+            </div>
+            <!--<div class="text-align-center">
+                <span class="material-symbols-sharp action-icon-opacity">
+                domain
+                </span><br>
+                <span>Debts</span>
+            </div>-->
         </div>
     </div>
     @include("components.nav_bottom_home")
