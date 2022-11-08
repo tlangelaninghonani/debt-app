@@ -36,7 +36,7 @@
     </div>
     <div class="container-not-top view-bottom">
         <div class="text-align-center">
-            <img src="/svg/42.svg" class="ill-svg" alt=""><br>
+            <img src="/svg/docs.svg" class="ill-svg" alt=""><br>
             <span>Please confirm your <span class="primary-color">information</span> before submitting</span>
             <div class="breaker"></div>
         </div>
