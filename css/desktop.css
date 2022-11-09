@@ -1355,6 +1355,26 @@ hr{
     border-radius: 50%;
 }
 
+.bottom-mountain{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.bottom-mountain-static{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.bottom-mountain-normal{
+    width: 100%;
+}
+
 .logo-left-symbol{
     background-color: white;
     height: 250px;
