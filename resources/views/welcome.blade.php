@@ -25,7 +25,7 @@
         </div>
     </div>-->
     <div class="container position-fixed display-flex-center">
-        <div class="text-align-center">
+        <div class="text-align-center h-100">
             <div class="top-design">
                 <div class="w-100">
                     <img src="/svg/logo.svg" style="width: 200px" alt=""><br>
@@ -42,6 +42,7 @@
                     </span>
                 </div>
             </div>
+            <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt=""><br>
         </div>
     </div>
 </body>

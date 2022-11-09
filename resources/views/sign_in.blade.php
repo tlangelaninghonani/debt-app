@@ -65,5 +65,6 @@
             </form>
         </div>
     </div>
+    <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt=""><br>
 </body>
 </html>

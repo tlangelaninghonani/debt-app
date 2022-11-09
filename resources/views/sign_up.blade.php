@@ -86,5 +86,6 @@
             </form>
         </div>
     </div>
+    <img src="/svg/bottom_mountain.svg" class="bottom-mountain-normal" alt=""><br>
 </body>
 </html>
