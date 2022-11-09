@@ -40,7 +40,7 @@
             <div class="button-style">
                 <div class="text-align-center">
                     <span class="material-symbols-sharp">
-                    update
+                    component_exchange
                     </span><br>
                     <span>Update</span> 
                 </div>

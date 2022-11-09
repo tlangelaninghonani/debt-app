@@ -5,10 +5,10 @@
             close
             </span>
         </div>
-        <div class="display-flex-align">
-            <span class="material-symbols-sharp icon-big">
-            account_circle
-            </span>
+        <div class="display-flex-align mid-gap">
+            <div>
+                <img src="/svg/account_circle.svg" class="ill-svg-cust" style="width: 100px !important" alt=""><br>
+            </div>
             <div>
                 <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
                 <span>Your status - <span>Application</span></span>

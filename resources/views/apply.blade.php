@@ -97,6 +97,30 @@
                 <span>We will be with you <span class="primary-color">all</span> the way</span>
                 <div class="breaker"></div>
             </div>
+            <div id="meritalobserver"></div>
+            <div class="merital">
+                <div class="button-style-primary float-center display-none" id="meritalobserverfloat">
+                    <div class="display-flex-align">
+                        <span class="material-symbols-sharp">
+                        library_add
+                        </span>
+                        <span>Spouse</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="display-flex-center">
+                <div class="display-none" id="meritalobserverstatic">
+                    <div class="button-style">
+                        <div class="display-flex-align">
+                            <span class="material-symbols-sharp">
+                            library_add
+                            </span>
+                            <span>Spouse</span> 
+                        </div>
+                    </div>
+                    <div class="breaker"></div>
+                </div>
+            </div>
             <!--<div class="display-flex-space-around">
                 <div class="focused to-focus" onclick="applicants(this)">
                     <span>Main applicant</span>
@@ -115,13 +139,29 @@
                     <input type="number" id="idnumber" name="idnumber" placeholder="Type your ID number">
                 </div>
                 <div class="breaker"></div>
-                <select name="maritalstatus" id="">
+                <select name="maritalstatus" id="" onchange="checkMerital(this.value)">
                     <option>Marital status</option>
                     <option value="Single">Single</option>
                     <option value="Married">Married</option>
                     <option value="Married in property">Married in property</option>
                     <option value="Divorced">Divorced</option>
                 </select>
+                <script>
+                    function checkMerital(status){
+                        
+                        if(status === "Married" || status === "Married in property"){
+
+                            observeMerital = true;
+                            elementObserve("meritalobserver", "meritalobserver", "flex");
+                            document.querySelector("#meritalobserverfloat").style.display = "flex";
+                        }else{
+
+                            observeMerital = false;
+                            document.querySelector("#meritalobserverfloat").style.display = "none";
+                            document.querySelector("#meritalobserverstatic").style.display = "none";
+                        }
+                    }
+                </script>
                 <div class="breaker"></div>
                 <select name="numberofdependants" id="">
                     <option>Number of dependants</option>
@@ -225,7 +265,7 @@
                 <span class="slogan">Income before deductions</span>
                 <div class="breaker"></div>
                 <div>
-                    <span>Around <span class="dark" id="incomebefore">R 1000.00</span></span>
+                    <span>Around <span class="primary-color" id="incomebefore">R 1000.00</span></span>
                 </div>
                 <div class="breaker"></div>
                 <input class="w-100 slider" name="incomebeforedeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomebefore')"><br>
@@ -233,7 +273,7 @@
                 <span class="slogan">Income after deductions</span><br>
                 <div class="breaker"></div>
                 <div>
-                    <span>Around <span class="dark" id="incomeafter">R 1000.00</span></span>
+                    <span>Around <span class="primary-color" id="incomeafter">R 1000.00</span></span>
                 </div>
                 <div class="breaker"></div>
                 <input class="w-100 slider" name="incomeafterdeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomeafter')"><br>

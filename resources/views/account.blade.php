@@ -17,11 +17,9 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="container-not-top view-bottom">
+    <div class="container view-bottom">
         <div class="text-align-center">
-            <span class="material-symbols-sharp icon-big">
-            account_circle
-            </span>
+            <img src="/svg/account_circle.svg" class="ill-svg-cust" alt=""><br>
             <div class="breaker"></div>
             <div>
                 <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>

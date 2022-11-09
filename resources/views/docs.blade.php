@@ -36,14 +36,80 @@
     </div>
     <div class="container-not-top view-bottom">
         <div class="text-align-center">
-            <img src="/svg/docs.svg" class="ill-svg" alt=""><br>
-            <span>Please confirm your <span class="primary-color">information</span> before submitting</span>
+            <img src="/svg/docs.svg" class="ill-svg-cust" alt=""><br>
+            <div class="breaker"></div>
+            <span>Please review your <span class="primary-color">documents</span> before submitting</span>
             <div class="breaker"></div>
         </div>
         <form id="uplaoddocsform" action="/upload_docs" method="POST" enctype="multipart/form-data">
             @csrf
             @method("POST")
-            <div class="docs">
+            <div class="display-flex-align">
+                <div class="doc-left">
+                    <div class="display-flex-align nowrap">
+                        <span class="material-symbols-sharp">
+                        cloud_done
+                        </span>
+                        <div>
+                            <span>Document uploaded</span><br>
+                            <span>11 - November - 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-flex-center w-100">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        cloud_sync
+                        </span><br>
+                        <span>Re-Upload</span>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-space-between">
+                <div class="display-flex-center w-100">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        cloud_sync
+                        </span><br>
+                        <span>Re-Upload</span>
+                    </div>
+                </div>
+                <div class="doc-right">
+                    <div class="display-flex-align nowrap">
+                        <span class="material-symbols-sharp">
+                        cloud_done
+                        </span>
+                        <div>
+                            <span>Document uploaded</span><br>
+                            <span>11 - November - 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-align">
+                <div class="doc-left">
+                    <div class="display-flex-align nowrap">
+                        <span class="material-symbols-sharp">
+                        cloud_done
+                        </span>
+                        <div>
+                            <span>Document uploaded</span><br>
+                            <span>11 - November - 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-flex-center w-100">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        cloud_sync
+                        </span><br>
+                        <span>Re-Upload</span>
+                    </div>
+                </div>
+            </div>
+            <div class="docs display-none">
                 <span class="slogan">Copy of your identity</span>
                 <div class="breaker"></div>
                 <div class="display-flex-space-between mid-gap">
@@ -106,12 +172,20 @@
                 }
             </script>
             <div class="breaker"></div>
-            <button type="button" onclick="submitForm('uplaoddocsform')" class="button-icon-space">
+            <div class="display-flex-center">
+                <div class="add-doc">
+                    <span class="material-symbols-sharp">
+                    add
+                    </span>
+                    <span class="my-font-align">Add document</span>
+                </div>
+            </div>
+            <!--<button type="button" onclick="submitForm('uplaoddocsform')" class="button-icon-space">
                 <span>Upload documents</span>
                 <span class="material-symbols-sharp">
                 upload
                 </span>
-            </button>
+            </button>-->
         </form>
     </div>
     @include("components.nav_bottom")

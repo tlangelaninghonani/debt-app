@@ -19,7 +19,8 @@
     </div>
     <div class="container-not-top">
         <div class="text-align-center">
-            <img src="/svg/312.svg" class="ill-svg" alt=""><br>
+            <img src="/svg/map.svg" class="ill-svg-cust" alt=""><br>
+            <div class="breaker"></div>
         </div>
         <div class="display-flex-space-between">
             <div class="display-flex">

@@ -58,3 +58,31 @@ function menu(mode){
         document.querySelector("#menu").style.padding = "0";
     }
 }
+
+var observeMerital = false;
+
+function elementObserve(mode, id){
+
+    var observer = new IntersectionObserver(function(entries) {
+
+        if(observeMerital){
+            if(entries[0].isIntersecting === true){
+
+                if(mode === "meritalobserver"){
+                    document.querySelector("#meritalobserverfloat").style.display = "none";
+                    document.querySelector("#meritalobserverstatic").style.display = "block";
+                }
+            }else{
+                
+                if(mode === "meritalobserver"){
+                    document.querySelector("#meritalobserverfloat").style.display = "flex";
+                    document.querySelector("#meritalobserverstatic").style.display = "none";
+                }
+            }
+        }
+        
+            
+    }, { threshold: [0.50] });
+
+    observer.observe(document.querySelector("#" + id));
+}

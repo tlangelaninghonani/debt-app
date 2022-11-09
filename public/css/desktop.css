@@ -17,9 +17,8 @@
     --input-color: rgb(248, 248, 248);
     --radius: 40px;
     --radius-circle: 50%;
-    --shadow-tailwind: rgba(190, 190, 190, 0.05) 0px 1px 1px 0px;
     --primary-color: rgb(253, 118, 0);
-    --feint: rgb(40, 40, 40);
+    --feint: rgb(60, 60, 60);
     --primary-feint: rgb(255, 243, 233);
     --placeholder-color: rgb(176, 176, 176);
     --font-family: 'Poller One', cursive;
@@ -47,6 +46,22 @@
     z-index: 200;
 }
 
+.ill-svg-cust{
+    transition: 0.1s;
+    width: 260px !important;
+}
+
+.ill-svg-cust:hover{
+    transform: scale(1.1);
+}
+
+.float-center{
+    position: fixed;
+    top: 131px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .mid-gap{
     gap: var(--mid-gap) !important;
 }
@@ -54,15 +69,6 @@
 body{
     margin: 0;
     animation: visible 0.4s;
-}
-
-@keyframes visible {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 *{
@@ -115,6 +121,49 @@ body{
     border-right: 4px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+}
+
+.doc-left{
+    margin-left: -25px;
+    height: 65px;
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 160px;
+    border-bottom-right-radius: 160px;
+    background-color: var(--input-color);
+    width: auto;
+}
+
+.doc-right{
+    margin-right: -25px;
+    height: 65px;
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 160px;
+    border-bottom-left-radius: 160px;
+    background-color: var(--input-color);
+    width: auto;
+}
+
+.add-doc{
+    height: 65px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    background-color: var(--feint);
+    border-radius: var(--radius);
+}
+
+.add-doc *{
+    color: white;
 }
 
 .container-not-top{
@@ -249,12 +298,31 @@ body{
     gap: var(--mid-gap);
 }
 
-.side-message{
-    color: var(--placeholder-color);
-}
-
 .button-style *{
     color: var(--feint);
+}
+
+.button-style-primary{
+    border-radius: var(--radius);
+    background-color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    width: auto;
+    padding: 0 var(--padding);
+    gap: var(--mid-gap);
+}
+
+.button-style-primary *{
+    color: white;
+}
+
+.merital{
+    animation: visible 0.4s;
+}
+
+.side-message{
+    color: var(--placeholder-color);
 }
 
 .debt-apply{
@@ -944,7 +1012,7 @@ img{
 }
 
 .top-banner-sign-in{
-    background-image: url("https://s28126.pcdn.co/blogs/ask-experian/wp-content/uploads/Couple-Smile-At-Advisor-While-Man-Shakes-Hand.jpg");
+    background-image: url("https://www.thebankofcanton.com/wp-content/uploads/Featured-Mobile-Banking-Mobile-Deposit-512x430.jpg");
     background-size: cover;
     background-position: center;
     height: var(--banner-height);
@@ -1105,8 +1173,8 @@ a{
     height: 30px;
     background: white;
     cursor: pointer;
-    border-radius: var(--radius-circle);
-    border: 12px solid var(--feint);
+    border-radius: 33% 67% 62% 38% / 48% 50% 50% 52% ;
+    background-color: var(--feint);
 }
 
 hr{
@@ -1118,7 +1186,6 @@ hr{
 .slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: var(--common-black);
     cursor: pointer;
 }
 
@@ -1378,4 +1445,13 @@ hr{
     background-color: var(--feint);
     border-top-right-radius: 160px; 
     border-bottom-right-radius: 160px; 
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

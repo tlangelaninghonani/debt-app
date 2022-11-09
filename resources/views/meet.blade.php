@@ -42,7 +42,7 @@
         <div class="text-align-center">
             @if($meeting)
                 <div class="text-align-center">
-                    <img src="/svg/241.svg" class="ill-svg" alt=""><br>
+                    <img src="/svg/account_circle.svg" class="ill-svg-cust" alt=""><br>
                 </div>
                 <span class="slogan">Meeting scheduled</span>
                 <div class="breaker"></div>
@@ -58,8 +58,9 @@
                 </form>
             @else
                 <div class="text-align-center">
-                    <img src="/svg/149.svg" class="ill-svg" alt=""><br>
+                    <img src="/svg/meet.svg" class="ill-svg-cust" alt=""><br>
                 </div>
+                <div class="breaker"></div>
                 <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color">Google Meet</span></span>
                 <div class="family">
                     <div class="text-align-center">
