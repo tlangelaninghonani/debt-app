@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="design-container">
-        <div class="logo-background">
+        <div class="logo-background" style="transform: scale(1.5) rotate(20deg)">
             @include("components.logo")
         </div>
     </div>

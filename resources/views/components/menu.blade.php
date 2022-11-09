@@ -5,7 +5,7 @@
             close
             </span>
         </div>
-        <div class="display-flex-align mid-gap">
+        <div class="display-flex-align">
             <span class="material-symbols-sharp icon-big">
             account_circle
             </span>
