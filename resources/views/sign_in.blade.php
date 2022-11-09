@@ -22,7 +22,7 @@
     </div>-->
     <div class="top-design">
         <div class="w-100">
-            <img src="/svg/logo.svg" style="width: 200px" alt=""><br>
+            <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
             <div class="breaker"></div>
             <span>Sign in with your <span>phone number</span> and <span>password</span></span>
         </div>

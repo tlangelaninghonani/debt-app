@@ -28,7 +28,7 @@
         <div class="text-align-center h-100">
             <div class="top-design">
                 <div class="w-100">
-                    <img src="/svg/logo.svg" style="width: 200px" alt=""><br>
+                    <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
                 </div>
             </div>
             <div>

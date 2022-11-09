@@ -523,6 +523,15 @@ button{
     gap: var(--gap);
 }
 
+.logo-svg{
+    width: 150px;
+    transition: 0.1s;
+}
+
+.logo-svg:hover{
+    transform: scale(1.1);
+}
+
 button * {
     color: white !important;
 }
