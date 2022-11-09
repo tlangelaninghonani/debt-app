@@ -1,8 +1,8 @@
 <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1_5)">
 <rect width="1000" height="1000" rx="500" fill="white"/>
-<circle cx="500" cy="1000" r="500" fill="#F8F8F8"/>
-<circle cx="500" cy="250" r="250" fill="#FD7600"/>
+<circle cx="500" cy="1125" r="500" fill="#F8F8F8"/>
+<circle cx="500" cy="325" r="200" fill="#FD7600"/>
 <circle cx="117" cy="597" r="25" fill="#FD7600"/>
 <circle cx="726" cy="824" r="50" fill="#FD7600"/>
 <circle cx="851" cy="308" r="25" fill="#FD7600"/>

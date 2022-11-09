@@ -13,14 +13,21 @@
 <body>
     @include("components.error")
     @include("components.loader")
-    <div class="top-banner-sign-up">
+    <!--<div class="top-banner-sign-up">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
                 @include("components.logo")
             </div>
         </div>
+    </div>-->
+    <div class="top-design">
+        <div class="w-100">
+            <img src="/svg/logo.svg" style="width: 200px" alt=""><br>
+            <div class="breaker"></div>
+            <span>We will be with you <span class="primary-color">all</span> the way</span>
+        </div>
     </div>
-    <div class="container">
+    <div class="container-not-top">
         <span class="slogan">Personal</span>
         <div class="breaker"></div>
         <div class="">

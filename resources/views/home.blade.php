@@ -11,6 +11,69 @@
     <title></title>
 </head>
 <body>
+    <div class="popup-binder"></div>
+    <div class="popup">
+        <div id="debts" class="display-none">
+            <div class="display-flex-space-between">
+                <span class="slogan">Debts</span>
+                <span class="material-symbols-sharp my-font-align" onclick="showHidePopup('debts', 'none')">
+                arrow_drop_down
+                </span>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-center">
+                <div class="debts position-relative" style="border-radius: 55% 45% 51% 49% / 47% 18% 82% 53% ">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp icon-mid">
+                        whatshot
+                        </span><br>
+                        <div class="breaker"></div>
+                        <span class="number-big nowrap">60%</span><br>
+                        <span>Looking good</span>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-space-between">
+                <div class="display-flex">
+                    <span class="material-symbols-sharp icon-mid">
+                    domain
+                    </span><br>
+                    <div>
+                        <span class="slogan">Capitec</span><br>
+     
+                        <span>Balance outstanding - <span class="primary-color">R 20 000.00</span></span><br>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-space-between">
+                <div class="display-flex">
+                    <span class="material-symbols-sharp icon-mid">
+                    domain
+                    </span><br>
+                    <div>
+                        <span class="slogan">Volkswagen</span><br>
+                 
+                        <span>Balance outstanding - <span class="primary-color">R 150 000.00</span></span><br>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-space-between">
+                <div class="display-flex">
+                    <span class="material-symbols-sharp icon-mid">
+                    domain
+                    </span><br>
+                    <div>
+                        <span class="slogan">Mjinga Finance</span><br>
+                    
+                        <span>Balance outstanding - <span class="primary-color">R 10 000.00</span></span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     @include("components.menu")
     @include("components.loader")
     <div class="observer"></div>
@@ -50,7 +113,7 @@
                     </span><br>
                     <span>Contact us</span> 
                 </div>
-                <div class="text-align-center">
+                <div class="text-align-center" onclick="showHidePopup('debts', 'block')">
                     <span class="material-symbols-sharp">
                     domain
                     </span><br>

@@ -18,7 +18,7 @@
 @endif
 @if(Route::getfacaderoot()->current()->uri() == "branches")
     <span class="material-symbols-sharp" onclick="redirectBack()">
-    arrow_back
+    west
     </span>
     <span class="header-title">Branches</span>
 @endif

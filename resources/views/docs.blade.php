@@ -34,9 +34,9 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="container-not-top view-bottom">
+    <div class="container view-bottom">
         <div class="text-align-center">
-            <img src="/svg/docs.svg" class="ill-svg-cust" alt=""><br>
+            <img src="/svg/42.svg" class="ill-svg" alt=""><br>
             <div class="breaker"></div>
             <span>Please review your <span class="primary-color">documents</span> before submitting</span>
             <div class="breaker"></div>

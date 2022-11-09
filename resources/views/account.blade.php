@@ -19,7 +19,7 @@
     </div>
     <div class="container view-bottom">
         <div class="text-align-center">
-            <img src="/svg/account_circle.svg" class="ill-svg-cust" alt=""><br>
+            <img src="/svg/484.svg" class="ill-svg" alt=""><br>
             <div class="breaker"></div>
             <div>
                 <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>

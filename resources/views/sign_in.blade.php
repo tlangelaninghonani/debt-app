@@ -13,17 +13,22 @@
 <body>
     @include("components.error")
     @include("components.loader")
-    <div class="top-banner-sign-in">
+    <!--<div class="top-banner-sign-in">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
                 @include("components.logo")
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div>
-            <span class="slogan">Sign <span class="slogan-primary-color">in</span></span>
+    </div>-->
+    <div class="top-design">
+        <div class="w-100">
+            <img src="/svg/logo.svg" style="width: 200px" alt=""><br>
+            <div class="breaker"></div>
+            <span>Sign in with your <span>phone number</span> and <span>password</span></span>
         </div>
+    </div>
+    <div class="container-not-top">
+        <span class="slogan">Sign <span class="slogan-primary-color">in</span></span>
         <div class="breaker"></div>
         <div class="">
             <form id="signinform" action="/sign_in" method="POST">
@@ -49,8 +54,11 @@
                     <div class="text-align-center">
                         <span class="nowrap" onclick="redirect('/sign_up')">Sign up instead</span>
                     </div>
-                    <button type="button" class="primal-color display-flex-center" onclick="submitForm('signinform')">
+                    <button type="button" class="button-icon-space" onclick="submitForm('signinform')">
                         <span>Sign in</span>
+                        <span class="material-symbols-sharp">
+                        east
+                        </span>
                     </button>
                 </div>
             </form>

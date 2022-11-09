@@ -17,15 +17,20 @@
 </head>
 @include("components.loader")
 <body> 
-    <div class="top-banner-welcome">
+    <!--<div class="top-banner-welcome">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
                 @include("components.logo")
             </div>
         </div>
-    </div>
-    <div class="container display-flex-center">
+    </div>-->
+    <div class="container position-fixed display-flex-center">
         <div class="text-align-center">
+            <div class="top-design">
+                <div class="w-100">
+                    <img src="/svg/logo.svg" style="width: 200px" alt=""><br>
+                </div>
+            </div>
             <div>
                 <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
                 <div class="breaker"></div>
