@@ -56,13 +56,15 @@ function showHidePopup(id, styleDisplay, delay = false){
 
             if(styleDisplay === "block"){
         
+                document.querySelector(".popup").style.padding = "25px";
                 document.querySelector(".popup-binder").style.display = "block";
                 document.querySelector(".popup").style.height = popupHeight;
             }else{
         
+                document.querySelector(".popup").style.padding = "0";
                 document.querySelector(".popup-binder").style.display = "none";
                 document.querySelector(".popup").style.height = "0%";
-                document.querySelector(".popup").style.bottom = "-50px";
+                document.querySelector(".popup").style.bottom = "0";
             }
 
             document.querySelector("#"+id).style.display = styleDisplay;
@@ -71,13 +73,15 @@ function showHidePopup(id, styleDisplay, delay = false){
 
         if(styleDisplay === "block"){
         
+            document.querySelector(".popup").style.padding = "25px";
             document.querySelector(".popup-binder").style.display = "block";
             document.querySelector(".popup").style.height = popupHeight;
         }else{
     
+            document.querySelector(".popup").style.padding = "0";
             document.querySelector(".popup-binder").style.display = "none";
             document.querySelector(".popup").style.height = "0%";
-            document.querySelector(".popup").style.bottom = "-50px";
+            document.querySelector(".popup").style.bottom = "0";
         }
 
         document.querySelector("#"+id).style.display = styleDisplay;

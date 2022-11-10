@@ -1279,11 +1279,11 @@ hr{
 .popup{
     position: fixed;
     z-index: 500;
-    bottom: -50px;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 0%;
-    padding: var(--padding);
+    padding: 0;
     transition: 0.1s;
     overflow: auto;
     background-color: white !important;
