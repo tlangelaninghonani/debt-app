@@ -10,9 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.22/index.umd.js" integrity="sha512-c08RNGquBScVDxl/Yf50kga+4ZEI/xuqjBxwFUTFjnRn4Zoz1qcd2m5e/E+Pi+2b0O+lwDPz+J9N3ZzHTbnxHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title></title>
 </head>
-<body>
-    @include("components.error")
-    @include("components.loader")
+@include("components.error")
+@include("components.loader")
+<body class="body-flex">
     <!--<div class="top-banner-sign-in">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
@@ -20,14 +20,15 @@
             </div>
         </div>
     </div>-->
-    <div class="top-design">
-        <div class="w-100">
-            <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
-            <div class="breaker"></div>
-            <span>Sign in with your <span>phone number</span> and <span>password</span></span>
+    <div class="container h-100">
+        <div class="top-design">
+            <div class="w-100">
+                <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
+                <div class="breaker"></div>
+                <span>Sign in with your <span>phone number</span> and <span>password</span></span>
+            </div>
         </div>
-    </div>
-    <div class="container-not-top">
+        <div class="breaker"></div>
         <span class="slogan">Sign <span class="slogan-primary-color">in</span></span>
         <div class="breaker"></div>
         <div class="">
@@ -65,6 +66,6 @@
             </form>
         </div>
     </div>
-    <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt=""><br>
+    <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt="">
 </body>
 </html>

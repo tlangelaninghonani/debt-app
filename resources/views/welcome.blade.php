@@ -16,7 +16,7 @@
     <title></title>
 </head>
 @include("components.loader")
-<body> 
+<body class="body-flex"> 
     <!--<div class="top-banner-welcome">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
@@ -24,8 +24,8 @@
             </div>
         </div>
     </div>-->
-    <div class="container position-fixed display-flex-center">
-        <div class="text-align-center h-100">
+    <div class="container h-100">
+        <div class="text-align-center">
             <div class="top-design">
                 <div class="w-100">
                     <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
@@ -42,8 +42,8 @@
                     </span>
                 </div>
             </div>
-            <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt=""><br>
         </div>
     </div>
+    <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt="">
 </body>
 </html>

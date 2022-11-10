@@ -46,6 +46,44 @@ function showHideElement(id, styleDisplay){
     document.querySelector("#"+id).style.display = styleDisplay;
 }
 
+var popupHeight = "80%";
+
+function showHidePopup(id, styleDisplay, delay = false){
+
+    if(delay){
+
+        setTimeout(() => {
+
+            if(styleDisplay === "block"){
+        
+                document.querySelector(".popup-binder").style.display = "block";
+                document.querySelector(".popup").style.height = popupHeight;
+            }else{
+        
+                document.querySelector(".popup-binder").style.display = "none";
+                document.querySelector(".popup").style.height = "0%";
+                document.querySelector(".popup").style.bottom = "-50px";
+            }
+
+            document.querySelector("#"+id).style.display = styleDisplay;
+        }, 200);
+    }else{
+
+        if(styleDisplay === "block"){
+        
+            document.querySelector(".popup-binder").style.display = "block";
+            document.querySelector(".popup").style.height = popupHeight;
+        }else{
+    
+            document.querySelector(".popup-binder").style.display = "none";
+            document.querySelector(".popup").style.height = "0%";
+            document.querySelector(".popup").style.bottom = "-50px";
+        }
+
+        document.querySelector("#"+id).style.display = styleDisplay;
+    }
+}
+
 function menu(mode){
 
     if(mode == "open"){
