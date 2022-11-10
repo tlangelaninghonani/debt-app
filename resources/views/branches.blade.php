@@ -27,7 +27,7 @@
                 
                 <div>
                     <span class="slogan">Giyani, Limpopo</span><br>
-     
+                    <div class="breaker"></div>
                     <span class="primary-color">Headquarters</span><br>
                     <span>CBD, near Mopani Spar</span><br>
                     <span class="primary-color">08:30 PM - 17:00 PM</span>
@@ -45,7 +45,7 @@
                 
                 <div>
                     <span class="slogan">Polokwane, Limpopo</span><br>
-               
+                    <div class="breaker"></div>
                     <span>19 Library Gardens Cnr Hans Van Rensburg & Grobler Polokwane Central, Polokwane, 0700</span><br>
                     <span class="primary-color">08:30 PM - 17:00 PM</span>
                 </div>
@@ -62,7 +62,7 @@
                 
                 <div>
                     <span class="slogan">Pretoria, Gauteng</span><br>
-                 
+                    <div class="breaker"></div>
                     <span>Office 0118 Banking Towers, 190 Thabo Sehume Street Pretoria CBD, Pretoria, 0002</span><br>
                     <span class="primary-color">08:30 PM - 17:00 PM</span>
                 </div>

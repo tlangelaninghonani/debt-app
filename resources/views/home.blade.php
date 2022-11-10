@@ -41,7 +41,7 @@
                     </span><br>
                     <div>
                         <span class="slogan">Capitec</span><br>
-     
+                        <div class="breaker"></div>
                         <span>Balance outstanding - <span class="primary-color">R 20 000.00</span></span><br>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     </span><br>
                     <div>
                         <span class="slogan">Volkswagen</span><br>
-                 
+                        <div class="breaker"></div>
                         <span>Balance outstanding - <span class="primary-color">R 150 000.00</span></span><br>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     </span><br>
                     <div>
                         <span class="slogan">Mjinga Finance</span><br>
-                    
+                        <div class="breaker"></div>
                         <span>Balance outstanding - <span class="primary-color">R 10 000.00</span></span><br>
                     </div>
                 </div>
