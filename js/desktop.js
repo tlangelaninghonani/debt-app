@@ -128,3 +128,45 @@ function elementObserve(mode, id){
 
     observer.observe(document.querySelector("#" + id));
 }
+
+function stopApplyIconBorderInterval(interval){
+    
+    clearInterval(interval);
+}
+
+function elementBorder(elementId, color = "primary", multiple = false){
+
+    var applyIconBorderInterval = setInterval(() => {
+
+        if(multiple === true){
+
+            const element = elementId;
+            
+            if(element !== null){
+        
+                stopApplyIconBorderInterval(applyIconBorderInterval);
+                var border = ["top", "right", "bottom", "left"];
+                
+                if(color === "primary"){
+                    element.classList.add("border-" + border[Math.floor(Math.random()*border.length)] + "-color");
+                }else if(color === "feint"){
+                    element.classList.add("border-" + border[Math.floor(Math.random()*border.length)] + "-color-feint");
+                }
+            }
+        }else{
+            const element = document.querySelector(elementId);
+            if(element !== null){
+        
+                stopApplyIconBorderInterval(applyIconBorderInterval);
+                var border = ["top", "right", "bottom", "left"];
+                
+                if(color === "primary"){
+                    element.classList.add("border-" + border[Math.floor(Math.random()*border.length)] + "-color");
+                }else if(color === "feint"){
+                    element.classList.add("border-" + border[Math.floor(Math.random()*border.length)] + "-color-feint");
+                }
+            }
+        }
+    }, 100);
+    
+}

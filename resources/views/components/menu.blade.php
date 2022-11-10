@@ -36,6 +36,7 @@
             <span class="my-font-align">Sign out</span>
         </div>
     </div>
+    <img src="/svg/bottom_mountain.svg" class="bottom-mountain-menu" alt="">
 </div>
 <script>
     let shareButton = document.querySelector("#share");

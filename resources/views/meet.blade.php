@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <link rel="stylesheet" href="{{ $links['desktopCss'] }}">
     <script src="{{ $links['desktopJs'] }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.22/index.umd.js" integrity="sha512-c08RNGquBScVDxl/Yf50kga+4ZEI/xuqjBxwFUTFjnRn4Zoz1qcd2m5e/E+Pi+2b0O+lwDPz+J9N3ZzHTbnxHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -21,8 +21,8 @@
                 </div>
                 <span class="slogan">Meeting scheduled</span>
                 <div class="breaker"></div>
-                <span>Date - <span class="dark">{{ $meeting->meeting_date }}</span></span><br>
-                <span>Time - <span class="dark">{{ $meeting->meeting_time }}</span></span><br>
+                <span>Date - <span class="primary-color">{{ $meeting->meeting_date }}</span></span><br>
+                <span>Time - <span class="primary-color">{{ $meeting->meeting_time }}</span></span><br>
                 <div class="breaker"></div>
                 <div class="display-flex-end" onclick="redirect('/meet')">
                     <button class="display-flex-center">
@@ -50,8 +50,8 @@
                 event
                 </span>
                 <div>
-                    <span>Date - <span class="dark">{{ $meeting->meeting_date }}</span></span><br>
-                    <span>Time - <span class="dark">{{ $meeting->meeting_time }}</span></span><br>
+                    <span>Date - <span class="primary-color">{{ $meeting->meeting_date }}</span></span><br>
+                    <span>Time - <span class="primary-color">{{ $meeting->meeting_time }}</span></span><br>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -109,8 +109,11 @@
             <form id="meetcancelform" action="/meet/cancel" method="POST">
                 @csrf
                 @method("POST")
-                <button type="button" onclick="submitForm('meetcancelform')">
+                <button type="button" class="button-icon-space" onclick="submitForm('meetcancelform')">
                     <span>Cancel meeting</span>
+                    <span class="material-symbols-sharp">
+                    delete
+                    </span>
                 </button>
             </form>
         @else
@@ -118,7 +121,10 @@
                 <img src="/svg/149.svg" class="ill-svg" alt=""><br>
             </div>
             <div class="breaker"></div>
-            <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color">Google Meet</span></span>
+            <div class="text-align-center">
+                <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color">Google Meet</span></span>
+            </div>
+            <div class="breaker"></div>
             <div class="family">
                 <div class="text-align-center">
                     <img class="profile-pic-small" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
@@ -208,6 +214,12 @@
                 </button>
             </form>
         @endif
+        <script>
+            for (let i = 0; i < document.querySelectorAll(".profile-pic-small").length; i++) {
+                const element =  document.querySelectorAll(".profile-pic-small")[i];
+                elementBorder(element, "primary", true)
+            }
+        </script>
     </div>
     @include("components.nav_bottom")
 </body>

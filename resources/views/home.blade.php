@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <link rel="stylesheet" href="{{ $links['desktopCss'] }}">
     <script src="{{ $links['desktopJs'] }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.22/index.umd.js" integrity="sha512-c08RNGquBScVDxl/Yf50kga+4ZEI/xuqjBxwFUTFjnRn4Zoz1qcd2m5e/E+Pi+2b0O+lwDPz+J9N3ZzHTbnxHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -41,8 +41,8 @@
                     </span><br>
                     <div>
                         <span class="slogan">Capitec</span><br>
-                        <div class="breaker"></div>
-                        <span>Balance outstanding - <span class="primary-color">R 20 000.00</span></span><br>
+           
+                        <span>Balance outstanding - <span>R 20 000.00</span></span><br>
                     </div>
                 </div>
             </div>
@@ -54,8 +54,8 @@
                     </span><br>
                     <div>
                         <span class="slogan">Volkswagen</span><br>
-                        <div class="breaker"></div>
-                        <span>Balance outstanding - <span class="primary-color">R 150 000.00</span></span><br>
+                  
+                        <span>Balance outstanding - <span>R 150 000.00</span></span><br>
                     </div>
                 </div>
             </div>
@@ -66,9 +66,9 @@
                     domain
                     </span><br>
                     <div>
-                        <span class="slogan">Mjinga Finance</span><br>
-                        <div class="breaker"></div>
-                        <span>Balance outstanding - <span class="primary-color">R 10 000.00</span></span><br>
+                        <span class="slogan">Absa</span><br>
+          
+                        <span>Balance outstanding - <span>R 10 000.00</span></span><br>
                     </div>
                 </div>
             </div>

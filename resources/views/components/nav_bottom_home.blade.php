@@ -34,7 +34,7 @@
                 @if(Route::getfacaderoot()->current()->uri() == "apply")
                     <!--<div class="focused-nav"></div>-->
                 @endif
-                <span class="material-symbols-sharp action-icon-opacity" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
+                <span class="material-symbols-sharp action-icon-opacity apply-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
                 ios_share
                 </span>
             </div> 
@@ -44,7 +44,7 @@
             @if(Route::getfacaderoot()->current()->uri() == "apply")
                 <!--<div class="focused-nav"></div>-->
             @endif
-            <span class="material-symbols-sharp action-icon-opacity" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
+            <span class="material-symbols-sharp action-icon-opacity apply-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
             ios_share
             </span>
         </div>

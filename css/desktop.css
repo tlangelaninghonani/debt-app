@@ -752,6 +752,53 @@ img{
     border-radius: var(--radius-circle);
 }
 
+.profile-pic-border-top{
+    border-top: 2px solid var(--primary-color);
+}
+
+.profile-pic-border-right{
+    border-right: 2px solid var(--primary-color);
+}
+
+.profile-pic-border-bottom{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.profile-pic-border-left{
+    border-left: 2px solid var(--primary-color);
+}
+
+.border-top-color{
+    border-top: 2px solid var(--primary-color);
+}
+
+.border-right-color{
+    border-right: 2px solid var(--primary-color);
+}
+
+.border-bottom-color{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.border-left-color{
+    border-left: 2px solid var(--primary-color);
+}
+
+.border-top-color-feint{
+    border-top: 2px solid var(--feint);
+}
+
+.border-right-color-feint{
+    border-right: 2px solid var(--feint);
+}
+
+.border-bottom-color-feint{
+    border-bottom: 2px solid var(--feint);
+}
+
+.border-left-color-feint{
+    border-left: 2px solid var(--feint);
+}
 .profile-pic-small{
     transition: transform .1s;
     min-width: 90px;
@@ -759,6 +806,7 @@ img{
     max-width: 90px;
     max-height: 90px;
     border-radius: var(--radius-circle);
+    
 }
 
 .logo-back{
@@ -1389,6 +1437,14 @@ hr{
 }
 
 .bottom-mountain{
+    width: 100%;
+}
+
+.bottom-mountain-menu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
 }
 

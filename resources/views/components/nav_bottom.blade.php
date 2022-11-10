@@ -21,12 +21,11 @@
         @if($links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/status')">
                 @if(Route::getfacaderoot()->current()->uri() == "status")
-                    <div class="focused-nav"></div>
+                    <!--<div class="focused-nav"></div>-->
                 @endif
-                <span class="material-symbols-sharp">
-                schedule
-                </span><br>
-                <span class="helvetica">Status</span>
+                <span class="material-symbols-sharp action-icon apply-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
+                update
+                </span>
             </div>
         @endif
         @if(! $links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
@@ -34,7 +33,7 @@
                 @if(Route::getfacaderoot()->current()->uri() == "apply")
                     <!--<div class="focused-nav"></div>-->
                 @endif
-                <span class="material-symbols-sharp action-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
+                <span class="material-symbols-sharp action-icon apply-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
                 ios_share
                 </span>
             </div> 
@@ -44,7 +43,7 @@
             @if(Route::getfacaderoot()->current()->uri() == "apply")
                 <!--<div class="focused-nav"></div>-->
             @endif
-            <span class="material-symbols-sharp action-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
+            <span class="material-symbols-sharp action-icon apply-icon" style="border-radius: 69% 31% 28% 72% / 63% 50% 50% 37% ">
             ios_share
             </span>
         </div>
@@ -58,7 +57,7 @@
         </span><br>
         <span class="helvetica">Docs</span>
     </div>
-    <div class="text-align-center relative" onclick="redirect('/account')">
+    <div class="text-align-center relative " onclick="redirect('/account')">
         @if(Route::getfacaderoot()->current()->uri() == "account")
             <div class="focused-nav"></div>
         @endif

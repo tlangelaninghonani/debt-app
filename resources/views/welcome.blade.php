@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <link rel="stylesheet" href="{{ $links['desktopCss'] }}">
     <script src="{{ $links['desktopJs'] }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.22/index.umd.js" integrity="sha512-c08RNGquBScVDxl/Yf50kga+4ZEI/xuqjBxwFUTFjnRn4Zoz1qcd2m5e/E+Pi+2b0O+lwDPz+J9N3ZzHTbnxHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -24,22 +24,25 @@
             </div>
         </div>
     </div>-->
-    <div class="container h-100">
-        <div class="text-align-center">
-            <div class="top-design">
-                <div class="w-100">
-                    <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
+    <div class="h-100 w-100">
+        <div class="container">
+            <div class="text-align-center">
+                <div class="top-design">
+                    <div class="w-100">
+                        <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
                 <div class="breaker"></div>
                 <div>
-                    <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
+                    <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
                     <div class="breaker"></div>
-                    <span class="material-symbols-sharp action-icon" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" onclick="redirect('/sign_in')">
-                    east
-                    </span>
+                    <div>
+                        <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
+                        <div class="breaker"></div>
+                        <span id="getstartedicon" class="material-symbols-sharp action-icon" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" onclick="redirect('/sign_in')">
+                        east
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
