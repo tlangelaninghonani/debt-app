@@ -23,13 +23,13 @@
     <span class="header-title">Branches</span>
 @endif
 <div class="display-flex-align mid-gap">
-    <span class="material-symbols-sharp action-icon-opacity" onclick="refreshPage()">
+    <span class="material-symbols-sharp" onclick="refreshPage()">
     refresh
     </span>
-    <!--<span class="material-symbols-sharp">
+    <span class="material-symbols-sharp">
     notifications
-    </span>-->
-    <span class="material-icons-sharp action-icon-opacity" style="border-radius: 70% 30% 35% 65% / 52% 31% 69% 48% " onclick="menu('open')">
+    </span>
+    <span class="material-icons-sharp" onclick="menu('open')">
     more_horiz
     </span>
 </div>

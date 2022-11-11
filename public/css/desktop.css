@@ -17,7 +17,7 @@
     --input-color: rgb(248, 248, 248);
     --radius: 40px;
     --radius-circle: 50%;
-    --primary-color: rgb(253, 118, 0);
+    --primary-color: rgb(50, 50, 50);
     --feint: rgb(50, 50, 50);
     --primary-feint: rgb(255, 243, 233);
     --placeholder-color: rgb(176, 176, 176);
@@ -121,7 +121,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 38% 62% 63% 37% / 51% 61% 39% 49% ;
+    border-radius: var(--radius-circle);
     background-color: var(--primary-color);
     transition: 0.1s;
 }
@@ -134,23 +134,23 @@ body{
     color: white;
 }
 
-.debts{
+.circle-badge{
     width: auto;
     width: 180px;
     height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 38% 62% 63% 37% / 51% 61% 39% 49% ;
+    border-radius: var(--radius-circle);
     background-color: var(--feint);
     transition: 0.1s;
 }
 
-.debts:hover{
+.circle-badge:hover{
     transform: scale(1.1);
 }
 
-.debts *{
+.circle-badge *{
     color: white;
 }
 
@@ -483,7 +483,7 @@ body{
 }
 
 .icon-big{
-    font-size: 120px !important;
+    font-size: 140px !important;
 }
 
 .icon-profile{
@@ -562,7 +562,7 @@ button * {
 
 .action-icon{
     padding: 20.5px;
-    border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
+    border-radius: var(--radius-circle);
     color: white;
     background-color: var(--feint);
     margin-bottom: 8px;
@@ -570,7 +570,7 @@ button * {
 
 .action-icon-primary{
     padding: 20.5px;
-    border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
+    border-radius: var(--radius-circle);
     color: white;
     background-color: var(--primary-color);
     margin-bottom: 8px;
@@ -578,7 +578,7 @@ button * {
 
 .action-icon-opacity{
     padding: 20.5px;
-    border-radius: 57% 43% 30% 70% / 45% 52% 48% 55% ;
+    border-radius: var(--radius-circle);
     color: white;
     background-color: var(--feint);
     opacity: 0.9;
@@ -641,7 +641,7 @@ button * {
 
 .greeting{
     position: fixed;
-    top: 123px;
+    top: 99px;
     left: var(--padding);
 }
 
@@ -710,6 +710,10 @@ img{
 }
 
 .primary-color{
+    color: var(--primary-color) !important;
+}
+
+.primary-color *{
     color: var(--primary-color) !important;
 }
 
@@ -960,7 +964,7 @@ img{
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url("https://wallpapercave.com/wp/wp8175027.jpg");
+    background-image: url("https://images.pexels.com/photos/10014803/pexels-photo-10014803.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
 }
 
@@ -1000,7 +1004,7 @@ img{
     min-height: 300px;
     max-width: 300px;
     max-height: 300px;
-    border-radius: 68% 32% 40% 60% / 47% 40% 60% 53% ;
+    border-radius: var(--radius-circle);
     margin-top: 74px;
     opacity: 0.9;
     background-color: var(--primary-color);
@@ -1179,7 +1183,7 @@ a{
     background-color: var(--primary-color);
     height: 8px;
     width: 8px;
-    border-radius: 50% 50% 49% 51% / 66% 66% 34% 34% ;
+    border-radius: var(--radius-circle);
 }
 
 .to-focus:hover{
@@ -1209,11 +1213,35 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 var(--padding);
     height: 92px;
-    background-color: var(--input-color);
+    /*background-color: var(--input-color);
     border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
+    border-top-right-radius: 100%;*/
+}
+
+.bottom-nav-binder{
+    padding: 0 var(--padding);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--input-color);
+}
+
+.bottom-nav-svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.apply-icon{
+   
 }
 
 .loader-binder{

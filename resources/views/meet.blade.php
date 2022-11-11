@@ -17,8 +17,11 @@
         <div class="applied" id="applied">
             <div class="text-align-center w-100">
                 <div class="text-align-center">
-                    <img src="/svg/448.svg" class="ill-svg" alt=""><br>
+                    <span class="material-symbols-sharp icon-big">
+                    published_with_changes
+                    </span><br>
                 </div>
+                <div class="breaker"></div>
                 <span class="slogan">Meeting scheduled</span>
                 <div class="breaker"></div>
                 <span>Date - <span class="primary-color">{{ $meeting->meeting_date }}</span></span><br>
@@ -40,7 +43,10 @@
     <div class="container view-bottom">
         @if($meeting)
             <div class="text-align-center">
-                <img src="/svg/448.svg" class="ill-svg" alt=""><br>
+                <!--<img src="/svg/448.svg" class="ill-svg" alt=""><br>-->
+                <span class="material-symbols-sharp icon-big">
+                published_with_changes
+                </span>
                 <div class="breaker"></div>
                 <span class="slogan">Meeting scheduled</span>
             </div>
@@ -57,49 +63,49 @@
             <div class="breaker"></div>
             <div class="family">
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
+                    <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Mahlori</span><br>
                     <span><span class="primary-color">Lead</span> Debt Counsellor</span>
                 </div>
                 <div class="text-align-center"> 
-                    <img class="profile-pic-small" style="border-radius: 60% 40% 38% 62% / 39% 29% 71% 61%" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
+                    <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Jenette</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 37% 63% 38% 62% / 26% 38% 62% 74%" src="https://i.pinimg.com/1200x/48/8e/a6/488ea65cf658b72083423cec3a87a6e2.jpg" alt="">
+                    <img class="profile-pic-small" src="https://i.pinimg.com/1200x/48/8e/a6/488ea65cf658b72083423cec3a87a6e2.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">James</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 37% 63% 38% 62% / 26% 38% 62% 74%" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
+                    <img class="profile-pic-small" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Marry</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 64% 36% 48% 52% / 53% 61% 39% 47%" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
+                    <img class="profile-pic-small" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Matt</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 55% 45% 45% 55% / 64% 65% 35% 36%" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
+                    <img class="profile-pic-small" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Conan</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 74% 26% 25% 75% / 60% 66% 34% 40%" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
+                    <img class="profile-pic-small" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Jerry</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 33% 67% 75% 25% / 69% 53% 47% 31%" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
+                    <img class="profile-pic-small" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Samatha</span><br>
                     <span>Debt Counsellor</span>
@@ -118,7 +124,10 @@
             </form>
         @else
             <div class="text-align-center">
-                <img src="/svg/149.svg" class="ill-svg" alt=""><br>
+                <!--<img src="/svg/149.svg" class="ill-svg" alt=""><br>-->
+                <span class="material-symbols-sharp icon-big">
+                videocam
+                </span>
             </div>
             <div class="breaker"></div>
             <div class="text-align-center">
@@ -127,49 +136,49 @@
             <div class="breaker"></div>
             <div class="family">
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
+                    <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Mahlori</span><br>
                     <span><span class="primary-color">Lead</span> Debt Counsellor</span>
                 </div>
                 <div class="text-align-center"> 
-                    <img class="profile-pic-small" style="border-radius: 60% 40% 38% 62% / 39% 29% 71% 61%" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
+                    <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Jenette</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 37% 63% 38% 62% / 26% 38% 62% 74%" src="https://i.pinimg.com/1200x/48/8e/a6/488ea65cf658b72083423cec3a87a6e2.jpg" alt="">
+                    <img class="profile-pic-small" src="https://i.pinimg.com/1200x/48/8e/a6/488ea65cf658b72083423cec3a87a6e2.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">James</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 37% 63% 38% 62% / 26% 38% 62% 74%" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
+                    <img class="profile-pic-small" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Marry</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 64% 36% 48% 52% / 53% 61% 39% 47%" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
+                    <img class="profile-pic-small" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Matt</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 55% 45% 45% 55% / 64% 65% 35% 36%" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
+                    <img class="profile-pic-small" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Conan</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 74% 26% 25% 75% / 60% 66% 34% 40%" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
+                    <img class="profile-pic-small" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Jerry</span><br>
                     <span>Debt Counsellor</span>
                 </div>
                 <div class="text-align-center">
-                    <img class="profile-pic-small" style="border-radius: 33% 67% 75% 25% / 69% 53% 47% 31%" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
+                    <img class="profile-pic-small" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Samatha</span><br>
                     <span>Debt Counsellor</span>

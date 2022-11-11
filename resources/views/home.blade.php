@@ -22,7 +22,7 @@
             </div>
             <div class="breaker"></div>
             <div class="display-flex-center">
-                <div class="debts position-relative" style="border-radius: 55% 45% 51% 49% / 47% 18% 82% 53% ">
+                <div class="circle-badge position-relative">
                     <div class="text-align-center">
                         <span class="material-symbols-sharp icon-mid">
                         whatshot
@@ -42,7 +42,7 @@
                     <div>
                         <span class="slogan">Capitec</span><br>
            
-                        <span>Balance outstanding - <span>R 20 000.00</span></span><br>
+                        <span>Balance outstanding - <span class="primary-color">R 20 000.00</span></span><br>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <div>
                         <span class="slogan">Volkswagen</span><br>
                   
-                        <span>Balance outstanding - <span>R 150 000.00</span></span><br>
+                        <span>Balance outstanding - <span class="primary-color">R 150 000.00</span></span><br>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     <div>
                         <span class="slogan">Absa</span><br>
           
-                        <span>Balance outstanding - <span>R 10 000.00</span></span><br>
+                        <span>Balance outstanding - <span class="primary-color">R 10 000.00</span></span><br>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,9 @@
     </div>
     <div class="home-container">
         <div class="greeting">
-            <span class="slogan">Good morning <br> Tlangelani</span>
+            <div class="display-flex-align">
+                <span class="slogan">Good morning <br> {{ $account->first_name }}</span>    
+            </div>
         </div>
         <div class="home-content">
             <div>

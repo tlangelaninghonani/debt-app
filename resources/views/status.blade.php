@@ -19,7 +19,7 @@
     </div>
     <div class="position-fixed display-flex-center">
         <div class="container">
-            <div class="display-flex-center">
+            <!--<div class="display-flex-center">
                 <div class="status position-relative">
                     <div class="text-align-center">
                         <span class="number-big nowrap">A</span><br>
@@ -29,7 +29,19 @@
             </div>
             <script>
                 elementBorder(".status", "feint")
-            </script>
+            </script>-->
+            <div class="display-flex-center">
+                <div class="circle-badge position-relative">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp icon-mid">
+                        whatshot
+                        </span><br>
+                        <div class="breaker"></div>
+                        <span class="number-big nowrap">A</span><br>
+                        <span>Status code</span>
+                    </div>
+                </div>
+            </div>
             <div class="breaker"></div>
             <div class="text-align-center">
                 <span class="slogan">Application</span>

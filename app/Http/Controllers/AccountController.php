@@ -126,12 +126,12 @@ class AccountController extends Controller
                 }
             }
             Session::put("error", true);
-            Session::put("errormessage", "Either your Phone number or Password is incorrect");
+            Session::put("errormessage", "Either your phone number or password is incorrect");
 
             return back();
         }else{
             Session::put("error", true);
-            Session::put("errormessage", "Enter your Phone number and a Password to Sign in");
+            Session::put("errormessage", "Enter your phone number and a password to sign in");
 
             return back();
         }

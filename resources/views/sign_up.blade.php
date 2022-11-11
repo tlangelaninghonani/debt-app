@@ -21,6 +21,15 @@
                 </div>
             </div>
         </div>-->
+        <div class="header">
+            <span class="material-symbols-sharp" onclick="redirectBack()">
+            west
+            </span>
+            <span class="my-font-align">Sign up</span>
+            <span class="material-symbols-sharp" onclick="refreshPage()">
+            refresh
+            </span>
+        </div>
         <div class="container">
             <div class="top-design">
                 <div class="w-100">
@@ -29,6 +38,7 @@
                     <span>We will be with you <span class="primary-color">all</span> the way</span>
                 </div>
             </div>
+            <div class="breaker"></div>
             <span class="slogan">Personal</span>
             <div class="breaker"></div>
             <form id="signupform" action="/sign_up" method="POST">

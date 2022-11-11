@@ -36,7 +36,10 @@
     </div>
     <div class="container view-bottom">
         <div class="text-align-center">
-            <img src="/svg/42.svg" class="ill-svg" alt=""><br>
+            <!--<img src="/svg/42.svg" class="ill-svg" alt=""><br>-->
+            <span class="material-symbols-sharp icon-big">
+            find_in_page
+            </span>
             <div class="breaker"></div>
             <span>Please review your <span class="primary-color">documents</span> before submitting</span>
             <div class="breaker"></div>

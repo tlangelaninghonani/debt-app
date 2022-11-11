@@ -136,12 +136,14 @@ function stopApplyIconBorderInterval(interval){
 
 function elementBorder(elementId, color = "primary", multiple = false){
 
+    return
+
     var applyIconBorderInterval = setInterval(() => {
 
         if(multiple === true){
 
             const element = elementId;
-            
+
             if(element !== null){
         
                 stopApplyIconBorderInterval(applyIconBorderInterval);

@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>-->
-    <div class="h-100 w-100">
+    <div class="h-100 w-100 display-flex-center">
         <div class="container">
             <div class="text-align-center">
                 <div class="top-design">
@@ -34,12 +34,12 @@
                 </div>
                 <div class="breaker"></div>
                 <div>
-                    <span class="slogan">The <span class="slogan-primary-color">Helping Hand</span> Debt Counsellors</span>
+                    <span class="slogan">The <span class="slogan text-gradient">Helping Hand</span> Debt Counsellors</span>
                     <div class="breaker"></div>
                     <div>
                         <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
                         <div class="breaker"></div>
-                        <span id="getstartedicon" class="material-symbols-sharp action-icon" style="border-radius: 38% 62% 62% 38% / 45% 52% 48% 55%" onclick="redirect('/sign_in')">
+                        <span id="getstartedicon" class="material-symbols-sharp action-icon" onclick="redirect('/sign_in')">
                         east
                         </span>
                     </div>
