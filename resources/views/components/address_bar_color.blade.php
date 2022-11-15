@@ -1,1 +1,1 @@
-<meta name="theme-color" id="themecolor" content="#ffffff" media="(prefers-color-scheme: dark)"/>
+<meta name="theme-color" id="themecolor" content="#fd7600" media="(prefers-color-scheme: dark)"/>

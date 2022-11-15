@@ -47,6 +47,5 @@
             </div>
         </div>
     </div>
-    <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt="">
 </body>
 </html>

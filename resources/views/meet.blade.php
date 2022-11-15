@@ -53,63 +53,12 @@
             </div>
             <div class="breaker"></div>
             <div class="display-flex-center"> 
-                <span class="material-symbols-sharp icon-mid">
+                <span class="material-symbols-sharp icon-small">
                 event
                 </span>
                 <div>
                     <span>Date - <span class="primary-color-exp">{{ $meeting->meeting_date }}</span></span><br>
                     <span>Time - <span class="primary-color-exp">{{ $meeting->meeting_time }}</span></span><br>
-                </div>
-            </div>
-            <div class="breaker"></div>
-            <div class="family">
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Mahlori</span><br>
-                    <span><span class="primary-color-exp">Lead</span> Debt Counsellor</span>
-                </div>
-                <div class="text-align-center"> 
-                    <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Jenette</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://i.pinimg.com/1200x/48/8e/a6/488ea65cf658b72083423cec3a87a6e2.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">James</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Marry</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Matt</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Conan</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Jerry</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Samatha</span><br>
-                    <span>Debt Counsellor</span>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -133,57 +82,6 @@
             <div class="breaker"></div>
             <div class="text-align-center">
                 <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color-exp">Google Meet</span></span>
-            </div>
-            <div class="breaker"></div>
-            <div class="family">
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Mahlori</span><br>
-                    <span><span class="primary-color-exp">Lead</span> Debt Counsellor</span>
-                </div>
-                <div class="text-align-center"> 
-                    <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Jenette</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://i.pinimg.com/1200x/48/8e/a6/488ea65cf658b72083423cec3a87a6e2.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">James</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://cdn.goodgallery.com/cf0ef39c-1c83-45f8-b905-c091160e555c/s/0800/2fpgxh16/female-professional-portrait-gray-backdrop.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Marry</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://journalauto.com/wp-content/uploads/2022/04/Ford-Trucks.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Matt</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="http://calemazoo.com/wp-content/uploads/2015/10/Businessman1.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Conan</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="https://www.bethesdaheadshots.com/wp-content/uploads/2021/06/gaitherburg-md-headshot-photographer-1.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Jerry</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
-                <div class="text-align-center">
-                    <img class="profile-pic-small" src="http://my.chatham.edu/tools/_centers/cwe/_images/_speaker/JuliaTakeda.jpg" alt="">
-                    <div class="breaker"></div>
-                    <span class="slogan">Samatha</span><br>
-                    <span>Debt Counsellor</span>
-                </div>
             </div>
             <div class="breaker"></div>
             <form id="meetform" action="/meet" method="POST">

@@ -12,7 +12,7 @@
 </head>
 @include("components.error")
 @include("components.loader")
-<body class="body-flex">
+<body class="body-flex display-flex-center">
     <!--<div class="top-banner-sign-in">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>-->
-    <div class="h-100 w-100">
+    <div>
         <div class="container">
             <div class="top-design">
                 <div class="w-100">
@@ -68,6 +68,5 @@
             </div>
         </div>
     </div>
-    <img src="/svg/bottom_mountain.svg" class="bottom-mountain" alt="">
 </body>
 </html>

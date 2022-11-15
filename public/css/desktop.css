@@ -261,12 +261,16 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: white !important;
+    background-color: var(--primary-color-exp) !important;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*border-bottom: 1px solid var(--input-color);*/
+}
+
+.header *{
+    color: white;
 }
 
 .header-home *{
@@ -487,6 +491,14 @@ body{
     font-size: 140px !important;
 }
 
+.icon-mid{
+    font-size: 100px !important;
+}
+
+.icon-small{
+    font-size: 40px !important;
+}
+
 .icon-profile{
     position: absolute;
     top: 150px;
@@ -494,18 +506,6 @@ body{
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: white;
-}
-
-.icon-big-2{
-    font-size: 300px !important;
-}
-
-.icon-mid{
-    font-size: 40px !important;
-}
-
-.icon-small{
-    font-size: 15px !important;
 }
 
 input:not(input[type=range]), select{
@@ -1157,13 +1157,13 @@ a{
 
 .focused-nav{
     position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
     background-color: var(--primary-color-exp);
-    height: 8px;
-    width: 8px;
-    border-radius: var(--radius-circle);
+    height: 2px;
+    top: -26px;
+    width: 100%;
+    transition: 0.1s;
 }
 
 .to-focus:hover{
@@ -1287,7 +1287,7 @@ a{
     height: 30px;
     background: white;
     cursor: pointer;
-    border-radius: 33% 67% 62% 38% / 48% 50% 50% 52% ;
+    border-radius: var(--radius-circle);
     background-color: var(--feint);
 }
 

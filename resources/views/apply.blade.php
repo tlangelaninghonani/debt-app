@@ -34,9 +34,11 @@
         @include("components.header")
     </div>
     @if($application)
-        <div class="container-not-top view-bottom">
+        <div class="container view-bottom">
             <div class="text-align-center">
-                <img src="/svg/32.svg" class="ill-svg" alt=""><br>
+                <span class="material-symbols-sharp icon-big">
+                ios_share
+                </span>
                 <span>Please confirm your <span class="primary-color">information</span> before submitting</span>
                 <div class="breaker"></div>
             </div>
@@ -91,10 +93,13 @@
             </div>
         </div>
     @else
-        <div class="container-not-top view-bottom">
+        <div class="container view-bottom">
             <div class="text-align-center">
-                <img src="/svg/233.svg" class="ill-svg" alt=""><br>
-                <span>We will be with you <span class="primary-color">all</span> the way</span>
+                <span class="material-symbols-sharp icon-big">
+                ios_share
+                </span>
+                <div class="breaker"></div>
+                <span>We will be with you <span class="primary-color-exp">all</span> the way</span>
                 <div class="breaker"></div>
             </div>
             <div id="meritalobserver"></div>
