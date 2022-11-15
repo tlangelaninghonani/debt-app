@@ -261,16 +261,12 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--primary-color-exp) !important;
+    background-color: white !important;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*border-bottom: 1px solid var(--input-color);*/
-}
-
-.header *{
-    color: white;
 }
 
 .header-home *{
