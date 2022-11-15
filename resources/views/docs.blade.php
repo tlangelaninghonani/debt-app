@@ -41,7 +41,7 @@
             find_in_page
             </span>
             <div class="breaker"></div>
-            <span>Please review your <span class="primary-color">documents</span> before submitting</span>
+            <span>Please <span class="primary-color-exp">review</span> your <span class="primary-color">documents</span> before submitting</span>
             <div class="breaker"></div>
         </div>
         <form id="uplaoddocsform" action="/upload_docs" method="POST" enctype="multipart/form-data">
@@ -54,7 +54,7 @@
                         cloud_done
                         </span>
                         <div>
-                            <span>Document uploaded</span><br>
+                            <span>Document <span>uploaded</span></span><br>
                             <span>11 - November - 2022</span>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                         cloud_done
                         </span>
                         <div>
-                            <span>Document uploaded</span><br>
+                            <span>Document <span>uploaded</span></span><br>
                             <span>11 - November - 2022</span>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                         cloud_done
                         </span>
                         <div>
-                            <span>Document uploaded</span><br>
+                            <span>Document <span>uploaded</span></span><br>
                             <span>11 - November - 2022</span>
                         </div>
                     </div>

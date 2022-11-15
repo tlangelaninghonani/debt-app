@@ -18,7 +18,7 @@
         @include("components.header")
     </div>
     <div class="position-fixed display-flex-center">
-        <div class="container">
+        <div class="container w-100">
             <!--<div class="display-flex-center">
                 <div class="status position-relative">
                     <div class="text-align-center">
@@ -44,24 +44,25 @@
             </div>
             <div class="breaker"></div>
             <div class="text-align-center">
-                <span class="slogan">Application</span>
+                <span class="slogan primary-color-exp">Application</span>
                 <div class="breaker"></div>
                 <span>Applied for Debt Counselling</span>
             </div>
             <div class="breaker"></div>
             <div class="display-flex-center">
-            <div class="button-style">
-                <div class="text-align-center">
-                    <span class="material-symbols-sharp">
-                    open_in_new
-                    </span><br>
-                    <span>Learn more</span> 
-                </div>
-                <div class="text-align-center">
-                    <span class="material-symbols-sharp">
-                    call
-                    </span><br>
-                    <span>Contact us</span> 
+                <div class="button-style-gray button-style-auto-wdith">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        open_in_new
+                        </span><br>
+                        <span>Learn more</span> 
+                    </div>
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        call
+                        </span><br>
+                        <span>Contact us</span> 
+                    </div>
                 </div>
             </div>
         </div>

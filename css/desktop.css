@@ -17,13 +17,16 @@
     --input-color: rgb(248, 248, 248);
     --radius: 40px;
     --radius-circle: 50%;
-    --primary-color: rgb(50, 50, 50);
-    --feint: rgb(50, 50, 50);
+    --primary-color: rgb(60, 60, 60);
+    --feint: rgb(60, 60, 60);
     --primary-feint: rgb(255, 243, 233);
     --placeholder-color: rgb(176, 176, 176);
     --font-family: 'Poller One', cursive;
     --banner-height: 50vh;
     --bottom-curve: 160px;
+    --primary-color-thick: #fd3f00;
+    --primary-color-exp: #fd7600;
+    --background-primary: linear-gradient(to right, var(--primary-color-thick), var(--primary-color-exp));
 }
 
 .ill-svg{
@@ -103,6 +106,7 @@ body{
 
 .container{
     padding: var(--padding);
+    box-sizing: border-box;
 }
 
 .icon-logo{
@@ -134,6 +138,11 @@ body{
     color: white;
 }
 
+.auto-width-flex{
+    display: inline-flex;
+    width: auto;
+}
+
 .circle-badge{
     width: auto;
     width: 180px;
@@ -144,6 +153,14 @@ body{
     border-radius: var(--radius-circle);
     background-color: var(--feint);
     transition: 0.1s;
+}
+
+.button-style-auto-wdith{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    width: auto;
 }
 
 .circle-badge:hover{
@@ -197,7 +214,7 @@ body{
 
 .add-doc{
     height: 65px;
-    padding: 0 25px;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,16 +295,6 @@ body{
     width: 30px;
 }
 
-.button-white{
-    background-color: white;
-    padding-top: 17px;
-    padding-bottom: 17px;
-}
-
-.button-white *{
-    color: black !important;
-}
-
 .search{
     border-bottom: 1px solid var(--input-color);
     padding-right: var(--padding);
@@ -297,26 +304,10 @@ body{
     border: none !important;
 }
 
-.button-icon{
-    background-color: var(--feint);
-    padding: 20.5px 40px;
-    border: none;
-    color: white;
-    gap: var(--gap);
-    white-space: nowrap;
-    cursor: pointer;
-    border-radius: var(--radius);
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap);
-}
-
 .button-icon-space{
     background-color: var(--feint);
-    padding: 20.5px 40px;
+    padding: 0 25px;
+    height: 65px;
     border: none;
     color: white;
     gap: var(--gap);
@@ -324,45 +315,55 @@ body{
     cursor: pointer;
     border-radius: var(--radius);
     width: 100%;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--gap);
 }
 
-.float-right{
-    float: right;
+.button-icon-space *{
+    color: white;
 }
 
-.button-style{
-    border-radius: var(--radius);
-    background-color: var(--input-color);
-    display: inline-flex;
-    align-items: center;
+.button-style-white{
+    background-color: white;
+    padding: 0 25px;
     height: 65px;
-    width: auto;
-    padding: 0 var(--padding);
-    gap: var(--mid-gap);
+    border: none;
+    color: white;
+    gap: var(--gap);
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: var(--radius);
+    width: 100%;
+    color: white;
+    gap: var(--gap);
 }
 
-.button-style *{
+.button-style-white *{
     color: var(--feint);
 }
 
-.button-style-primary{
-    border-radius: var(--radius);
-    background-color: var(--primary-color);
-    display: inline-flex;
-    align-items: center;
+.button-style-gray{
+    background-color: var(--input-color);
+    padding: 0 25px;
     height: 65px;
-    width: auto;
-    padding: 0 var(--padding);
-    gap: var(--mid-gap);
+    border: none;
+    color: white;
+    gap: var(--gap);
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: var(--radius);
+    color: white;
+    gap: var(--gap);
 }
 
-.button-style-primary *{
-    color: white;
+.opacity{
+    opacity: 0.9;
+}
+
+.float-right{
+    float: right;
 }
 
 .merital{
@@ -530,23 +531,6 @@ select{
     cursor: pointer;
 }
 
-button{
-    background-color: var(--feint);
-    padding: 25px 40px;
-    border: none;
-    color: white;
-    gap: var(--gap);
-    white-space: nowrap;
-    cursor: pointer;
-    border-radius: var(--radius);
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap);
-}
-
 .logo-svg{
     width: 150px;
     transition: 0.1s;
@@ -554,10 +538,6 @@ button{
 
 .logo-svg:hover{
     transform: scale(1.1);
-}
-
-button * {
-    color: white !important;
 }
 
 .action-icon{
@@ -715,6 +695,10 @@ img{
 
 .primary-color *{
     color: var(--primary-color) !important;
+}
+
+.primary-color-exp{
+    color: var(--primary-color-exp) !important;
 }
 
 .kanit-mid{
@@ -968,10 +952,6 @@ img{
     background-size: cover;
 }
 
-.home-container .button-style{
-    opacity: 0.9;
-}
-
 .header-home{
     padding: var(--padding);
     position: sticky;
@@ -1180,7 +1160,7 @@ a{
     top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-exp);
     height: 8px;
     width: 8px;
     border-radius: var(--radius-circle);
@@ -1214,9 +1194,6 @@ a{
     left: 0;
     right: 0;
     height: 92px;
-    /*background-color: var(--input-color);
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;*/
 }
 
 .bottom-nav-binder{
@@ -1241,7 +1218,7 @@ a{
 }
 
 .apply-icon{
-   
+    background-color: var(--feint);
 }
 
 .loader-binder{
@@ -1282,7 +1259,7 @@ a{
     box-sizing: border-box;
     animation: rotation 0.4s linear infinite;
     transition: 0.1s;
-    border-bottom-color: var(--primary-color);
+    border-bottom-color: var(--primary-color-exp);
   }
 
   @keyframes rotation {
@@ -1341,7 +1318,7 @@ hr{
 }
 
 .popup-binder{
-    position: fixed;
+    /*position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1349,7 +1326,7 @@ hr{
     background-color: white;
     z-index: 300;
     display: none;
-    opacity: 0.9;
+    opacity: 0.9;*/
 }
 
 .popup{

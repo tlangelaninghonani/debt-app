@@ -102,7 +102,7 @@
             </div>
         </div>
         <div class="float-bottom display-flex-center">
-            <div class="button-style">
+            <div class="button-style-white display-flex-space-around opacity">
                 <div class="text-align-center">
                     <span class="material-symbols-sharp">
                     component_exchange

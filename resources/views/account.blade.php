@@ -23,14 +23,14 @@
             <span class="material-symbols-sharp icon-big">
             account_circle
             </span>
-            <div class="breaker"></div>
+            <!--<div class="breaker"></div>
             <div>
                 <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Phone number - <span class="primary-color">{{ $account->phone_number }}</span></span><br>
+                <span>Phone number - <span class="primary-color-exp">{{ $account->phone_number }}</span></span><br>
                 @if($account->email_address != "")
-                    <span>Email address - <span class="primary-color">{{ $account->email_address }}</span></span><br>
+                    <span>Email address - <span class="primary-color-exp">{{ $account->email_address }}</span></span><br>
                 @endif
-            </div>
+            </div>-->
         </div>
         <div class="breaker"></div>
         <span class="slogan">Personal</span>
@@ -55,7 +55,7 @@
                 <span class="side-message">Optional</span>
             </div>
             <div class="breaker"></div>
-            <span class="slogan">Update your <span class="slogan-primary-color">password</span></span>
+            <span class="slogan">Update your <span class="slogan-primary-color primary-color-exp">password</span></span>
             <div class="breaker"></div>
             <div class="input-contain">
                 <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your password">

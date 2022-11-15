@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="breaker"></div>
-            <span class="slogan">Sign <span class="slogan text-gradient">in</span></span>
+            <span class="slogan">Sign <span class="slogan primary-color-exp">in</span></span>
             <div class="breaker"></div>
             <div class="">
                 <form id="signinform" action="/sign_in" method="POST">

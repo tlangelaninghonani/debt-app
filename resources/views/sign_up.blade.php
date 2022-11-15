@@ -69,9 +69,9 @@
                     </select>
                 </div>
                 <div class="breaker"></div>
-                <span class="slogan">Setup a <span class="slogan-primary-color">password</span></span><br>
+                <span class="slogan">Setup a <span class="slogan primary-color-exp">password</span></span><br>
                 <div class="breaker"></div>
-                <span>Password should be at least 6 characters long</span>
+                <span>Password should be at least <span class="primary-color-exp">6 </span>characters long</span>
                 <div class="breaker"></div>
                 <div class="input-contain">
                     <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your password">

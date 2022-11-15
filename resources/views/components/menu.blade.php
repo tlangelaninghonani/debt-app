@@ -11,7 +11,7 @@
             </span>
             <div>
                 <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Your status - <span class="primary-color">Application</span></span>
+                <span>Your status - <span class="primary-color-exp">Application</span></span>
             </div>
         </div>
         <div class="breaker"></div>

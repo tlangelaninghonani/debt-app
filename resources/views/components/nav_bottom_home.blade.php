@@ -23,29 +23,32 @@
                 @if(Route::getfacaderoot()->current()->uri() == "status")
                     <div class="focused-nav"></div>
                 @endif
-                <span class="material-symbols-sharp action-icon-opacity apply-icon">
+                <span class="material-symbols-sharp">
                 update
-                </span>
+                </span><br>
+                <span>Status</span>
             </div>
         @endif
         @if(! $links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/apply')">
                 @if(Route::getfacaderoot()->current()->uri() == "apply")
-                    <!--<div class="focused-nav"></div>-->
+                    <div class="focused-nav"></div>
                 @endif
-                <span class="material-symbols-sharp action-icon-opacity apply-icon">
+                <span class="material-symbols-sharp">
                 ios_share
-                </span>
+                </span><br>
+                <span>Apply</span>
             </div> 
         @endif 
     @else
         <div class="text-align-center relative" onclick="redirect('/apply')">
             @if(Route::getfacaderoot()->current()->uri() == "apply")
-                <!--<div class="focused-nav"></div>-->
+                <div class="focused-nav"></div>
             @endif
-            <span class="material-symbols-sharp action-icon-opacity apply-icon">
+            <span class="material-symbols-sharp">
             ios_share
-            </span>
+            </span><br>
+                <span>Apply</span>
         </div>
     @endif
     <div class="text-align-center relative" onclick="redirect('/docs')">

@@ -34,10 +34,10 @@
                 </div>
                 <div class="breaker"></div>
                 <div>
-                    <span class="slogan">The <span class="slogan text-gradient">Helping Hand</span> Debt Counsellors</span>
+                    <span class="slogan">The <span class="slogan">Helping Hand</span> Debt Counsellors</span>
                     <div class="breaker"></div>
                     <div>
-                        <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
+                        <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color-exp">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
                         <div class="breaker"></div>
                         <span id="getstartedicon" class="material-symbols-sharp action-icon" onclick="redirect('/sign_in')">
                         east

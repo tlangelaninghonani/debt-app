@@ -24,14 +24,15 @@
                 <div class="breaker"></div>
                 <span class="slogan">Meeting scheduled</span>
                 <div class="breaker"></div>
-                <span>Date - <span class="primary-color">{{ $meeting->meeting_date }}</span></span><br>
-                <span>Time - <span class="primary-color">{{ $meeting->meeting_time }}</span></span><br>
+                <span>Date - <span class="primary-color-exp">{{ $meeting->meeting_date }}</span></span><br>
+                <span>Time - <span class="primary-color-exp">{{ $meeting->meeting_time }}</span></span><br>
                 <div class="breaker"></div>
-                <div class="display-flex-end" onclick="redirect('/meet')">
-                    <button class="display-flex-center">
-                        <span>Done</span>
-                    </button>
-                </div>
+                <button class="button-icon-space" onclick="redirect('/meet')">
+                    <span>Done</span>
+                    <span class="material-symbols-sharp">
+                    done
+                    </span>
+                </button>
             </div>
         </div>
         {{ Session::forget("success") }}
@@ -56,8 +57,8 @@
                 event
                 </span>
                 <div>
-                    <span>Date - <span class="primary-color">{{ $meeting->meeting_date }}</span></span><br>
-                    <span>Time - <span class="primary-color">{{ $meeting->meeting_time }}</span></span><br>
+                    <span>Date - <span class="primary-color-exp">{{ $meeting->meeting_date }}</span></span><br>
+                    <span>Time - <span class="primary-color-exp">{{ $meeting->meeting_time }}</span></span><br>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -66,7 +67,7 @@
                     <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Mahlori</span><br>
-                    <span><span class="primary-color">Lead</span> Debt Counsellor</span>
+                    <span><span class="primary-color-exp">Lead</span> Debt Counsellor</span>
                 </div>
                 <div class="text-align-center"> 
                     <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
@@ -131,7 +132,7 @@
             </div>
             <div class="breaker"></div>
             <div class="text-align-center">
-                <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color">Google Meet</span></span>
+                <span>Schedule a virtual meeting with a debt counsellor on <span class="primary-color-exp">Google Meet</span></span>
             </div>
             <div class="breaker"></div>
             <div class="family">
@@ -139,7 +140,7 @@
                     <img class="profile-pic-small" src="https://imageio.forbes.com/specials-images/imageserve/5c33a1554bbe6f7020fb2fd2/0x0.jpg?format=jpg&crop=1909,1909,x865,y206,safe&fit=crop" alt="">
                     <div class="breaker"></div>
                     <span class="slogan">Mahlori</span><br>
-                    <span><span class="primary-color">Lead</span> Debt Counsellor</span>
+                    <span><span class="primary-color-exp">Lead</span> Debt Counsellor</span>
                 </div>
                 <div class="text-align-center"> 
                     <img class="profile-pic-small" src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="">
