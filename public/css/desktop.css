@@ -24,9 +24,6 @@
     --font-family: 'Poller One', cursive;
     --banner-height: 50vh;
     --bottom-curve: 160px;
-    --primary-color-thick: #fd3f00;
-    --primary-color-exp: #fd7600;
-    --background-primary: linear-gradient(to right, var(--primary-color-thick), var(--primary-color-exp));
 }
 
 .ill-svg{
@@ -110,7 +107,7 @@ body{
 }
 
 .icon-logo{
-    color: var(--primary-color) !important;
+    color: var(--feint) !important;
 }
 
 
@@ -126,7 +123,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: var(--radius-circle);
-    background-color: var(--primary-color);
+    background-color: var(--feint);
     transition: 0.1s;
 }
 
@@ -548,7 +545,7 @@ select{
     padding: 20.5px;
     border-radius: var(--radius-circle);
     color: white;
-    background-color: var(--primary-color);
+    background-color: var(--feint);
     margin-bottom: 8px;
 }
 
@@ -676,25 +673,25 @@ img{
 .slogan-small-color{
     font-family: var(--font-family);
     font-size: 25px;
-    color: var(--primary-color) !important;
+    color: var(--feint) !important;
 }
 
 .slogan-primary-color{
     font-family: var(--font-family);
     font-size: 25px;
-    color: var(--primary-color) !important;
+    color: var(--feint) !important;
 }
 
 .primary-color{
-    color: var(--primary-color) !important;
+    color: var(--feint) !important;
 }
 
 .primary-color *{
-    color: var(--primary-color) !important;
+    color: var(--feint) !important;
 }
 
 .primary-color-exp{
-    color: var(--primary-color-exp) !important;
+    color: var(--feint) !important;
 }
 
 .kanit-mid{
@@ -703,7 +700,7 @@ img{
 }
 
 .underline{
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--feint);
 }
 
 .underline-white{
@@ -737,35 +734,35 @@ img{
 }
 
 .profile-pic-border-top{
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--feint);
 }
 
 .profile-pic-border-right{
-    border-right: 2px solid var(--primary-color);
+    border-right: 2px solid var(--feint);
 }
 
 .profile-pic-border-bottom{
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--feint);
 }
 
 .profile-pic-border-left{
-    border-left: 2px solid var(--primary-color);
+    border-left: 2px solid var(--feint);
 }
 
 .border-top-color{
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--feint);
 }
 
 .border-right-color{
-    border-right: 2px solid var(--primary-color);
+    border-right: 2px solid var(--feint);
 }
 
 .border-bottom-color{
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--feint);
 }
 
 .border-left-color{
-    border-left: 2px solid var(--primary-color);
+    border-left: 2px solid var(--feint);
 }
 
 .border-top-color-feint{
@@ -983,7 +980,7 @@ img{
     border-radius: var(--radius-circle);
     margin-top: 74px;
     opacity: 0.9;
-    background-color: var(--primary-color);
+    background-color: var(--feint);
     transition: 0.1s;
 }
 
@@ -1138,7 +1135,7 @@ img{
 }
 
 .focused{
-    border-bottom: 2px solid var(--primary-color) !important;
+    border-bottom: 2px solid var(--feint) !important;
     border-radius: var(--radius);
 }
 
@@ -1155,7 +1152,7 @@ a{
     position: absolute;
     left: 0;
     right: 0;
-    background-color: var(--primary-color-exp);
+    background-color: var(--feint);
     height: 2px;
     top: -26px;
     width: 100%;
@@ -1255,7 +1252,7 @@ a{
     box-sizing: border-box;
     animation: rotation 0.4s linear infinite;
     transition: 0.1s;
-    border-bottom-color: var(--primary-color-exp);
+    border-bottom-color: var(--feint);
   }
 
   @keyframes rotation {
@@ -1362,7 +1359,7 @@ hr{
 .design-slogan-primary-color{
     font-family: 'Poller One', cursive;
     font-size: 100px;
-    color: var(--primary-color);
+    color: var(--feint);
 }
 
 .poller-one{
@@ -1416,7 +1413,7 @@ hr{
 }
 
 .logo-orange-line{
-    border: 10px solid var(--primary-color);
+    border: 10px solid var(--feint);
     position: absolute;
     top: 0;
     right: 0;
@@ -1507,7 +1504,7 @@ hr{
 
 
 .logo-t-symbol{
-    background-color: var(--primary-color);
+    background-color: var(--feint);
     height: 250px;
     width: 60px;
     position: relative;
@@ -1528,7 +1525,7 @@ hr{
 
 .logo-t-symbol-bottom-ball{
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--feint);
     bottom: 0px;
     left: 0px;
     height: 35px;
@@ -1540,7 +1537,7 @@ hr{
 
 .logo-t-symbol-left-bar{
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--feint);
     top: 50px;
     left: -30px;
     height: 60px;
