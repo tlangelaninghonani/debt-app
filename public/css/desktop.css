@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
+
 @font-face {
     font-family: 'MyFont';
     src: url('/Helvetica-Neue-LT-Com-63-Medium-Extended.woff2') format('WOFF2');
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('/garantpro-bold.otf') format('WOFF');
 }
 
 @font-face {
@@ -17,11 +23,11 @@
     --input-color: rgb(248, 248, 248);
     --radius: 40px;
     --radius-circle: 50%;
-    --primary-color: rgb(60, 60, 60);
+    --primary-color: #fd7600;
     --feint: rgb(60, 60, 60);
     --primary-feint: rgb(255, 243, 233);
     --placeholder-color: rgb(176, 176, 176);
-    --font-family: 'Poller One', cursive;
+    --font-family: 'test';
     --banner-height: 50vh;
     --bottom-curve: 160px;
 }
@@ -332,7 +338,6 @@ body{
     white-space: nowrap;
     cursor: pointer;
     border-radius: var(--radius);
-    width: 100%;
     color: white;
     gap: var(--gap);
 }
@@ -1413,7 +1418,7 @@ hr{
 }
 
 .logo-orange-line{
-    border: 10px solid var(--feint);
+    border: 10px solid var(--primary-color);
     position: absolute;
     top: 0;
     right: 0;
@@ -1496,15 +1501,8 @@ hr{
     border-bottom-left-radius: 80px;
 }
 
-
-
-
-
-
-
-
 .logo-t-symbol{
-    background-color: var(--feint);
+    background-color: var(--primary-color);
     height: 250px;
     width: 60px;
     position: relative;
@@ -1525,7 +1523,7 @@ hr{
 
 .logo-t-symbol-bottom-ball{
     position: absolute;
-    background-color: var(--feint);
+    background-color: var(--primary-color);
     bottom: 0px;
     left: 0px;
     height: 35px;
@@ -1537,7 +1535,7 @@ hr{
 
 .logo-t-symbol-left-bar{
     position: absolute;
-    background-color: var(--feint);
+    background-color: var(--primary-color);
     top: 50px;
     left: -30px;
     height: 60px;

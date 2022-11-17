@@ -24,7 +24,7 @@
             <div class="display-flex-center">
                 <div class="circle-badge position-relative">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp icon-mid">
+                        <span class="material-symbols-sharp icon-small">
                         whatshot
                         </span><br>
                         <div class="breaker"></div>
@@ -36,7 +36,7 @@
             <div class="breaker"></div>
             <div class="display-flex-space-between">
                 <div class="display-flex">
-                    <span class="material-symbols-sharp icon-mid">
+                    <span class="material-symbols-sharp icon-small">
                     domain
                     </span><br>
                     <div>
@@ -49,7 +49,7 @@
             <div class="breaker"></div>
             <div class="display-flex-space-between">
                 <div class="display-flex">
-                    <span class="material-symbols-sharp icon-mid">
+                    <span class="material-symbols-sharp icon-small">
                     domain
                     </span><br>
                     <div>
@@ -62,7 +62,7 @@
             <div class="breaker"></div>
             <div class="display-flex-space-between">
                 <div class="display-flex">
-                    <span class="material-symbols-sharp icon-mid">
+                    <span class="material-symbols-sharp icon-small">
                     domain
                     </span><br>
                     <div>
@@ -102,7 +102,7 @@
             </div>
         </div>
         <div class="float-bottom display-flex-center">
-            <div class="button-style-white display-flex-space-around opacity">
+            <div class="button-style-white opacity button-style-auto-wdith">
                 <div class="text-align-center">
                     <span class="material-symbols-sharp">
                     component_exchange

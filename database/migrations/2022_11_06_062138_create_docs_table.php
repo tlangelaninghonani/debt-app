@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string("payslip_document_filename");
             $table->string("statement_document");
             $table->string("statement_document_filename");
+            $table->string("date_uploaded");
             $table->timestamps();
         });
     }

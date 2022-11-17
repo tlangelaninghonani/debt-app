@@ -25,7 +25,7 @@
             <span class="material-symbols-sharp" onclick="redirectBack()">
             west
             </span>
-            <span class="my-font-align">Sign up</span>
+            <span class="my-font-align">Register</span>
             <span class="material-symbols-sharp" onclick="refreshPage()">
             refresh
             </span>
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="top-design">
                 <div class="w-100">
-                    <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
+                    <img src="/svg/logo.png" class="logo-svg" alt=""><br>
                     <div class="breaker"></div>
                     <span>We will be with you <span class="primary-color-exp">all</span> the way</span>
                 </div>

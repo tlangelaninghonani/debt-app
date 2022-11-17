@@ -9,7 +9,7 @@
             </span><br>
             <span class="helvetica">Home</span>
         </div>
-        <div class="text-align-center relative" onclick="redirect('/meet')">
+        <!--<div class="text-align-center relative" onclick="redirect('/meet')">
             @if(Route::getfacaderoot()->current()->uri() == "meet")
                 <div class="focused-nav"></div>
             @endif
@@ -17,7 +17,7 @@
             videocam
             </span><br>
             <span class="helvetica">Meet</span>
-        </div>
+        </div>-->
         @if($links['application']::where("account_id", Cookie::get("accountid"))->exists())
             @if($links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
                 <div class="text-align-center relative" onclick="redirect('/status')">

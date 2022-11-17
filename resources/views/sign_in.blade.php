@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <link rel="stylesheet" href="{{ $links['desktopCss'] }}">
     <script src="{{ $links['desktopJs'] }}"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/bxs7qjl.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.22/index.umd.js" integrity="sha512-c08RNGquBScVDxl/Yf50kga+4ZEI/xuqjBxwFUTFjnRn4Zoz1qcd2m5e/E+Pi+2b0O+lwDPz+J9N3ZzHTbnxHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title></title>
 </head>
@@ -20,17 +21,16 @@
             </div>
         </div>
     </div>-->
-    <div>
-        <div class="container">
+        <div class="container w-100">
             <div class="top-design">
                 <div class="w-100">
-                    <img src="/svg/logo.svg" class="logo-svg" alt=""><br>
+                    <img src="/svg/logo.png" class="logo-svg" alt=""><br>
                     <div class="breaker"></div>
                     <span>Sign in with your <span>phone number</span> and <span>password</span></span>
                 </div>
             </div>
             <div class="breaker"></div>
-            <span class="slogan">Sign <span class="slogan primary-color-exp">in</span></span>
+            <span class="slogan">Log <span class="slogan primary-color-exp">in</span></span>
             <div class="breaker"></div>
             <div class="">
                 <form id="signinform" action="/sign_in" method="POST">
@@ -67,6 +67,5 @@
                 </form>
             </div>
         </div>
-    </div>
 </body>
 </html>

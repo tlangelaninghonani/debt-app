@@ -23,14 +23,14 @@
             <span class="material-symbols-sharp icon-big">
             account_circle
             </span>
-            <!--<div class="breaker"></div>
+            <div class="breaker"></div>
             <div>
-                <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Phone number - <span class="primary-color-exp">{{ $account->phone_number }}</span></span><br>
+                <span >{{ $account->first_name." ".$account->last_name }}</span><br>
+                <span><span class="primary-color-exp">{{ $account->phone_number }}</span></span><br>
                 @if($account->email_address != "")
-                    <span>Email address - <span class="primary-color-exp">{{ $account->email_address }}</span></span><br>
+                    <span><span class="primary-color-exp">{{ $account->email_address }}</span></span><br>
                 @endif
-            </div>-->
+            </div>
         </div>
         <div class="breaker"></div>
         <span class="slogan">Personal</span>

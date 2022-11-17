@@ -25,6 +25,7 @@ class AccountController extends Controller
         $req->phonenumber != "" && $req->password != ""){
 
             if(strlen(str_replace(" ", "", $req->phonenumber)) != 10){
+
                 Session::put("error", true);
                 Session::put("errormessage", "Phone number should be 10 digits");
 
@@ -33,6 +34,7 @@ class AccountController extends Controller
 
             if($req->emailaddress != ""){
                 if(! strpos(strtolower($req->emailaddress), "@")){
+
                     Session::put("error", true);
                     Session::put("errormessage", "Invalid email address");
     
@@ -40,6 +42,7 @@ class AccountController extends Controller
                 }
     
                 if(! strpos(strtolower($req->emailaddress), ".")){
+                    
                     Session::put("error", true);
                     Session::put("errormessage", "Invalid email address");
     

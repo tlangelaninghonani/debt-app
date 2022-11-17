@@ -135,9 +135,11 @@ class ClientController extends Controller
     public function docs(){
 
         $account = Account::find(Cookie::get("accountid"));
+        $docs = Doc::where("account_id", $account->id)->first();
 
         return view("docs", [
             "account" => $account,
+            "docs" => $docs,
         ]);
     }
 
@@ -147,9 +149,17 @@ class ClientController extends Controller
 
         $docs = new Doc();
 
+        if(! $req->file("identity") || ! $req->file("payslip") || ! $req->file("statement")){
+
+            Session::put("error", true);
+            Session::put("errormessage", "Please upload all required documents");
+
+            return back();
+        }
+
         $file = $req->file("identity");
         $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
-        $file->move("accounts/accounts_documents", $filename);
+        $file->move("accounts/".$account->first_name." ".$account->last_name."/documents", $filename);
 
         $docs->account_id = $account->id;
         $docs->identity_document = $filename;
@@ -157,15 +167,17 @@ class ClientController extends Controller
 
         $file = $req->file("payslip");
         $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
-        $file->move("accounts/accounts_documents", $filename);
+        $file->move("accounts/".$account->first_name." ".$account->last_name."/documents", $filename);
         $docs->payslip_document = $filename;
         $docs->payslip_document_filename = $file->getClientOriginalName();
 
         $file = $req->file("statement");
         $filename = uniqid(date("dmYHis"), true).$file->getClientOriginalName();
-        $file->move("accounts/accounts_documents", $filename);
+        $file->move("accounts/".$account->first_name." ".$account->last_name."/documents", $filename);
         $docs->statement_document = $filename;
         $docs->statement_document_filename = $file->getClientOriginalName();
+
+        $docs->date_uploaded = date("d - M - Y");
 
         $docs->save();
 
