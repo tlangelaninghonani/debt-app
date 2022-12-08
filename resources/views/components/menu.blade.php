@@ -5,16 +5,6 @@
             close
             </span>
         </div>
-        <div class="display-flex-align">
-            <span class="material-symbols-sharp icon-mid">
-            account_circle
-            </span>
-            <div>
-                <span class="slogan">{{ $account->first_name." ".$account->last_name }}</span><br>
-                <span>Your status - <span class="primary-color-exp">Application</span></span>
-            </div>
-        </div>
-        <div class="breaker"></div>
         <div class="display-flex-align" onclick="redirect('/branches')">
             <span class="material-symbols-sharp">
             store
@@ -28,13 +18,14 @@
             </span>
             <span class="my-font-align">Refer to a friend</span>
         </div>
-        <div class="breaker"></div>
-        <div class="display-flex-align" onclick="redirect('/sign_out')">
+    </div>
+    <div class="menu-footer">
+        <button class="button-icon-space" onclick="redirect('/sign_out')">
+            <span class="my-font-align">Sign out</span>
             <span class="material-symbols-sharp">
             power_settings_new
             </span>
-            <span class="my-font-align">Sign out</span>
-        </div>
+        </button>
     </div>
 </div>
 <script>

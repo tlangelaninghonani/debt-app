@@ -17,7 +17,34 @@
     <title></title>
 </head>
 @include("components.loader")
-<body class="body-flex"> 
+<div class="menu" id="menu">
+    <div class="container">
+        <div class="display-flex-end">
+            <span class="material-symbols-sharp" onclick="menu('close')">
+            close
+            </span>
+        </div>
+        <div class="display-flex-align">
+            <span class="material-symbols-sharp">
+            verified
+            </span>
+            <span class="my-font-align">Registered debt counsellors</span>
+        </div>
+        <div class="breaker"></div>
+        <div class="display-flex-align">
+            <span class="material-symbols-sharp">
+            call
+            </span>
+            <span class="my-font-align">Contact us</span>
+        </div>
+    </div>
+</div>
+<body> 
+    <!--<div class="float-top-left">
+        <span class="material-icons-sharp" onclick="menu('open')">
+        more_horiz
+        </span> 
+    </div>-->
     <!--<div class="top-banner-welcome">
         <div class="logo-background-mobile-binder">
             <div class="logo-background-mobile">
@@ -25,27 +52,87 @@
             </div>
         </div>
     </div>-->
-    <div class="h-100 w-100 display-flex-center">
+    <div class="header">
+        <span>Welcome</span>
+        @include("components.find_a_branch")
+        <span class="material-icons-sharp" onclick="menu('open')">
+        more_horiz
+        </span> 
+    </div>
+    <div>
         <div class="container">
             <div class="text-align-center">
-                <div class="top-design">
-                    <div class="w-100">
-                        <img src="/svg/logo.png" class="logo-svg" alt=""><br>
-                    </div>
-                </div>
+                <img src="/smart_logo.png" class="logo-svg" alt=""><br>
                 <div class="breaker"></div>
                 <div>
-                    <span class="slogan">The <span class="slogan">Helping Hand</span> Debt Counsellors</span>
+                    <span class="slogan">The <span class="slogan primary-color">Helping Hand</span> Debt Counsellors</span>
                     <div class="breaker"></div>
                     <div>
-                        <span>Do you feel as if you've bitten off more than you can chew? The <span class="primary-color-exp">Helping Hand</span> Debt Councellors can offer you a debt solution that works</span>
-                        <div class="breaker"></div>
-                        <span id="getstartedicon" class="material-symbols-sharp action-icon" onclick="redirect('/sign_in')">
-                        east
-                        </span>
+                        <span>Do you feel as if you've bitten off more than you can chew? <span class="bold">The <span class="">Helping Hand</span> Debt Councellors</span> can offer you a debt solution that works.</span>
                     </div>
                 </div>
             </div>
+            <!-- <div class="breaker"></div>
+            <div class="margin-ini-exp">
+                <div class="display-flex-align mid-gap">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp ">
+                        groups
+                        </span><br>
+                        <span class="bold">10 000 <br> plus</span><br>
+                        <span>Active <br> Clients</span>
+                    </div>
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp ">
+                        draft
+                        </span><br>
+                        <span class="bold">15 000 <br> plus</span><br>
+                        <span>Submitted <br> applications</span>
+                    </div>
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp ">
+                        my_location
+                        </span><br>
+                        <span class="bold">50 <br> plus</span><br>
+                        <span>Presentation <br> locations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-center">
+                <span class="material-symbols-sharp">
+                airplay
+                </span> 
+                <span>Learn more from our <span class="bold">Website</span></span>
+            </div> -->
+            <div class="breaker"></div>
+            <button class="button-icon-space" onclick="redirect('/sign_in')">
+                <span>Get started</span>
+                <span class="material-symbols-sharp">
+                east
+                </span>
+            </button>
+            <form id="confirmaccountform" action="/confirm_account" method="POST" class="display-none">
+                @csrf
+                @method("POST")
+            </form>
+            @if(Cookie::has("signed"))
+                <div class="breaker"></div>
+                <div class="div-ini-normal-not-right position-relative" onclick="submitForm('confirmaccountform')">
+                    <div class="display-flex-align">
+                        <span class="material-symbols-sharp">
+                        account_circle
+                        </span>
+                        <div>
+                            <span>Tlangelani nghonani</span><br>
+                            <span>067 722 8944</span>
+                        </div>
+                    </div>
+                    <span class="material-symbols-sharp">
+                    done
+                    </span>
+                </div> 
+            @endif
         </div>
     </div>
 </body>

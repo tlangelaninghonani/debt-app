@@ -16,13 +16,16 @@
     @if(Session::has("success"))
         <div class="applied" id="applied">
             <div class="text-align-center w-100">
-                <img src="/svg/127.svg" class="ill-svg" alt=""><br>
+                <span class="material-symbols-sharp icon-big">
+                published_with_changes
+                </span><br>
+                <div class="breaker"></div>
                 <span class="slogan">Submitted</span>
                 <div class="breaker"></div>
                 <span>Application successfully submitted</span>
                 <div class="breaker"></div>
                 <div class="text-align-center">
-                    <span class="material-symbols-sharp action-icon" style="border-radius: 34% 66% 68% 32% / 52% 58% 42% 48% " onclick="redirect('/apply')">
+                    <span class="material-symbols-sharp action-icon" onclick="redirect('/apply')">
                     done
                     </span>
                 </div>
@@ -37,8 +40,9 @@
         <div class="container view-bottom">
             <div class="text-align-center">
                 <span class="material-symbols-sharp icon-big">
-                ios_share
-                </span>
+                info
+                </span><br>
+                <div class="breaker"></div>
                 <span>Please confirm your <span class="primary-color">information</span> before submitting</span>
                 <div class="breaker"></div>
             </div>
@@ -78,13 +82,13 @@
                 </form>
                 <div class="display-flex-space-evenly">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp action-icon" style="border-radius: 34% 66% 68% 32% / 52% 58% 42% 48% ">
+                        <span class="material-symbols-sharp action-icon">
                         edit
                         </span><br>
                         <span>Edit</span>
                     </div>
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp action-icon-primary" style="border-radius: 65% 35% 37% 63% / 64% 59% 41% 36%  " onclick="submitForm('submitform')">
+                        <span class="material-symbols-sharp action-icon-primary" onclick="submitForm('submitform')">
                         ios_share
                         </span><br>
                         <span>Submit</span>
@@ -267,23 +271,23 @@
                     }
                 </script>
                 <div class="breaker"></div>
-                <span class="slogan">Income before deductions</span>
+                <span class="slogan">Income</span>
                 <div class="breaker"></div>
-                <div>
-                    <span>Around <span class="primary-color" id="incomebefore">R 1000.00</span></span>
+                <div class="income">
+                    <div class="display-flex-align">
+                        <span>Before deductions - <span id="incomebefore">R 1000.00</span></span>
+                    </div>
+                    <div class="breaker"></div>
+                    <input class="w-100 slider" name="incomebeforedeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomebefore')"><br>
+                    <div class="breaker"></div>
+                    <div>
+                        <span>After deductions -  <span id="incomeafter">R 1000.00</span></span>
+                    </div>
+                    <div class="breaker"></div>
+                    <input class="w-100 slider" name="incomeafterdeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomeafter')"><br>
                 </div>
                 <div class="breaker"></div>
-                <input class="w-100 slider" name="incomebeforedeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomebefore')"><br>
-                <div class="breaker"></div>
-                <span class="slogan">Income after deductions</span><br>
-                <div class="breaker"></div>
-                <div>
-                    <span>Around <span class="primary-color" id="incomeafter">R 1000.00</span></span>
-                </div>
-                <div class="breaker"></div>
-                <input class="w-100 slider" name="incomeafterdeductions" type="range" min="1000" max="50000" value="1000" step="1000" oninput="sliderValue(this.value, 'incomeafter')"><br>
-                <div class="breaker"></div>
-                <div>
+                <div class="margin-ini">
                     <div class="display-flex">
                         <span id="checkbox" onclick="check()" class="material-symbols-sharp cursor-pointer">
                         check_box_outline_blank

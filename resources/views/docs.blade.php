@@ -82,7 +82,7 @@
                     </div>
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('identity')">
-                            <span class="material-symbols-sharp">
+                            <span class="material-symbols-sharp ">
                             cloud_sync
                             </span><br>
                             <span>Re-Upload</span>
@@ -93,7 +93,7 @@
                 <div class="display-flex-space-between">
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('payslip')">
-                            <span class="material-symbols-sharp">
+                            <span class="material-symbols-sharp ">
                             cloud_sync
                             </span><br>
                             <span>Upload</span>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('statement')">
-                            <span class="material-symbols-sharp">
+                            <span class="material-symbols-sharp ">
                             cloud_sync
                             </span><br>
                             <span>Upload</span>
@@ -158,7 +158,7 @@
                     </div>
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('identity')">
-                            <span class="material-symbols-sharp">
+                            <span class="material-symbols-sharp ">
                             cloud_upload
                             </span><br>
                             <span>Upload</span>
@@ -169,7 +169,7 @@
                 <div class="display-flex-space-between">
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('payslip')">
-                            <span class="material-symbols-sharp">
+                            <span class="material-symbols-sharp ">
                             cloud_upload
                             </span><br>
                             <span>Upload</span>

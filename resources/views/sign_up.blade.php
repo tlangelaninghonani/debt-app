@@ -12,7 +12,7 @@
 </head>
 @include("components.error")
 @include("components.loader")
-<body class="body-flex-normal">
+<body>
         <div class="w-100">
         <!--<div class="top-banner-sign-up">
             <div class="logo-background-mobile-binder">
@@ -21,21 +21,27 @@
                 </div>
             </div>
         </div>-->
-        <div class="header">
+        <div class="header-normal">
+           <div class="display-flex-space-between">
             <span class="material-symbols-sharp" onclick="redirectBack()">
-            west
-            </span>
-            <span class="my-font-align">Register</span>
-            <span class="material-symbols-sharp" onclick="refreshPage()">
-            refresh
-            </span>
+                west
+                </span>
+                <span class="my-font-align">Register</span>
+                <span class="material-symbols-sharp" onclick="refreshPage()">
+                refresh
+                </span>
+           </div>
+           <div class="breaker"></div>
+            <div>
+                @include("components.find_a_branch") 
+            </div>
         </div>
         <div class="container">
             <div class="top-design">
                 <div class="w-100">
-                    <img src="/svg/logo.png" class="logo-svg" alt=""><br>
+                    <img src="/smart_logo.png" class="logo-svg" alt=""><br>
                     <div class="breaker"></div>
-                    <span>We will be with you <span class="primary-color-exp">all</span> the way</span>
+                    <span>We will be <span class="">with you</span> all the way</span>
                 </div>
             </div>
             <div class="breaker"></div>
@@ -61,15 +67,78 @@
                     <span class="side-message">Optional</span>
                 </div>
                 <div class="breaker"></div>
-                <div class="input-contain">
+                <div class="gender-display">
+                    <div class="gender text-align-center display-flex-center" id="male" onclick="selectGender('male')">
+                        <div class="display-none" id="maleselected">
+                            <span class="material-symbols-sharp">
+                            done
+                            </span>
+                        </div>
+                        <div>
+                            <span class="material-symbols-sharp icon-small action-icon-style">
+                            man
+                            </span><br>
+                            <span>Male</span>
+                        </div>
+                    </div>
+                    <div class="gender text-align-center display-flex-center" id="female" onclick="selectGender('female')">
+                        <div class="display-none" id="femaleselected">
+                            <span class="material-symbols-sharp">
+                            done
+                            </span>
+                        </div>
+                        <div>
+                            <span class="material-symbols-sharp icon-small action-icon-style">
+                            woman
+                            </span><br>
+                            <span>Female</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="breaker"></div>
+                <div class="display-flex-center" id="other" onclick="selectGender('other')">
+                    <span class="material-symbols-sharp">
+                    account_circle
+                    </span>
+                    <span class="my-font-align">Rather not say</span>
+                    <div class="display-none" id="otherselected">
+                        <span class="material-symbols-sharp">
+                        done
+                        </span>
+                    </div>
+                </div>
+                <input type="hidden" id="gender" name="gender">
+                <script>
+                    function selectGender(gender){
+
+                        document.querySelector("#maleselected").classList.remove("tag-top-right");
+                        document.querySelector("#femaleselected").classList.remove("tag-top-right");
+                        document.querySelector("#otherselected").classList.remove("tag-normal");
+
+                        if(gender === "male"){
+
+                            document.querySelector("#maleselected").classList.add("tag-top-right");
+                            document.querySelector("#gender").value = gender.charAt(0).toUpperCase() + gender.slice(1);
+                        }else if(gender === "female"){
+
+                            document.querySelector("#femaleselected").classList.add("tag-top-right");
+                            document.querySelector("#gender").value = gender.charAt(0).toUpperCase() + gender.slice(1);
+                        }else{
+
+                            document.querySelector("#otherselected").classList.add("tag-normal");
+                            document.querySelector("#gender").value = gender.charAt(0).toUpperCase() + gender.slice(1);
+                        }
+                    }
+                </script>
+                <!--<div class="input-contain">
                     <select name="gender" id="gender" class="w-100">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Other">Other</option>
                     </select>
-                </div>
+                </div>-->
                 <div class="breaker"></div>
-                <span class="slogan">Setup a <span class="slogan primary-color-exp">password</span></span><br>
+                <span class="slogan">Setup a <span class="slogan primary-color">password</span></span><br>
                 <div class="breaker"></div>
                 <span>Password should be at least <span class="primary-color-exp">6 </span>characters long</span>
                 <div class="breaker"></div>
@@ -91,7 +160,7 @@
                 </div>
                 <div class="breaker"></div>
                 <div class="text-align-center">
-                    <span class="nowrap" onclick="redirect('/sign_in')">Sign in instead</span>
+                    <span class="nowrap" onclick="redirect('/sign_in')">Sign <span>in</span> instead</span>
                 </div>
             </form>
         </div>

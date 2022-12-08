@@ -12,9 +12,9 @@ class AccountController extends Controller
 {
 
     public function signUpIndex(){
-        if(Cookie::has("signed")){
-            return redirect("/home");
-        }
+        // if(Cookie::has("signed")){
+        //     return redirect("/home");
+        // }
 
         return view("sign_up");
     }
@@ -110,11 +110,24 @@ class AccountController extends Controller
     }
 
     public function signInIndex(){
-        if(Cookie::has("signed")){
-            return redirect("/home");
+        // if(Cookie::has("signed")){
+        //     return redirect("/home");
+        // }
+
+        if(! Account::where("id", Cookie::get("accountid"))->exists()){
+
+            Cookie::queue(Cookie::forget("signed"));
+            Cookie::queue(Cookie::forget("accountid"));
+
+            return redirect("/sign_in");
         }
 
         return view("sign_in");
+    }
+
+    public function confirmAccount(){
+
+        return redirect("/home");
     }
 
     public function signIn(Request $req){
@@ -217,6 +230,7 @@ class AccountController extends Controller
             $account->last_name = ucfirst(strtolower($req->lastname));
             $account->phone_number = str_replace(" ", "", $req->phonenumber);
             $account->email_address = strtolower($req->emailaddress);
+            $account->gender = $req->gender;
             if($req->password != ""){
                 $account->password = Hash::make($req->password);
             }

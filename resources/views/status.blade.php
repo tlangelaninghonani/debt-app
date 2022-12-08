@@ -17,52 +17,43 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="position-fixed display-flex-center">
+    <div class="display-flex-center">
         <div class="container w-100">
-            <!--<div class="display-flex-center">
-                <div class="status position-relative">
-                    <div class="text-align-center">
-                        <span class="number-big nowrap">A</span><br>
-                        <span>Status <br> code</span>
-                    </div>
-                </div>
-            </div>
-            <script>
-                elementBorder(".status", "feint")
-            </script>-->
             <div class="display-flex-center">
-                <div class="circle-badge position-relative">
+                <div class="installment-status">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp icon-mid">
-                        whatshot
+                        <span class="material-symbols-sharp icon-big">
+                        autorenew
                         </span><br>
                         <div class="breaker"></div>
-                        <span class="number-big nowrap">A</span><br>
-                        <span>Status code</span>
+                        <span>Reduced to</span><br>
+                        <span class="number-big">R 5 600.00</span><br>
+                        <span>From <span>R 10 000.00</span></span>
                     </div>
                 </div>
             </div>
             <div class="breaker"></div>
             <div class="text-align-center">
-                <span class="slogan primary-color-exp">Application</span>
-                <div class="breaker"></div>
-                <span>Applied for Debt Counselling</span>
+                <span>Download your latest statement</span>
             </div>
             <div class="breaker"></div>
-            <div class="display-flex-center">
-                <div class="button-style-gray button-style-auto-wdith">
-                    <div class="text-align-center">
-                        <span class="material-symbols-sharp">
-                        open_in_new
-                        </span><br>
-                        <span>Learn more</span> 
+            <div class="display-flex-space-between">
+                <div class="margin-ini-feint">
+                    <div class="display-flex-align">
+                        <span class="material-symbols-sharp icon-small">
+                        draft
+                        </span>
+                        <div>
+                            <span class="bold">Latest statement</span><br>
+                            <span>20 - Nov - 2022</span>
+                        </div>
                     </div>
-                    <div class="text-align-center">
-                        <span class="material-symbols-sharp">
-                        call
-                        </span><br>
-                        <span>Contact us</span> 
-                    </div>
+                </div> 
+                <div class="text-align-center">
+                    <span class="material-symbols-sharp ">
+                    cloud_download
+                    </span><br>
+                    <span class="my-font-align">Download</span>
                 </div>
             </div>
         </div>

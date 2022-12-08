@@ -14,9 +14,9 @@ use App\Models\Doc;
 class ClientController extends Controller
 {
     public function welcome(){
-        if(Cookie::has("signed")){
-            return redirect("/home");
-        }
+        // if(Cookie::has("signed")){
+        //     return redirect("/home");
+        // }
 
         return view("welcome");
     }
@@ -53,14 +53,14 @@ class ClientController extends Controller
         $account = Account::find(Cookie::get("accountid"));
         $application = Application::where("account_id", $account->id)->first();  
         
-        if($application){
-            if(! $application->submit){
+        // if($application){
+        //     if(! $application->submit){
                 
-                return redirect("/apply");
-            }
-        }else{
-            return redirect("/apply");
-        }
+        //         return redirect("/apply");
+        //     }
+        // }else{
+        //     return redirect("/apply");
+        // }
 
         return view("status", [
             "account" => $account

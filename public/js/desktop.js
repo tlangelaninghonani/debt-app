@@ -46,7 +46,7 @@ function showHideElement(id, styleDisplay){
     document.querySelector("#"+id).style.display = styleDisplay;
 }
 
-var popupHeight = "80%";
+var popupHeight = "60vh";
 
 function showHidePopup(id, styleDisplay, delay = false){
 
@@ -54,34 +54,24 @@ function showHidePopup(id, styleDisplay, delay = false){
 
         setTimeout(() => {
 
-            if(styleDisplay === "block"){
+            if(styleDisplay !== "none"){
         
-                document.querySelector(".popup").style.padding = "25px";
-                document.querySelector(".popup-binder").style.display = "block";
-                document.querySelector(".popup").style.height = popupHeight;
+                document.querySelector(".popup").style.display = "block";
             }else{
         
-                document.querySelector(".popup").style.padding = "0";
-                document.querySelector(".popup-binder").style.display = "none";
-                document.querySelector(".popup").style.height = "0%";
-                document.querySelector(".popup").style.bottom = "0";
+                document.querySelector(".popup").style.display = "none";
             }
 
             document.querySelector("#"+id).style.display = styleDisplay;
         }, 200);
     }else{
 
-        if(styleDisplay === "block"){
+        if(styleDisplay !== "none"){
         
-            document.querySelector(".popup").style.padding = "25px";
-            document.querySelector(".popup-binder").style.display = "block";
-            document.querySelector(".popup").style.height = popupHeight;
+            document.querySelector(".popup").style.display = "block";
         }else{
     
-            document.querySelector(".popup").style.padding = "0";
-            document.querySelector(".popup-binder").style.display = "none";
-            document.querySelector(".popup").style.height = "0%";
-            document.querySelector(".popup").style.bottom = "0";
+            document.querySelector(".popup").style.display = "none";
         }
 
         document.querySelector("#"+id).style.display = styleDisplay;

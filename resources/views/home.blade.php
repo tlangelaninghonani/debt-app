@@ -15,7 +15,7 @@
     <div class="popup">
         <div id="debts" class="display-none">
             <div class="display-flex-space-between">
-                <span class="slogan">Debts</span>
+                <span>Debts</span>
                 <span class="material-symbols-sharp my-font-align" onclick="showHidePopup('debts', 'none')">
                 arrow_drop_down
                 </span>
@@ -24,7 +24,7 @@
             <div class="display-flex-center">
                 <div class="circle-badge position-relative">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp icon-small">
+                        <span class="material-symbols-sharp icon-mid">
                         whatshot
                         </span><br>
                         <div class="breaker"></div>
@@ -34,42 +34,55 @@
                 </div>
             </div>
             <div class="breaker"></div>
-            <div class="display-flex-space-between">
-                <div class="display-flex">
+            <div class="text-align-center">
+                <span>Your debts</span>
+            </div>
+            <div class="breaker"></div>
+            <div class="display-flex-space-between debt">
+                <div class="display-flex-align">
                     <span class="material-symbols-sharp icon-small">
                     domain
-                    </span><br>
-                    <div>
-                        <span class="slogan">Capitec</span><br>
+                    </span>
+                    <div class="my-font-align">
+                        <span class="bold">Capitec</span><br>
            
-                        <span>Balance outstanding - <span class="primary-color">R 20 000.00</span></span><br>
+                        <span>Balance outstanding - <span class="bold">R 20 000.00</span></span><br>
                     </div>
+                </div>
+                <div class="debt-progress">
+                    <span>12%</span>
                 </div>
             </div>
             <div class="breaker"></div>
-            <div class="display-flex-space-between">
-                <div class="display-flex">
+            <div class="display-flex-space-between debt">
+                <div class="display-flex-align">
                     <span class="material-symbols-sharp icon-small">
                     domain
-                    </span><br>
-                    <div>
-                        <span class="slogan">Volkswagen</span><br>
+                    </span>
+                    <div class="my-font-align">
+                        <span class="bold">Volkswagen</span><br>
                   
-                        <span>Balance outstanding - <span class="primary-color">R 150 000.00</span></span><br>
+                        <span>Balance outstanding - <span class="bold">R 150 000.00</span></span><br>
                     </div>
+                </div>
+                <div class="debt-progress">
+                    <span>50%</span>
                 </div>
             </div>
             <div class="breaker"></div>
-            <div class="display-flex-space-between">
-                <div class="display-flex">
+            <div class="display-flex-space-between debt">
+                <div class="display-flex-align">
                     <span class="material-symbols-sharp icon-small">
                     domain
-                    </span><br>
-                    <div>
-                        <span class="slogan">Absa</span><br>
+                    </span>
+                    <div class="my-font-align">
+                        <span class="bold">Absa</span><br>
           
-                        <span>Balance outstanding - <span class="primary-color">R 10 000.00</span></span><br>
+                        <span>Balance outstanding - <span class="bold">R 10 000.00</span></span><br>
                     </div>
+                </div>
+                <div class="debt-progress">
+                    <span>35%</span>
                 </div>
             </div>
         </div>
@@ -81,13 +94,19 @@
         @include("components.header_banner_background")
     </div>
     <div class="home-container">
-        <div class="greeting">
-            <div class="display-flex-align">
-                <span class="slogan">Good morning <br> {{ $account->first_name }}</span>    
-            </div>
-        </div>
         <div class="home-content">
-            <div>
+            <div class="h-100"> 
+                <div class="greeting">
+                    <span class="material-symbols-sharp icon-small">
+                    waving_hand
+                    </span>
+                    <div>
+                        <span class="slogan">Hello there</span><br>
+                        <span>Tlangelani</span>
+                    </div> 
+                </div>
+            </div>
+            <div class="display-flex-center h-100">
                 <div class="installment">
                     <div class="text-align-center">
                         <span class="material-symbols-sharp icon-big">
@@ -98,28 +117,25 @@
                         <span class="number-big">R 5 600.00</span><br>
                         <span>From <span>R 10 000.00</span></span>
                     </div>
+                    <div class="installment-tag">
+                        <span>68%</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="float-bottom display-flex-center">
-            <div class="button-style-white opacity button-style-auto-wdith">
-                <div class="text-align-center">
-                    <span class="material-symbols-sharp">
-                    component_exchange
-                    </span><br>
-                    <span>Update</span> 
-                </div>
-                <div class="text-align-center">
-                    <span class="material-symbols-sharp">
-                    call
-                    </span><br>
-                    <span>Contact us</span> 
-                </div>
-                <div class="text-align-center" onclick="showHidePopup('debts', 'block')">
-                    <span class="material-symbols-sharp">
-                    domain
-                    </span><br>
-                    <span>Debts</span> 
+            <div class="h-100" style="display: flex; align-items: flex-end; justify-content: center">
+                <div class="button-style-white opacity button-style-auto-wdith">
+                    <div class="text-align-center">
+                        <span class="material-symbols-sharp">
+                        call
+                        </span><br>
+                        <span>Contact us</span> 
+                    </div>
+                    <div class="text-align-center" onclick="showHidePopup('debts', 'block')">
+                        <span class="material-symbols-sharp">
+                        domain
+                        </span><br>
+                        <span>Your debts</span> 
+                    </div>
                 </div>
             </div>
             <!--<div class="text-align-center">

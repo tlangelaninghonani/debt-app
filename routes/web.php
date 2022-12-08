@@ -17,10 +17,10 @@ use Illuminate\Support\Facades\Session;
 Route::get("/sign_out", function(){
     Session::flush();
 
-    Cookie::queue(Cookie::forget("signed"));
-    Cookie::queue(Cookie::forget("accountid"));
+    // Cookie::queue(Cookie::forget("signed"));
+    // Cookie::queue(Cookie::forget("accountid"));
 
-    return redirect("sign_in");
+    return redirect("/");
 });
 
 Route::get("/design", function(){
@@ -52,7 +52,9 @@ Route::post("/upload_docs", [App\Http\Controllers\ClientController::class, "uplo
 Route::get("/account", [App\Http\Controllers\AccountController::class, "account"]);
 Route::get("/sign_in", [App\Http\Controllers\AccountController::class, "signInIndex"]);
 Route::get("/sign_up", [App\Http\Controllers\AccountController::class, "signUpIndex"]);
+
 Route::post("/sign_in", [App\Http\Controllers\AccountController::class, "signIn"]);
 Route::post("/sign_up", [App\Http\Controllers\AccountController::class, "signUp"]);
 Route::post("/account/update", [App\Http\Controllers\AccountController::class, "update"]);
+Route::post("/confirm_account", [App\Http\Controllers\AccountController::class, "confirmAccount"]);
 

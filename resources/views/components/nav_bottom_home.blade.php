@@ -8,6 +8,15 @@
         </span><br>
         <span class="helvetica">Home</span>
     </div>
+    <div class="text-align-center relative" onclick="redirect('/status')">
+        @if(Route::getfacaderoot()->current()->uri() == "status")
+            <div class="focused-nav"></div>
+        @endif
+        <span class="material-symbols-sharp">
+        update
+        </span><br>
+        <span>Status</span>
+    </div>
     <!--<div class="text-align-center relative" onclick="redirect('/meet')">
         @if(Route::getfacaderoot()->current()->uri() == "meet")
             <div class="focused-nav"></div>
@@ -17,7 +26,7 @@
         </span><br>
         <span class="helvetica">Meet</span>
     </div>-->
-    @if($links['application']::where("account_id", Cookie::get("accountid"))->exists())
+    <!-- @if($links['application']::where("account_id", Cookie::get("accountid"))->exists())
         @if($links['application']::where("account_id", Cookie::get("accountid"))->first()->submit)
             <div class="text-align-center relative" onclick="redirect('/status')">
                 @if(Route::getfacaderoot()->current()->uri() == "status")
@@ -50,7 +59,13 @@
             </span><br>
                 <span>Apply</span>
         </div>
-    @endif
+    @endif -->
+    <div class="text-align-center relative" onclick="redirect('/apply')">
+        <span class="material-symbols-sharp">
+        ios_share
+        </span><br>
+        <span>Apply</span>
+    </div> 
     <div class="text-align-center relative" onclick="redirect('/docs')">
         @if(Route::getfacaderoot()->current()->uri() == "docs")
             <div class="focused-nav"></div>
