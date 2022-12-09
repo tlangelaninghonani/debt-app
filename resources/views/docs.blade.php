@@ -35,7 +35,7 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="container view-bottom">
+    <div class="container-not-top view-bottom">
         <div class="text-align-center">
             <span class="material-symbols-sharp icon-big">
             find_in_page

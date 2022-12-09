@@ -18,7 +18,7 @@
         @include("components.header")
     </div>
     <div class="display-flex-center">
-        <div class="container w-100">
+        <div class="container-not-top w-100">
             <div class="display-flex-center">
                 <div class="installment-status">
                     <div class="text-align-center">

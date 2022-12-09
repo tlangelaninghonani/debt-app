@@ -119,7 +119,7 @@ class AccountController extends Controller
             Cookie::queue(Cookie::forget("signed"));
             Cookie::queue(Cookie::forget("accountid"));
 
-            return redirect("/sign_in");
+            return view("sign_in");
         }
 
         return view("sign_in");

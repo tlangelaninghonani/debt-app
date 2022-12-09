@@ -37,7 +37,7 @@
         @include("components.header")
     </div>
     @if($application)
-        <div class="container view-bottom">
+        <div class="container-not-top view-bottom">
             <div class="text-align-center">
                 <span class="material-symbols-sharp icon-big">
                 info
@@ -97,7 +97,7 @@
             </div>
         </div>
     @else
-        <div class="container view-bottom">
+        <div class="container-not-top view-bottom">
             <div class="text-align-center">
                 <span class="material-symbols-sharp icon-big">
                 ios_share

@@ -773,6 +773,12 @@ img{
     font-size: 25px;
 }
 
+.profile{
+    padding: var(--padding);
+    background-color: var(--input-color);
+    border-radius: 20px;
+}
+
 .bold{
     /*font-family: var(--font-family);*/
 }

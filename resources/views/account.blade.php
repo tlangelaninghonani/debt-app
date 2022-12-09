@@ -17,12 +17,23 @@
     <div class="header">
         @include("components.header")
     </div>
-    <div class="container view-bottom">
-        <div class="text-align-center">
-            <!--<img src="/svg/484.svg" class="ill-svg" alt=""><br>-->
+    <div class="container-not-top view-bottom">
+        <!-- <div class="text-align-center">
             <span class="material-symbols-sharp icon-big">
             account_circle
             </span>
+        </div> -->
+        <div class="profile">
+            <div class="text-align-center">
+                <span class="material-symbols-sharp icon-big">
+                account_circle
+                </span><br>
+                <div class="breaker"></div>
+                <div>
+                    <span>{{ $account->first_name." ".$account->last_name }}</span><br>
+                    <span>{{ $account->phone_number }}</span>
+                </div>
+            </div>
         </div>
         <div class="breaker"></div>
         <span class="slogan">Personal</span>
