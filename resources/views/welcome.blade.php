@@ -62,7 +62,19 @@
     <div>
         <div class="container">
             <div class="text-align-center">
-                <img src="/smart_logo.png" class="logo-svg" alt=""><br>
+                <img src="/smart_logo.png" class="logo-svg" alt="" onclick="changeLogo(this);"><br>
+                <script>
+                    function changeLogo(self){
+
+                        if(self.src.includes("/smart_logo.png")){
+
+                            self.src = "/svg/logo.png";
+                        }else{
+
+                            self.src = "/smart_logo.png";
+                        }
+                    }
+                </script>
                 <div class="breaker"></div>
                 <div>
                     <span class="slogan">The <span class="slogan primary-color">Helping Hand</span> Debt Counsellors</span>

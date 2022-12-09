@@ -6,11 +6,6 @@
 }
 
 @font-face {
-    font-family: 'test';
-    src: url('/BebasNeue-Regular.woff2') format('WOFF2');
-}
-
-@font-face {
     font-family: 'MyFontBd';
     src: url('/HelveticaNeueLTPro-HvEx.woff2') format('WOFF2');
 }
@@ -435,6 +430,20 @@ body{
 
 .merital{
     animation: visible 0.4s;
+
+}
+
+.spouse-float{
+    background-color: var(--primary-color); 
+    display: flex;
+    align-items: center;
+    padding: 0 var(--padding);
+    height: 65px;
+    border-radius: var(--radius);
+}
+
+.spouse-float *{
+    color: white;
 }
 
 .side-message{
@@ -605,6 +614,7 @@ select{
 .logo-svg{
     width: 150px;
     transition: 0.1s;
+    animation: visible 0.4s;
 }
 
 .logo-svg:hover{
@@ -759,7 +769,7 @@ img{
 }
 
 .slogan{
-    font-family: var(--font-family);
+    font-family: 'Poller One', cursive; 
     font-size: 25px;
 }
 

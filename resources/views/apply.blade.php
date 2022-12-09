@@ -109,7 +109,7 @@
             <div id="meritalobserver"></div>
             <div class="merital">
                 <div class="button-style-primary float-center display-none" id="meritalobserverfloat">
-                    <div class="display-flex-align">
+                    <div class="display-flex-align spouse-float">
                         <span class="material-symbols-sharp">
                         library_add
                         </span>
