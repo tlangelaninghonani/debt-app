@@ -78,10 +78,10 @@
             </div>
         </div>
     </div>-->
-    <div class="design-container">
+    <!-- <div class="design-container">
         <div class="logo-background" style="transform: scale(2) rotate(20deg)">
             @include("components.logo")
         </div>
-    </div>
+    </div> -->
 </body>
 </html>

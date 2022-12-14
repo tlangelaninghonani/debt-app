@@ -14,13 +14,13 @@
     --padding: 25px;
     --gap: 10px;
     --mid-gap: 25px;
-    --input-color: rgb(248, 248, 248);
+    --input-color: rgb(250, 250, 250);
     --radius: 40px;
     --radius-circle: 50%;
     --primary-color: #fd7600;
     --feint: rgb(60, 60, 60);
     --primary-feint: rgb(255, 243, 233);
-    --placeholder-color: rgb(176, 176, 176);
+    --placeholder-color: rgb(180, 180, 180);
     --font-family: 'Poller One', cursive;
     --banner-height: 50vh;
     --bottom-curve: 160px;
@@ -290,6 +290,9 @@ body{
     color: var(--placeholder-color) !important;
 }
 
+.animation{
+    animation: visible 0.4s;
+}
 
 .header{
     padding: var(--padding);
@@ -302,7 +305,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border-bottom: 1px solid var(--input-color);*/
 }
 
 .header-home *{
@@ -579,6 +581,18 @@ body{
     font-size: 40px !important;
 }
 
+.icon-exp-small{
+    font-size: 24px !important;
+}
+
+.icon-exp-mid{
+    font-size: 48px !important;
+}
+
+.icon-exp-big{
+    font-size: 144px !important;
+}
+
 .icon-profile{
     position: absolute;
     top: 150px;
@@ -621,15 +635,26 @@ select{
     transform: scale(1.1);
 }
 
-.action-icon-style{
-    margin-bottom: 8px;
-}
-
 .action-icon{
     padding: 20.5px;
     border-radius: var(--radius-circle);
     color: white;
     background-color: var(--feint);
+    margin-bottom: 8px;
+}
+
+.action-icon-normal{
+    padding: 20.5px;
+    border-radius: var(--radius-circle);
+    color: white;
+    background-color: var(--feint);
+    margin-bottom: 8px;
+}
+
+.action-icon-normal-silver{
+    padding: 20.5px;
+    border-radius: var(--radius-circle);
+    background-color: var(--input-color);
     margin-bottom: 8px;
 }
 
@@ -640,6 +665,7 @@ select{
     background-color: var(--feint);
     margin-bottom: 8px;
 }
+
 
 .action-icon-opacity{
     padding: 20.5px;
@@ -773,10 +799,37 @@ img{
     font-size: 25px;
 }
 
+.progress-indicator{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.progress-done{
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.mid-icon{
+    padding: 20.5px;
+    background-color: var(--feint);
+    border-radius: var(--radius-circle);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.progress-pending{
+    border: 2px solid var(--input-color);
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+
 .profile{
     padding: var(--padding);
     background-color: var(--input-color);
-    border-radius: 20px;
+    border-radius: var(--radius);
 }
 
 .bold{
@@ -806,7 +859,7 @@ img{
 }
 
 .primary-color *{
-    color: var(--feint) !important;
+    color: var(--primary-color) !important;
 }
 
 .primary-color-exp{
@@ -1068,7 +1121,8 @@ img{
 }
 
 .header-home{
-    padding: var(--padding);
+    padding: 0 var(--padding);
+    height: 92px;
     position: sticky;
     top: 0;
     left: 0;
@@ -1090,6 +1144,7 @@ img{
     display: flex;
     flex-direction: column;
     padding-bottom: var(--padding);
+    padding-top: var(--padding);
 }
 
 .installment{
@@ -1244,6 +1299,7 @@ img{
     background-position: center;
 }
 
+
 .back-img *{
     color: white;
 }
@@ -1322,11 +1378,11 @@ a{
     position: absolute;
     left: 0;
     right: 0;
-    background-color: var(--primary-color);
-    height: 2px;
+    border: 2px solid var(--primary-color);
     top: -26px;
     width: 100%;
     transition: 0.1s;
+    border-radius: var(--radius);
 }
 
 .to-focus:hover{
@@ -1456,10 +1512,7 @@ a{
 }
 
 .nav-middle-icon{
-    padding: 20.5px;
-    background-color: var(--feint);
-    border-radius: var(--radius-circle);
-    color: white !important;
+    font-size: 48px !important;
 }
 
 .div-ini-normal-not-right{
@@ -1500,6 +1553,12 @@ a{
     align-items: center;
     text-align: center;
     padding: var(--padding);
+}
+
+.spouse-switch{
+    background-color: var(--feint);
+    border-radius: var(--radius);
+    height: 65px;
 }
 
 .loader {
@@ -1828,8 +1887,6 @@ hr{
     z-index: 250;
 }
 
-
-
 .logo-right-symbol{
     position: absolute;
     top: -40px;
@@ -1841,6 +1898,7 @@ hr{
     border-top-left-radius: 40px;
     border-bottom-right-radius: 80px;
 }
+
 
 .logo-right-symbol-bottom-curve{
     position: absolute;

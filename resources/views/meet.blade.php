@@ -29,9 +29,7 @@
                 <div class="breaker"></div>
                 <button class="button-icon-space" onclick="redirect('/meet')">
                     <span>Done</span>
-                    <span class="material-symbols-sharp">
-                    done
-                    </span>
+                    <i class="ph-check-circle icon-exp-small"></i>
                 </button>
             </div>
         </div>
@@ -67,9 +65,7 @@
                 @method("POST")
                 <button type="button" class="button-icon-space" onclick="submitForm('meetcancelform')">
                     <span>Cancel meeting</span>
-                    <span class="material-symbols-sharp">
-                    delete
-                    </span>
+                    <i class="ph-trash icon-exp-small"></i>
                 </button>
             </form>
         @else
@@ -116,9 +112,7 @@
                 <div class="breaker"></div>
                 <button type="button" class="button-icon-space" onclick="submitForm('meetform')">
                     <span>Schedule</span>
-                    <span class="material-symbols-sharp">
-                    east
-                    </span>
+                    <i class="ph-timer icon-exp-small"></i>
                 </button>
             </form>
         @endif

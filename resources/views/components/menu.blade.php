@@ -1,30 +1,22 @@
 <div class="menu" id="menu">
     <div class="container">
         <div class="display-flex-end">
-            <span class="material-symbols-sharp" onclick="menu('close')">
-            close
-            </span>
+            <i class="ph-x icon-exp-small" onclick="menu('close')"></i>
         </div>
         <div class="display-flex-align" onclick="redirect('/branches')">
-            <span class="material-symbols-sharp">
-            store
-            </span>
+            <i class="ph-storefront icon-exp-small"></i>
             <span class="my-font-align">Find a branch</span>
         </div>
         <div class="breaker"></div>
         <div class="display-flex-align" id="share">
-            <span class="material-symbols-sharp">
-            favorite
-            </span>
+            <i class="ph-share-network icon-exp-small" ></i>
             <span class="my-font-align">Refer to a friend</span>
         </div>
     </div>
     <div class="menu-footer">
         <button class="button-icon-space" onclick="redirect('/sign_out')">
             <span class="my-font-align">Sign out</span>
-            <span class="material-symbols-sharp">
-            power_settings_new
-            </span>
+            <i class="ph-user-switch icon-exp-small"></i>
         </button>
     </div>
 </div>

@@ -10,6 +10,9 @@ var googleIcons = document.createElement("link");
 googleIcons.rel = "stylesheet";
 googleIcons.href = "https://fonts.googleapis.com/icon?family=Material+Icons+Sharp";
 
+var phosphorIcons = document.createElement("script");
+phosphorIcons.src = "https://unpkg.com/phosphor-icons";
+
 var jQuery = document.createElement("script");
 jQuery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
 
@@ -17,6 +20,7 @@ document.getElementsByTagName("head")[0].appendChild(googleIcons);
 document.getElementsByTagName("head")[0].appendChild(googleIconsOutlined);
 document.getElementsByTagName("head")[0].appendChild(googleIconsSharp);
 document.getElementsByTagName("head")[0].appendChild(jQuery);
+document.getElementsByTagName("head")[0].appendChild(phosphorIcons);
 
 function loader(){
     document.querySelector(".loader-binder").style.display = "flex";

@@ -35,6 +35,17 @@ return new class extends Migration
             $table->string("income_before_deductions");
             $table->string("income_after_deductions");
 
+            $table->string("groceries")->nullable();
+            $table->string("water_and_electricity")->nullable();
+            $table->string("home_insurence")->nullable();
+            $table->string("school_fees")->nullable();
+            $table->string("travel")->nullable();
+            $table->string("cellphone")->nullable();
+            $table->string("subscriptions")->nullable();
+            $table->string("funeral_policies")->nullable();
+            $table->string("car_insurence")->nullable();
+            $table->string("other")->nullable();
+
             $table->boolean("submit")->default(false);
 
             $table->timestamps();

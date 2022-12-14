@@ -20,21 +20,10 @@
 <div class="menu" id="menu">
     <div class="container">
         <div class="display-flex-end">
-            <span class="material-symbols-sharp" onclick="menu('close')">
-            close
-            </span>
+            <i class="ph-x icon-exp-small" onclick="menu('close')"></i>
         </div>
         <div class="display-flex-align">
-            <span class="material-symbols-sharp">
-            verified
-            </span>
-            <span class="my-font-align">Registered debt counsellors</span>
-        </div>
-        <div class="breaker"></div>
-        <div class="display-flex-align">
-            <span class="material-symbols-sharp">
-            call
-            </span>
+            <i class="ph-headset icon-exp-small"></i>
             <span class="my-font-align">Contact us</span>
         </div>
     </div>
@@ -55,9 +44,7 @@
     <div class="header">
         <span>Welcome</span>
         @include("components.find_a_branch")
-        <span class="material-icons-sharp" onclick="menu('open')">
-        more_horiz
-        </span> 
+        <i class="ph-dots-three-outline icon-exp-small" onclick="menu('open')"></i>
     </div>
     <div>
         <div class="container">
@@ -76,13 +63,9 @@
                     }
                 </script>
                 <div class="breaker"></div>
-                <div>
-                    <span class="slogan">The <span class="slogan primary-color">Helping Hand</span> Debt Counsellors</span>
-                    <div class="breaker"></div>
-                    <div>
-                        <span>Do you feel as if you've bitten off more than you can chew? <span class="bold">The <span class="">Helping Hand</span> Debt Councellors</span> can offer you a debt solution that works.</span>
-                    </div>
-                </div>
+                <span class="slogan">The <span class="slogan primary-color">Helping Hand</span> Debt Counsellors</span>
+                <div class="breaker"></div>
+                <span>Do you feel as if you've bitten off more than you can chew? <span class="bold">The <span class="">Helping Hand</span> Debt Councellors</span> can offer you a debt solution that works.</span>
             </div>
             <!-- <div class="breaker"></div>
             <div class="margin-ini-exp">
@@ -120,9 +103,7 @@
             <div class="breaker"></div>
             <button class="button-icon-space" onclick="redirect('/sign_in')">
                 <span>Get started</span>
-                <span class="material-symbols-sharp">
-                east
-                </span>
+                <i class="ph-arrow-right icon-exp-small"></i>
             </button>
             <form id="confirmaccountform" action="/confirm_account" method="POST" class="display-none">
                 @csrf
@@ -132,19 +113,20 @@
                 <div class="breaker"></div>
                 <div class="div-ini-normal-not-right position-relative" onclick="submitForm('confirmaccountform')">
                     <div class="display-flex-align">
-                        <span class="material-symbols-sharp">
-                        account_circle
-                        </span>
+                        <i class="ph-user icon-exp-small"></i>
                         <div>
                             <span>Tlangelani nghonani</span><br>
                             <span>067 722 8944</span>
                         </div>
                     </div>
-                    <span class="material-symbols-sharp">
-                    done
-                    </span>
+                    <i class="ph-shield-check icon-exp-small"></i>
                 </div> 
             @endif
+            <div class="breaker"></div>
+            <div class="display-flex-center">
+                <i class="ph-circle-wavy-check icon-exp-small"></i>
+                <span class="my-font-align">Registered debt counsellors - 645654</span>
+            </div>
         </div>
     </div>
 </body>

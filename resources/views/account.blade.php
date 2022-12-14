@@ -25,9 +25,7 @@
         </div> -->
         <div class="profile">
             <div class="text-align-center">
-                <span class="material-symbols-sharp icon-big">
-                account_circle
-                </span><br>
+                <i class="ph-user icon-exp-big"></i><br>
                 <div class="breaker"></div>
                 <div>
                     <span>{{ $account->first_name." ".$account->last_name }}</span><br>
@@ -42,19 +40,19 @@
             @csrf
             @method("POST")
             <div class="input-contain">
-                <input type="text" id="firstname" name="firstname" value="{{ $account->first_name }}" placeholder="Type your first name">
+                <input type="text" id="firstname" name="firstname" value="{{ $account->first_name }}" placeholder="first name">
             </div>
             <div class="breaker"></div>
             <div class="input-contain">
-                <input type="text" id="lastname" name="lastname" value="{{ $account->last_name }}" placeholder="Type your last name">
+                <input type="text" id="lastname" name="lastname" value="{{ $account->last_name }}" placeholder="Last name">
             </div>
             <div class="breaker"></div>
             <div class="input-contain">
-                <input type="text" id="phonenumber" name="phonenumber" value="{{ $account->phone_number }}" placeholder="Type your phone number">
+                <input type="text" id="phonenumber" name="phonenumber" value="{{ $account->phone_number }}" placeholder="Phone number">
             </div>
             <div class="breaker"></div>
             <div class="input-contain" style="padding-right: var(--padding)">
-                <input type="text" id="email" name="emailaddress" value="{{ $account->email_address }}" placeholder="Type your email address">
+                <input type="text" id="email" name="emailaddress" value="{{ $account->email_address }}" placeholder="Email address">
                 <span class="side-message">Optional</span>
             </div>
             <div class="breaker"></div>
@@ -66,9 +64,7 @@
                         </span>
                     </div>
                     <div>
-                        <span class="material-symbols-sharp icon-small action-icon-style">
-                        man
-                        </span><br>
+                        <i class="ph-gender-male icon-exp-mid"></i><br>
                         <span>Male</span>
                     </div>
                 </div>
@@ -79,18 +75,14 @@
                         </span>
                     </div>
                     <div>
-                        <span class="material-symbols-sharp icon-small action-icon-style">
-                        woman
-                        </span><br>
+                        <i class="ph-gender-female icon-exp-mid"></i><br>
                         <span>Female</span>
                     </div>
                 </div>
             </div>
             <div class="breaker"></div>
             <div class="display-flex-center" id="other" onclick="selectGender('other')">
-                <span class="material-symbols-sharp">
-                account_circle
-                </span>
+                <i class="ph-user icon-exp-small"></i>
                 <span class="my-font-align">Rather not say</span>
                 <div class="display-none" id="otherselected">
                     <span class="material-symbols-sharp">
@@ -125,7 +117,7 @@
             <span class="slogan">Update your <span class="slogan primary-color">password</span></span>
             <div class="breaker"></div>
             <div class="input-contain">
-                <input type="password" id="password" name="password" value="" placeholder="Type your password">
+                <input type="password" id="password" name="password" value="" placeholder="password">
             </div>
             <div class="breaker"></div>
             <div class="input-contain">
@@ -134,9 +126,7 @@
             <div class="breaker"></div>
             <button type="button" class="button-icon-space" onclick="submitForm('updateform')">
                 <span>Update changes</span>
-                <span class="material-symbols-sharp">
-                update
-                </span>
+                <i class="ph-clock-clockwise icon-exp-small"></i>
             </button>
         </form>
     </div>

@@ -3,19 +3,8 @@
         @if(Route::getfacaderoot()->current()->uri() == "home")
             <div class="focused-nav"></div>
         @endif
-        <span class="material-symbols-sharp">
-        home
-        </span><br>
+        <i class="ph-house-simple icon-exp-small"></i><br>
         <span class="helvetica">Home</span>
-    </div>
-    <div class="text-align-center relative" onclick="redirect('/status')">
-        @if(Route::getfacaderoot()->current()->uri() == "status")
-            <div class="focused-nav"></div>
-        @endif
-        <span class="material-symbols-sharp">
-        update
-        </span><br>
-        <span>Status</span>
     </div>
     <!--<div class="text-align-center relative" onclick="redirect('/meet')">
         @if(Route::getfacaderoot()->current()->uri() == "meet")
@@ -57,31 +46,34 @@
             <span class="material-symbols-sharp">
             ios_share
             </span><br>
-                <span>Apply</span>
+            <span>Apply</span>
         </div>
     @endif -->
+    <div class="text-align-center relative" onclick="redirect('/status')">
+        @if(Route::getfacaderoot()->current()->uri() == "status")
+            <div class="focused-nav"></div>
+        @endif
+        <i class="ph-tree-structure icon-exp-small"></i><br>
+        <span>Status</span>
+    </div>
     <div class="text-align-center relative" onclick="redirect('/apply')">
-        <span class="material-symbols-sharp">
-        ios_share
-        </span><br>
-        <span>Apply</span>
+        @if(Route::getfacaderoot()->current()->uri() == "apply")
+            <div class="focused-nav"></div>
+        @endif
+        <i class="ph-paper-plane-tilt icon-exp-small nav-middle-icon"></i><br>
     </div> 
     <div class="text-align-center relative" onclick="redirect('/docs')">
         @if(Route::getfacaderoot()->current()->uri() == "docs")
             <div class="focused-nav"></div>
         @endif
-        <span class="material-symbols-sharp">
-        folder
-        </span><br>
+        <i class="ph-folder-notch icon-exp-small"></i><br>
         <span class="helvetica">Docs</span>
     </div>
-    <div class="text-align-center relative" onclick="redirect('/account')">
+    <div class="text-align-center relative " onclick="redirect('/account')">
         @if(Route::getfacaderoot()->current()->uri() == "account")
             <div class="focused-nav"></div>
         @endif
-        <span class="material-symbols-sharp">
-        account_circle
-        </span><br>
+        <i class="ph-user icon-exp-small"></i><br>
         <span class="helvetica">Profile</span>
     </div>
 </div>

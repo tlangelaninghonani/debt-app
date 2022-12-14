@@ -1,4 +1,8 @@
 @if(Route::getfacaderoot()->current()->uri() == "apply")
+    <div class="display-flex-align mid-gap">
+        <i class="ph-arrow-left icon-exp-small" onclick="redirectBack()"></i>
+        <i class="ph-house-simple icon-exp-small" onclick="redirect('/home')"></i>
+    </div>
     <span class="header-title">Apply</span>
 @endif
 @if(Route::getfacaderoot()->current()->uri() == "account")
@@ -17,19 +21,18 @@
     <span class="header-title">Docs</span>
 @endif
 @if(Route::getfacaderoot()->current()->uri() == "branches")
-    <span class="material-symbols-sharp" onclick="redirectBack()">
-    west
-    </span>
+    <i class="ph-arrow-left icon-exp-small" onclick="redirectBack()"></i>
     <span class="header-title">Branches</span>
 @endif
-<div class="display-flex-align mid-gap">
-    <span class="material-symbols-sharp" onclick="refreshPage()">
-    refresh
-    </span>
-    <span class="material-symbols-sharp">
-    notifications
-    </span>
-    <span class="material-icons-sharp" onclick="menu('open')">
-    more_horiz
-    </span>
-</div>
+@if(Route::getfacaderoot()->current()->uri() == "apply")
+    <div class="display-flex-align mid-gap">
+        <i class="ph-arrows-clockwise icon-exp-small" onclick="refreshPage()"></i>
+        <i class="ph-bell icon-exp-small" ></i>
+        <i class="ph-dots-three-outline icon-exp-small" onclick="menu('open')"></i>
+    </div>
+@else
+    <div class="display-flex-align mid-gap">
+        <i class="ph-bell icon-exp-small" ></i>
+        <i class="ph-dots-three-outline icon-exp-small" onclick="menu('open')"></i>
+    </div>
+@endif

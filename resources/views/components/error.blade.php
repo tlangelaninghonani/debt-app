@@ -3,9 +3,7 @@
         <div class="padding w-100">
             <div class="text-align-center">
                 <div class="text-align-center">
-                    <span class="material-symbols-sharp icon-big">
-                    error
-                    </span>
+                    <i class="ph-smiley-sad icon-exp-big"></i>
                     <div class="breaker"></div>
                 </div>
                 <span class="slogan">Something went <span class="slogan-primary-color">wrong</span></span><br>
@@ -13,9 +11,7 @@
                 <span>{{ Session::get("errormessage") }}</span>
                 <div class="breaker"></div>
                 <div>
-                    <span class="material-symbols-sharp action-icon" onclick="showHideElement('errormessage', 'none')">
-                    replay
-                    </span>
+                    <i class="ph-arrow-clockwise icon-exp-small action-icon" onclick="showHideElement('errormessage', 'none')"></i>
                 </div>
             </div>
         </div>

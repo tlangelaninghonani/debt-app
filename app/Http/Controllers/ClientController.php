@@ -116,6 +116,17 @@ class ClientController extends Controller
         $application->company_contact = $req->companytel;
         $application->position_held = $req->positionheld;
         $application->type_of_employment = $req->typeofemployment;
+
+        $application->groceries = $req->groceries;
+        $application->water_and_electricity = $req->waterandelectricity;
+        $application->home_insurence = $req->homeinsurence;
+        $application->school_fees = $req->schoolfees;
+        $application->travel = $req->travel;
+        $application->cellphone = $req->cellphone;
+        $application->subscriptions = $req->subscriptions;
+        $application->funeral_policies = $req->funeralpolicies;
+        $application->car_insurence = $req->carinsurence;
+        $application->other = $req->other;
         
         if($req->employmentlength != ""){
             $application->employment_length = $req->employmentlength;

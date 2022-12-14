@@ -37,9 +37,7 @@
     </div>
     <div class="container-not-top view-bottom">
         <div class="text-align-center">
-            <span class="material-symbols-sharp icon-big">
-            find_in_page
-            </span>
+            <i class="ph-folder-notch icon-exp-big"></i><br>
             <div class="breaker"></div>
             <span>Please <span class="primary-color-exp">review</span> your <span class="primary-color">documents</span> before submitting</span>
             <div class="breaker"></div>
@@ -138,17 +136,13 @@
                 <div class="breaker"></div>
                 <button class="button-icon-space">
                     <span class="my-font-align">Re-Submit documents</span>
-                    <span class="material-symbols-sharp">
-                    drive_file_move
-                    </span>
+                    <i class="ph-folder-plus icon-exp-small"></i>
                 </button> 
             @else
                 <div class="display-flex-align">
                     <div class="doc-left">
                         <div class="display-flex-align nowrap">
-                            <span class="material-symbols-sharp">
-                            contact_page
-                            </span>
+                            <i class="ph-folder-user icon-exp-small"></i>
                             <input type="file" id="identity" name="identity" class="display-none" onchange="preview('identitypreview', event)" accept="application/pdf">
                             <div>
                                 <span>Upload Identity</span><br>
@@ -158,9 +152,7 @@
                     </div>
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('identity')">
-                            <span class="material-symbols-sharp ">
-                            cloud_upload
-                            </span><br>
+                            <i class="ph-cloud-arrow-up icon-exp-small"></i><br>
                             <span>Upload</span>
                         </div>
                     </div>
@@ -169,17 +161,13 @@
                 <div class="display-flex-space-between">
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('payslip')">
-                            <span class="material-symbols-sharp ">
-                            cloud_upload
-                            </span><br>
+                            <i class="ph-cloud-arrow-up icon-exp-small"></i><br>
                             <span>Upload</span>
                         </div>
                     </div>
                     <div class="doc-right">
                         <div class="display-flex-align nowrap">
-                            <span class="material-symbols-sharp">
-                            description
-                            </span>
+                            <i class="ph-newspaper icon-exp-small"></i><i class=""></i>
                             <input type="file" id="payslip" name="payslip" class="display-none" onchange="preview('payslippreview', event)" accept="application/pdf">
                             <div>
                                 <span>Upload Payslip</span><br>
@@ -192,9 +180,7 @@
                 <div class="display-flex-align">
                     <div class="doc-left">
                         <div class="display-flex-align nowrap">
-                            <span class="material-symbols-sharp">
-                            account_balance
-                            </span>
+                            <i class="ph-credit-card icon-exp-small"></i>
                             <input type="file" id="statement" name="statement" class="display-none" onchange="preview('statementpreview', event)" accept="application/pdf">
                             <div>
                                 <span>Upload Bank statement</span><br>
@@ -204,9 +190,7 @@
                     </div>
                     <div class="display-flex-center w-100">
                         <div class="text-align-center" onclick="upload('statement')">
-                            <span class="material-symbols-sharp">
-                            cloud_upload
-                            </span><br>
+                            <i class="ph-cloud-arrow-up icon-exp-small"></i><br>
                             <span>Upload</span>
                         </div>
                     </div>
@@ -214,9 +198,7 @@
                 <div class="breaker"></div>
                 <button class="button-icon-space">
                     <span class="my-font-align">Submit documents</span>
-                    <span class="material-symbols-sharp">
-                    drive_file_move
-                    </span>
+                    <i class="ph-folder-plus icon-exp-small"></i>
                 </button> 
             @endif
             <script>

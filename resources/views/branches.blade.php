@@ -20,16 +20,14 @@
     <div class="container">
         <div class="text-align-center">
             <!--<img src="/svg/444.svg" class="ill-svg" alt=""><br>-->
-            <span class="material-symbols-sharp icon-big">
-            store
-            </span>
+            <i class="ph-storefront icon-exp-big"></i>
             <div class="breaker"></div>
         </div>
         <div class="display-flex-space-between">
             <div class="display-flex">
                 
                 <div>
-                    <span class="bold">Giyani - Limpopo</span><br>
+                    <span class="slogan">Giyani</span><br>
 
                     <span class="primary-color-exp">Headquarters</span><br>
                     <span>CBD, near Mopani Spar</span><br>
@@ -37,9 +35,7 @@
                 </div>
             </div>
             <a href="https://goo.gl/maps/tTWwFhcM8bG7GFHb9" target="_blank">
-                <span class="material-symbols-sharp action-icon">
-                my_location
-                </span>
+                <i class="ph-navigation-arrow icon-exp-small action-icon"></i>
             </a>
         </div>
         <div class="breaker"></div>
@@ -47,16 +43,14 @@
             <div class="display-flex">
                 
                 <div>
-                    <span class="bold">Polokwane - Limpopo</span><br>
+                    <span class="slogan">Polokwane</span><br>
 
                     <span>19 Library Gardens Cnr Hans Van Rensburg & Grobler Polokwane Central, Polokwane, 0700</span><br>
                     <span class="primary-color-exp">08:30 PM - 17:00 PM</span>
                 </div>
             </div>
             <a href="https://goo.gl/maps/cipZyWgF4Sprtt8n8" target="_blank">
-                <span class="material-symbols-sharp action-icon">
-                my_location
-                </span>
+                <i class="ph-navigation-arrow icon-exp-small action-icon"></i>
             </a>
         </div>
         <div class="breaker"></div>
@@ -64,16 +58,14 @@
             <div class="display-flex">
                 
                 <div>
-                    <span class="bold">Pretoria - Gauteng</span><br>
+                    <span class="slogan">Pretoria</span><br>
 
                     <span>Office 0118 Banking Towers, 190 Thabo Sehume Street Pretoria CBD, Pretoria, 0002</span><br>
                     <span class="primary-color-exp">08:30 PM - 17:00 PM</span>
                 </div>
             </div>
             <a href="https://goo.gl/maps/31gMhB8KrieQV6248" target="_blank">
-                <span class="material-symbols-sharp action-icon">
-                my_location
-                </span>
+                <i class="ph-navigation-arrow icon-exp-small action-icon"></i>
             </a>
         </div>
     </div>

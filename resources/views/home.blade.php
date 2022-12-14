@@ -24,9 +24,7 @@
             <div class="display-flex-center">
                 <div class="circle-badge position-relative">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp icon-mid">
-                        whatshot
-                        </span><br>
+                        <i class="ph-chart-pie-slice icon-exp-big"></i><br>
                         <div class="breaker"></div>
                         <span class="number-big nowrap">60%</span><br>
                         <span>Looking good</span>
@@ -40,9 +38,7 @@
             <div class="breaker"></div>
             <div class="display-flex-space-between debt">
                 <div class="display-flex-align">
-                    <span class="material-symbols-sharp icon-small">
-                    domain
-                    </span>
+                    <i class="ph-folder-notch-minus icon-exp-small"></i><br>
                     <div class="my-font-align">
                         <span class="bold">Capitec</span><br>
            
@@ -56,9 +52,7 @@
             <div class="breaker"></div>
             <div class="display-flex-space-between debt">
                 <div class="display-flex-align">
-                    <span class="material-symbols-sharp icon-small">
-                    domain
-                    </span>
+                    <i class="ph-folder-notch-minus icon-exp-small"></i><br>
                     <div class="my-font-align">
                         <span class="bold">Volkswagen</span><br>
                   
@@ -72,9 +66,7 @@
             <div class="breaker"></div>
             <div class="display-flex-space-between debt">
                 <div class="display-flex-align">
-                    <span class="material-symbols-sharp icon-small">
-                    domain
-                    </span>
+                    <i class="ph-folder-notch-minus icon-exp-small"></i><br>
                     <div class="my-font-align">
                         <span class="bold">Absa</span><br>
           
@@ -97,9 +89,7 @@
         <div class="home-content">
             <div class="h-100"> 
                 <div class="greeting">
-                    <span class="material-symbols-sharp icon-small">
-                    waving_hand
-                    </span>
+                    <i class="ph-hand-waving icon-exp-mid"></i>
                     <div>
                         <span class="slogan">Hello there</span><br>
                         <span>Tlangelani</span>
@@ -109,9 +99,7 @@
             <div class="display-flex-center h-100">
                 <div class="installment">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp icon-big">
-                        task_alt
-                        </span><br>
+                        <i class="ph-check-square-offset icon-exp-big"></i><br>
                         <div class="breaker"></div>
                         <span>Reduced to</span><br>
                         <span class="number-big">R 5 600.00</span><br>
@@ -125,15 +113,11 @@
             <div class="h-100" style="display: flex; align-items: flex-end; justify-content: center">
                 <div class="button-style-white opacity button-style-auto-wdith">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp">
-                        call
-                        </span><br>
+                        <i class="ph-headset icon-exp-small"></i><br>
                         <span>Contact us</span> 
                     </div>
                     <div class="text-align-center" onclick="showHidePopup('debts', 'block')">
-                        <span class="material-symbols-sharp">
-                        domain
-                        </span><br>
+                        <i class="ph-folder-notch-minus icon-exp-small"></i><br>
                         <span>Your debts</span> 
                     </div>
                 </div>

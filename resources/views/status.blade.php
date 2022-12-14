@@ -22,9 +22,7 @@
             <div class="display-flex-center">
                 <div class="installment-status">
                     <div class="text-align-center">
-                        <span class="material-symbols-sharp icon-big">
-                        autorenew
-                        </span><br>
+                        <i class="ph-chart-pie-slice icon-exp-big"></i><br>
                         <div class="breaker"></div>
                         <span>Reduced to</span><br>
                         <span class="number-big">R 5 600.00</span><br>
@@ -40,9 +38,7 @@
             <div class="display-flex-space-between">
                 <div class="margin-ini-feint">
                     <div class="display-flex-align">
-                        <span class="material-symbols-sharp icon-small">
-                        draft
-                        </span>
+                        <i class="ph-file icon-exp-mid"></i><br>
                         <div>
                             <span class="bold">Latest statement</span><br>
                             <span>20 - Nov - 2022</span>
@@ -50,9 +46,7 @@
                     </div>
                 </div> 
                 <div class="text-align-center">
-                    <span class="material-symbols-sharp ">
-                    cloud_download
-                    </span><br>
+                    <i class="ph-cloud-arrow-down icon-exp-small"></i><br>
                     <span class="my-font-align">Download</span>
                 </div>
             </div>

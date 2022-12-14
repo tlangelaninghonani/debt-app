@@ -23,13 +23,9 @@
         </div>-->
         <div class="header-normal">
            <div class="display-flex-space-between">
-            <span class="material-symbols-sharp" onclick="redirectBack()">
-                west
-                </span>
+                <i class="ph-arrow-left icon-exp-small" onclick="redirectBack()"></i>
                 <span class="my-font-align">Register</span>
-                <span class="material-symbols-sharp" onclick="refreshPage()">
-                refresh
-                </span>
+                <i class="ph-arrows-clockwise icon-exp-small" onclick="refreshPage()"></i>
            </div>
            <div class="breaker"></div>
             <div>
@@ -39,7 +35,19 @@
         <div class="container">
             <div class="top-design">
                 <div class="w-100">
-                    <img src="/smart_logo.png" class="logo-svg" alt=""><br>
+                    <img src="/smart_logo.png" class="logo-svg" alt="" onclick="changeLogo(this);"><br>
+                    <script>
+                        function changeLogo(self){
+
+                            if(self.src.includes("/smart_logo.png")){
+
+                                self.src = "/svg/logo.png";
+                            }else{
+
+                                self.src = "/smart_logo.png";
+                            }
+                        }
+                    </script>
                     <div class="breaker"></div>
                     <span>We will be <span class="">with you</span> all the way</span>
                 </div>
@@ -51,19 +59,19 @@
                 @csrf
                 @method("POST")
                 <div class="input-contain">
-                    <input type="text" id="firstname" name="firstname" autocomplete="off" value="" placeholder="Type your first name">
+                    <input type="text" id="firstname" name="firstname" autocomplete="off" value="" placeholder="First name">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="text" id="lastname" name="lastname" autocomplete="off" value="" placeholder="Type your last name">
+                    <input type="text" id="lastname" name="lastname" autocomplete="off" value="" placeholder="Last name">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Type your phone number">
+                    <input type="number" id="phonenumber" name="phonenumber" autocomplete="off" value="" placeholder="Phone number">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain" style="padding-right: var(--padding)">
-                    <input type="email" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Type your email address">
+                    <input type="email" id="email" name="emailaddress" autocomplete="off" value="" placeholder="Email address">
                     <span class="side-message">Optional</span>
                 </div>
                 <div class="breaker"></div>
@@ -75,9 +83,7 @@
                             </span>
                         </div>
                         <div>
-                            <span class="material-symbols-sharp icon-small action-icon-style">
-                            man
-                            </span><br>
+                            <i class="ph-gender-male icon-exp-mid"></i><br>
                             <span>Male</span>
                         </div>
                     </div>
@@ -88,18 +94,14 @@
                             </span>
                         </div>
                         <div>
-                            <span class="material-symbols-sharp icon-small action-icon-style">
-                            woman
-                            </span><br>
+                            <i class="ph-gender-female icon-exp-mid"></i><br>
                             <span>Female</span>
                         </div>
                     </div>
                 </div>
                 <div class="breaker"></div>
                 <div class="display-flex-center" id="other" onclick="selectGender('other')">
-                    <span class="material-symbols-sharp">
-                    account_circle
-                    </span>
+                    <i class="ph-user icon-exp-small"></i>
                     <span class="my-font-align">Rather not say</span>
                     <div class="display-none" id="otherselected">
                         <span class="material-symbols-sharp">
@@ -143,7 +145,7 @@
                 <span>Password should be at least <span class="primary-color-exp">6 </span>characters long</span>
                 <div class="breaker"></div>
                 <div class="input-contain">
-                    <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Type your password">
+                    <input type="password" id="password" name="password" autocomplete="off" value="" placeholder="Password">
                 </div>
                 <div class="breaker"></div>
                 <div class="input-contain">
@@ -153,9 +155,7 @@
                 <div class="display-flex-space-between mid-gap">
                     <button type="button" class="button-icon-space" onclick="submitForm('signupform')">
                         <span>Sign up</span>
-                        <span class="material-symbols-sharp">
-                        east
-                        </span>
+                        <i class="ph-user-plus icon-exp-small"></i>
                     </button>
                 </div>
                 <div class="breaker"></div>
