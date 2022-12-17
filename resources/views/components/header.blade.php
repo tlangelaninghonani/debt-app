@@ -1,5 +1,18 @@
 @if(Route::getfacaderoot()->current()->uri() == "apply")
     <div class="display-flex-align mid-gap">
+        <script>
+            function redirectBack(){
+
+                if(visiblePart.length === 0){
+
+                    loader();
+                    history.back();
+                }else{
+
+                   formNext(formVisibilityState, visiblePart[visiblePart.length - 1], true, true);
+                }
+            }
+        </script>
         <i class="ph-arrow-left icon-exp-small" onclick="redirectBack()"></i>
         <i class="ph-house-simple icon-exp-small" onclick="redirect('/home')"></i>
     </div>

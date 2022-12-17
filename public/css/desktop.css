@@ -806,7 +806,7 @@ img{
 }
 
 .progress-done{
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     width: 100%;
     border-radius: var(--radius);
 }
@@ -820,7 +820,7 @@ img{
 }
 
 .progress-pending{
-    border: 2px solid var(--input-color);
+    border: 1px solid var(--input-color);
     width: 100%;
     border-radius: var(--radius);
 }
@@ -1378,7 +1378,7 @@ a{
     position: absolute;
     left: 0;
     right: 0;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     top: -26px;
     width: 100%;
     transition: 0.1s;

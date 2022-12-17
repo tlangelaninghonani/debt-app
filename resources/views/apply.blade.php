@@ -486,6 +486,10 @@
         </div>
     @endif
     <script>
+
+        var formVisibilityState = "formpersonal"; 
+        var visiblePart = [];
+
         function applicants(self){
             for (let i = 0; i < document.querySelectorAll(".focused").length; i++) {
                 const element = document.querySelectorAll(".focused")[i];
@@ -494,10 +498,28 @@
             self.classList.add("focused");
         }
 
-        function formNext(hide, show){
+        function formNext(hide, show, updateVisibilityState = true, updateVisiblePart = false){
+
             document.querySelector("#" + hide).style.display = "none";
             document.querySelector("#" + show).style.display = "block";
+
+            if(updateVisibilityState){
+
+                formVisibilityState = show;
+            }
+
+            if(updateVisiblePart){
+
+                visiblePart.pop(hide);
+            }else{
+
+                visiblePart.push(hide);
+            }
+
+            console.log(visiblePart);
+            console.log(formVisibilityState);
         }
+       
     </script>
 </body>
 </html>
